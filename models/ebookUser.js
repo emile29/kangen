@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const ebookUser = new Schema({
+const ebookUserSchema = new Schema({
     firstname: {
         type: String,
         required: true
@@ -20,4 +20,4 @@ const ebookUser = new Schema({
     }
 });
 
-export default model('ebookUser', ebookUser);
+export default model('ebookUser', ebookUserSchema);
