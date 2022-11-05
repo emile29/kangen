@@ -3,6 +3,7 @@ import { EmailService } from '../email.service';
 import { DbService } from '../db.service';
 import * as $ from 'jquery';
 import { environment } from 'src/environments/environment';
+import * as varTemplate from 'src/environments/varTemplate.json';
 
 @Component({
   selector: 'app-homepage',
@@ -11,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HomepageComponent implements OnInit {
     websiteName = '';
-    VARS = {};
+    VARS = varTemplate;
 
     constructor(private emailService: EmailService, private dbService: DbService) { }
 

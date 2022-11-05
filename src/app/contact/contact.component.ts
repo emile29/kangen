@@ -3,6 +3,7 @@ import { EmailService } from '../email.service';
 import { DbService } from '../db.service';
 import * as $ from 'jquery';
 import { environment } from 'src/environments/environment';
+import * as varTemplate from 'src/environments/varTemplate.json';
 
 @Component({
   selector: 'app-contact',
@@ -22,7 +23,7 @@ export class ContactComponent implements OnInit {
         "k8": "Leveluk K8"
     };
     websiteName = '';
-    VARS = {};
+    VARS = varTemplate;
 
   constructor(private emailService: EmailService, private dbService: DbService) { }
 
