@@ -23,7 +23,7 @@ export class HomepageComponent implements OnInit {
             let body = {
                 firstname,
                 lastname,
-                email,
+                email: email.toLowerCase(),
                 phone
             };
             this.emailService.sendEbook(body).subscribe(

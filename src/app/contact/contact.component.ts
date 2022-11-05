@@ -48,7 +48,7 @@ export class ContactComponent implements OnInit {
             } else {
                 let currentTypeFull = this.machineFullNames[this.currentType];
                 this.emailService.sendEmail(currentTypeFull, firstname, lastname,
-                                                    city, country, phone, email, message).subscribe(
+                                                    city, country, phone, email.toLowerCase(), message).subscribe(
                     res => {
                         if (res.status == 200) {
                             console.log('Email sent successfully');
@@ -90,7 +90,7 @@ export class ContactComponent implements OnInit {
             let body = {
                 firstname,
                 lastname,
-                email,
+                email: email.toLowerCase(),
                 phone
             };
             this.emailService.sendEbook(body).subscribe(
@@ -118,6 +118,7 @@ export class ContactComponent implements OnInit {
             if ($('.send-newsletter').is(':checked')) {
                 this.addSubscriber(body);
             }
+            this.addEbookUser(body);
         } else {
             alert('Some fields are missing!!');
         }
@@ -136,4 +137,16 @@ export class ContactComponent implements OnInit {
         );
     }
 
+    addEbookUser(body) {
+        this.dbService.addEbookUser(body).subscribe(
+            res => {
+                if (res.status == 200) {
+                    console.log('ebookUser added successfully!');
+                }
+            },
+            err => {
+                console.log('Email already registered in the system');
+            }
+        );
+    }
 }
