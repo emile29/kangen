@@ -15,7 +15,7 @@ const newsletterSubscriberSchema = new Schema({
         unique: true
     },
     phone: {
-        type: Number,
+        type: String,
         required: true
     }
 });
