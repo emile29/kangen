@@ -51,6 +51,7 @@ export class HomepageComponent implements OnInit {
             if ($('.send-newsletter').is(':checked')) {
                 this.addSubscriber(body);
             }
+            this.addEbookUser(body);
         } else {
             alert('Some fields are missing!!');
         }
@@ -61,6 +62,19 @@ export class HomepageComponent implements OnInit {
             res => {
                 if (res.status == 200) {
                     console.log('Subscriber added successfully!');
+                }
+            },
+            err => {
+                console.log('Email already registered in the system');
+            }
+        );
+    }
+
+    addEbookUser(body) {
+        this.dbService.addEbookUser(body).subscribe(
+            res => {
+                if (res.status == 200) {
+                    console.log('ebookUser added successfully!');
                 }
             },
             err => {

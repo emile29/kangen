@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 // const wakeUpDyno = require("./wakeUpDyno");
 const OAuth2 = google.auth.OAuth2;
 import newsletterSubscriberSchema from './models/newsletterSubscriber';
+import ebookUser from './models/ebookUser';
 import * as VARS from './vars.json';
 const dotenv = require('dotenv');
 dotenv.config();
@@ -34,8 +35,8 @@ app.listen(port, () => {
 });
 
 // Connection to MongoDB database
-const uri = "mongodb+srv://User:Password@cluster0.ihihk.mongodb.net/kangen?retryWrites=true&w=majority";
-mongoose.connect(uri, {
+const mongodb_uri = process.env.mongodbUri;
+mongoose.connect(mongodb_uri, {
                         useNewUrlParser : true,
                         useUnifiedTopology : true,
                         useCreateIndex : true,
@@ -169,5 +170,18 @@ app.get("/api/newsletterSubscribers/all", (req, res) => {
             res.status(400).send(err.message);
         else
             res.status(200).json(response);
+    });
+});
+
+// add ebookUser
+app.post("/api/ebookUser/add", (req, res) => {
+    let obj = new ebookUser(req.body)
+    obj.save(function(err, response) {
+        if (err)
+            res.status(400).send(err.message);
+        else {
+            res.status(200).send(response);
+            console.log("ebookUser added successfully!");
+        }
     });
 });

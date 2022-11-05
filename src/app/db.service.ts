@@ -10,13 +10,17 @@ export class DbService {
 
     constructor(private http: HttpClient) {
         if (environment.production) {
-			this.uri = '/api';
-		} else {
-			this.uri = 'http://localhost:8080/api';
-		}
+          this.uri = '/api';
+        } else {
+          this.uri = 'http://localhost:8080/api';
+        }
     }
 
     addSubscriber(body) {
         return this.http.post(`${this.uri}/newsletterSubscribers/add`, body, {observe: 'response'});
     }
+
+    addEbookUser(body) {
+      return this.http.post(`${this.uri}/ebookUser/add`, body, {observe: 'response'});
+  }
 }
