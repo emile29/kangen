@@ -56,7 +56,7 @@ export class HomepageComponent implements OnInit {
                     $('.phone-num').val('');
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
-                    alert('Something went wrong while sending the email!');
+                    alert('Something went wrong while sending the email !!');
                     $('.loader').css('display', 'none');
                 }
             );

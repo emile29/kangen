@@ -80,14 +80,23 @@ const smtpTransport = nodemailer.createTransport({
 app.post("/api/sendmail", (req, res) => {
     console.log("New machine inquiry request received");
     let user = req.body;
+    let websiteName = process.env.website.split("kangen")[1];
+    websiteName = websiteName.charAt(0).toUpperCase() + websiteName.slice(1);
+
+    let subject = `Kangen ${websiteName}: New Inquiry about ${user.machineType}`;
+    let header = `Interested in ${user.machineType}`;
+    if (user.machineType == "other") {
+        subject = `Kangen ${websiteName}: General Inquiry`;
+        header = `General Inquiry`;
+    }
 
     const mailOptions = {
         from: VARS.officeEmail,
         to: VARS.personalEmail,
-        subject: `New Inquiry about ${user.machineType}`,
+        subject: subject,
         generateTextFromHTML: true,
         html: `
-            <h2>Interested in ${user.machineType}</h2>
+            <h2>${header}</h2>
             <p>${user.message}</p>
             <b>FROM:</b>
             <div>${user.firstname} ${user.lastname}</div>

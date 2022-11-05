@@ -11,8 +11,8 @@ import * as varTemplate from 'src/environments/varTemplate.json';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8"];
     currentType = "";
+    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "other"];
     machineFullNames = {
         "anespa": "ANESPA DX",
         "r": "Leveluk R",
@@ -20,7 +20,8 @@ export class ContactComponent implements OnInit {
         "super501": "Leveluk SUPER 501",
         "sd501": "Leveluk SD501",
         "sd501-plat": "Leveluk SD501 PLATINUM 5-LANGUAGE",
-        "k8": "Leveluk K8"
+        "k8": "Leveluk K8",
+        "other": "other"
     };
     websiteName = '';
     VARS = varTemplate;
@@ -88,7 +89,7 @@ export class ContactComponent implements OnInit {
                         $(".city-1").val("");
                         $(".country-1").val("");
                         $(".msg-box").val("");
-                        alert('Invalid email!! Please try again.');
+                        alert('Something went wrong while sending the email !!');
                         $('.loader-1').css('display', 'none');
                     }
                 );
@@ -126,7 +127,7 @@ export class ContactComponent implements OnInit {
                     $('.phone-num').val('');
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
-                    alert('Invalid email!! Please try again.');
+                    alert('Something went wrong while sending the email !!');
                     $('.loader-2').css('display', 'none');
                 }
             );
