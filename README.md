@@ -1,6 +1,6 @@
 # KangenWater Distributor Website
 
-Currently hosting for the following domain suffixes:
+Currently hosting replicas for the following domain suffixes:
 - 77
 - cameroun
 - ghana
