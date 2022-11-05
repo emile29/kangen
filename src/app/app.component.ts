@@ -26,8 +26,8 @@ export class AppComponent {
 		// });
 		this.dbService.getWebsiteName().subscribe(
             res => {
-                this.websiteName = res.body.websiteName;
-                this.VARS = environment.vars.default.data[environment.vars.default.indexes[this.websiteName]]
+                this.websiteName = (res.body as any).websiteName;
+                this.VARS = (environment.vars as any).default.data[(environment.vars as any).default.indexes[this.websiteName]];
             },
             err => {
                 console.log(err)

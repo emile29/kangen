@@ -23,16 +23,14 @@ export class ContactComponent implements OnInit {
     };
     websiteName = '';
     VARS = {};
-    env_vars: any = environment.vars as any;
 
   constructor(private emailService: EmailService, private dbService: DbService) { }
 
   ngOnInit() {
     this.dbService.getWebsiteName().subscribe(
-        res => {
-            let body: any = res.body as any;
-            this.websiteName = body.websiteName;
-            this.VARS = this.env_vars.default.data[this.env_vars.default.indexes[this.websiteName]];
+        (res) => {
+            this.websiteName = (res.body as any).websiteName;
+            this.VARS = (environment.vars as any).default.data[(environment.vars as any).default.indexes[this.websiteName]];
         },
         err => {
             console.log(err)
