@@ -1,0 +1,329 @@
+@import 'src/styles.scss';
+
+.banner {
+    padding: 20px 30px;
+    display: flex;
+    background: url('https://drive.google.com/uc?export=view&id=1u4hsXAz8lGCbKZmYs6MYh3WvqmbuFp4h');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+    .para, .para-header, .para-header-1, .para-header-2 {
+        text-shadow: 1px 0 2px black;
+    }
+
+    .para {
+        margin-bottom: 10px;
+    }
+
+    .para-header-1 {
+        margin-bottom: 5px;
+    }
+
+    .left-section {
+        width: 60%;
+        padding-top: 10px;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .right-section {
+        text-align: center;
+        width: 40%;
+        padding-left: 35px;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .image {
+            width: 110px;
+            border-radius: 50%;
+            margin-bottom: 14px;
+            border: 3px solid white;
+        }
+
+        a {
+            color: white;
+
+            &:hover {
+                color: #2E86C1;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.nav-bar {
+    @extend %ext-nav-bar;
+}
+
+.separator {
+	border-color: rgba(80, 80, 80, 0.3);
+	border-width: 1px;
+	margin: 20px 0;
+}
+
+.img-section {
+	padding: 10px 30px;
+
+	@media screen and (max-width: 425px) {
+		padding: 0 20px 10px;
+	}
+
+	.para-header {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.img-container {
+		text-align: center;
+		margin-top: 10px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.section {
+	display: flex;
+	padding: 20px 30px;
+
+	@media screen and (max-width: 425px) {
+        padding: 10px 20px;
+        display: inline-block;
+	}
+
+	.left-col {
+		width: 50%;
+        padding-right: 10px;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            padding: 0;
+        }
+
+        &-1 {
+            width: 30%;
+            padding: 0;
+
+            @media screen and (max-width: 425px) {
+                width: 100%;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        .glasses-img {
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+    }
+
+    .right-col {
+		width: 50%;
+        padding-left: 10px;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+            padding: 0;
+        }
+
+        &-1 {
+            width: 70%;
+            padding: 0;
+
+            @media screen and (max-width: 425px) {
+                width: 100%;
+            }
+        }
+	}
+
+	.para-header {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 425px) {
+            margin-bottom: 10px;
+        }
+	}
+
+	.para-header-2 {
+        margin-bottom: 5px;
+
+        @media screen and (max-width: 425px) {
+            margin-bottom: 0;
+        }
+	}
+
+	.para {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 425px) {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+	}
+
+	img {
+		width: 100%;
+    }
+
+    .no-display-on-small {
+        width: 33%;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+
+    .equal-width-on-small {
+        width: 33%;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
+    }
+}
+
+.sec-1 {
+    padding-top: 30px;
+}
+
+.newsletter-sec {
+    .container {
+        padding: 15px 30px 30px;
+        border-radius: 6px;
+        background: #015cac;
+
+        @media screen and (max-width: 425px) {
+            padding: 15px 16px 30px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            font-weight: normal;
+        }
+
+        .col-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+
+            .first-name, .last-name, .email, .phone-num {
+                width: 90%;
+                height: 36px;
+                border-radius: 3px;
+                border: 1.1px solid grey;
+                padding: 0 8px;
+            }
+
+            .first-name, .email, .checkbox-container {
+                margin-bottom: 15px;
+            }
+
+            .left-col {
+                width: 34%;
+            }
+
+            .mid-col {
+                width: 33%;
+            }
+
+            .right-col {
+                width: 33%;
+
+                .checkbox-container {
+                    display: flex;
+                    margin-left: 5%;
+                    width: 90%;
+                    height: 36px;
+                    text-align: left;
+
+                    .text {
+                        line-height: 20px;
+                        margin-left: 10px;
+                        color: white;
+                    }
+                }
+
+                button {
+                    height: 36px;
+                    width: 90%;
+                    background: #5ddc02;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .col-container-on-xs {
+            display: none;
+            text-align: center;
+
+            @media screen and (max-width: 425px) {
+                display: inline-block;
+            }
+
+            .inner-container {
+                display: flex;
+
+                .first-name, .last-name, .email, .phone-num {
+                    width: 90%;
+                    height: 36px;
+                    border-radius: 3px;
+                    border: 1.1px solid grey;
+                    padding: 0 8px;
+                }
+
+                .first-name, .email, .checkbox-container {
+                    margin-bottom: 15px;
+                }
+
+                .left-col {
+                    width: 50%;
+                }
+
+                .right-col {
+                    width: 50%;
+                }
+            }
+
+            .checkbox-container {
+                display: flex;
+                margin: 5px auto 0;
+                justify-content: space-around;
+                padding: 0 12px;
+                width: 90%;
+                height: 36px;
+                text-align: left;
+
+                .text {
+                    line-height: 22px;
+                    margin-left: 10px;
+                    color: white;
+                }
+            }
+
+            button {
+                height: 36px;
+                width: 90%;
+                background: #5ddc02;
+                font-weight: bold;
+            }
+        }
+    }
+}

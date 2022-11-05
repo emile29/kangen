@@ -1,0 +1,321 @@
+<div class='banner'>
+    <div class="left-section">
+        <div class="para-header-1">
+            People everywhere are discovering the life changing power of Kangen Water®
+        </div>
+        <div class="para">
+            Make your own healthy, alkaline, antioxidant drinking water that's rich in minerals and purged of impurities, right in your own home!
+        </div>
+        <div class="para-header-2">
+            Change Your Water - Change Your Life!®
+        </div>
+    </div>
+    <div class="right-section">
+        <img class="image" src='{{VARS.profileImg}}'>
+        <div class="para-header-2">{{VARS.distributor}}</div>
+        <div class="para-header-2">Enagic® Global Distributor</div>
+		<div class="para-header-2">{{VARS.location}}</div>
+        <div class="para-header-2">{{VARS.phone}}</div>
+		<div class="para"><a href='/contact'><u>Make Contact Today!</u></a></div>
+        <!-- <div class="para-header-2"><a href="mailto:{{VARS.personalEmail}}">{{VARS.personalEmail}}</a></div> -->
+    </div>
+</div>
+<div class='nav-bar'>
+    <div class='left-section'>
+        <div class="text-container">
+            <img class="logo" src="https://drive.google.com/uc?export=view&id=11Up7UF9N5zTCKtsiSjdDlukePst5RL_x">
+            <div class='text'><a href=''>Kangen Water<span style="font-size: 12px; float: right; padding: 5px 0 0 2px;">®</span></a></div>
+        </div>
+    </div>
+    <div class='right-section'>
+        <div class='sub-header'><a href='/usage'>Usage</a></div>
+        <div class='sub-header'><a href='/products'>Products</a></div>
+        <div class='sub-header'><a href='/contact'>Contact</a></div>
+        <div class='menu-dropdown' ngbDropdown>
+            <button ngbDropdownToggle><i class="fa fa-bars"></i></button>
+            <div ngbDropdownMenu>
+                <div ngbDropdownMenuItem><a href='/usage'>Usage</a></div>
+                <div ngbDropdownMenuItem><a href='/products'>Products</a></div>
+                <div ngbDropdownMenuItem><a href='/contact'>Contact</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='img-section sec-1'>
+	<div class="para-header">People everywhere are discovering the life-changing power of Kangen Water®</div>
+	<div class='img-container'>
+		<img src="https://drive.google.com/uc?export=view&id=15zgm0dcGYGY-0VZ_LL-MbN-TAyI3frqM">
+	</div>
+</div>
+<hr class="separator">
+<div class="section">
+	<div class="left-col">
+		<div class='para-header'>Water is the most important substance in the world</div>
+		<div class="para">
+			Drinking plenty of water on a daily basis is vital to our health.
+			Water carries nutrients to cells, helps with digestion, flushes out toxins,
+			helps prevent headache and fatigue, and can even aid in weight loss or maintenance.
+			Our bodies are up to 75% water, and staying well-hydrated is critical to our optimum health and survival.
+		</div>
+	</div>
+	<div class="right-col">
+		<img src="https://drive.google.com/uc?export=view&id=1Vea2tUGnvbjBsls0bo8GvAi6HoPSC6F4">
+	</div>
+</div>
+<div class='section'>
+	<div class="left-col">
+		<img class="glasses-img" src='https://drive.google.com/uc?export=view&id=1DC3hxUHTP8rfdF6R72sGCWOaZ_KP9pBv'>
+	</div>
+	<div class='right-col'>
+		<div class="para-header">HOWEVER, NOT ALL WATER IS CREATED EQUAL</div>
+		<img src="https://drive.google.com/uc?export=view&id=1MwonBa0_B8OtZbT1GwqGiGg9eUnBtxHP">
+	</div>
+</div>
+<div class="section">
+	<div class="left-col">
+        <div class="para-header">Common Drinks and their pH Level</div>
+        <div class="para">
+            Watch the eye-opening demonstration video that will wake you up to the reality of what you drink!
+        </div>
+	</div>
+	<div class="right-col">
+		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=1daRhVk31YFciTd6gg_QrPRlzXHNMwZc_" controls>
+			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/demo/ph.mp4" type="video/mp4">
+		</video>
+	</div>
+</div>
+<div class='section newsletter-sec'>
+    <div class="container">
+        <div class="header para-header">Get your FREE Healthy Water eBook!</div>
+        <div class="col-container">
+            <div class="left-col">
+                <input class="first-name" placeholder="first name *" #firstname>
+                <input class="last-name" placeholder="last name *" #lastname>
+            </div>
+            <div class="mid-col">
+                <input class="email" placeholder="email *" #email>
+                <input class="phone-num" placeholder="phone *" #phone>
+            </div>
+            <div class="right-col">
+                <div class='checkbox-container'>
+                    <div><input class='send-newsletter' type="checkbox"></div>
+                    <div class='text'>Yes! Please also send the newsletter</div>
+                </div>
+                <button (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">SEND THE EBOOK &#187;</button>
+            </div>
+        </div>
+        <div class="col-container-on-xs">
+            <div class="inner-container">
+                <div class="left-col">
+                    <input class="first-name" placeholder="first name *" #firstname1>
+                    <input class="last-name" placeholder="last name *" #lastname1>
+                </div>
+                <div class="right-col">
+                    <input class="email" placeholder="email *" #email1>
+                    <input class="phone-num" placeholder="phone *" #phone1>
+                </div>
+            </div>
+            <div class='checkbox-container'>
+                <div><input class='send-newsletter' type="checkbox"></div>
+                <div class='text'>Yes! Please also send the newsletter</div>
+            </div>
+            <button (click)="sendEbook(firstname1.value, lastname1.value, email1.value, phone1.value)">SEND THE EBOOK &#187;</button>
+        </div>
+    </div>
+</div>
+<div class='img-section'>
+	<div class="para-header" style="margin-bottom: 18px;">The <span style='color: #005188;'>Truth</span> about the $13 billion dollar Bottled Water Industry</div>
+	<div class='img-container'>
+		<img src="https://drive.google.com/uc?export=view&id=14pPxFgLfE9yHL-lMWoMDLQrHSf-gAmVf">
+	</div>
+</div>
+<div class="section">
+	<div class="left-col">
+		<div class="para-header-2">Bottled water is bad for the environment</div>
+		<div class='para'>
+			According to the National Geographic1, "Bottled water is a drain on the environment: The U.S. public goes through about
+			50 billion water bottles a year, and most of those plastic containers are not recycled. Transporting the bottles and keeping
+			them cold also burns fossil fuels, which give off greenhouse gases." 1500 plastic bottles are consumed every second. Enough plastic
+			is thrown away each year to circle the earth four times. And, it will take 1000 years for the plastic to degrade.
+		</div>
+		<div class="para-header-2">It can pose health threats</div>
+		<div class='para'>
+			The plastic in bottled water often contains chemicals BPA and phthalates, which are proven to be hazardous to human health.
+		</div>
+		<div class="para-header-2">It's not proven to be any safer than tap water</div>
+		<div class='para'>
+			The non-profit, non-partisan Environmental Working Group (EWG) says, "The government does not mandate that bottled water be
+			any safer than tap water. In fact, the chemical pollution standards are nearly identical." Historically, bottled waters have
+			even been recalled for contamination with particulate matter, mold and bacteria.
+		</div>
+	</div>
+	<div class="right-col">
+		<div class="para">
+			Further, as reported by ABC, environmental advocate Mae Wu has performed studies which show bottled is no safer
+			or cleaner: There is actually more testing federally mandated on tap water than bottled. 100 compounds of tap water must be tested
+			every day and the results posted online.
+		</div>
+		<div class="para-header-2">It doesn't necessarily taste better</div>
+		<div class="para">
+			In this video by ABC, in a blind taste test, many even preferred the taste of tap water over bottled.
+		</div>
+		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=1aQk0Tlc1l4J-N61x7I7LTdye1spdNEo9" controls>
+			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/abc_bottledwater.mp4" type="video/mp4">
+		</video>
+		<a style="font-size: 12px; line-break: anywhere;" href='http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</a>
+	</div>
+</div>
+<div class="section" style="padding-top: 0;">
+	<div class='para-header' style="text-align: center; margin: 0; color: #005188; font-size: 26px;">
+		And, by the way, about half of all bottled water is tap water that has been purified.
+	</div>
+</div>
+<hr class="separator">
+<div class='img-section'>
+	<div class="para-header" style="margin-bottom: 18px;"><span style='color: #005188;'>Dangers</span> of Tap Water</div>
+	<div class='img-container'>
+		<img src="https://drive.google.com/uc?export=view&id=1wLDTbgrevssVpD3HjBtg96fAk_PGRvff">
+	</div>
+</div>
+<div class="section">
+	<div class="left-col">
+		<div class='para'>
+			Safe and readily available water is a basic human necessity in order to meet health and sanitation needs.
+			However, tap water around the world has consistently been found to be subpar, "first-world" countries not excluded.
+		</div>
+		<div class='para'>
+			According to the WHO (World Health Organization) some pretty astonishing facts about drinking global water are:
+		</div>
+		<div class='para'>
+			<ul>
+				<li>Around the world, at least 1.8 billion people utilize a drinking water source contaminated with fecal matter.</li>
+				<li>Contaminated water can transmit diseases such as diarrhea, cholera, dysentery, typhoid and polio. Contaminated drinking water is estimated to cause 502,000 diarrheal deaths each year.</li>
+				<li>By 2025, half of the world's population will be living in water-stressed areas.</li>
+				<li>In low and middle income countries, 38% of health care facilities lack any water source, 19% do not have improved sanitation, and 35% lack water and soap for handwashing.</li>
+			</ul>
+		</div>
+		<div class='para'>
+			We're not trying to say that our Enagic® machine will solve all of the world's water problems. However, we do advise
+			that you have your own water analyzed to get a better idea. At that point, you can be proactive about filtering your
+			source water, then ionizing it to achieve the healthiest water on the planet! Think about what you drink!
+		</div>
+	</div>
+	<div class="right-col">
+		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=114sKEQ1GfKFHDLmxakt61e83-ldje7dx" controls>
+			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/abc_bottledwater.mp4" type="video/mp4">
+		</video>
+		<a style="font-size: 12px; line-break: anywhere;" href='http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</a>
+		<div class="para-header-2">NY Times: Tainted Tap Water in U.S.</div>
+		<div class="para">
+			Thirty-five years after the U.S. Congress passed the Safe Drinking Water Act, some regulators and environmentalists
+			state the law is now so obsolete that it fails to protect people from the most obvious threats.
+		</div>
+		<div class="para">
+			In the USA, the NY Times reported on violations of the Clean Water Act, a federal law which governs water pollution,
+			and has shown household water that is contaminated with lead, nickel, and other heavy metals. (Some extreme side-effects
+			of this contamination have resulted in skin burns, rashes, and eroded tooth enamel).
+		</div>
+		<div class="para">
+			The NY Times has since compiled a database of violations of the Safe Drinking Water Act, finding 40% of the nation's
+			community water systems in violation at least once, exposing millions to potentially harmful chemicals, toxins, and heavy metals.
+		</div>
+	</div>
+</div>
+<hr class="separator">
+<div class='img-section'>
+	<div class="para-header" style="margin-bottom: 18px;">
+		Kangen Water® is <span style='color: #005188;'>Antioxidant-Rich,</span> Healthy Water for <span style='color: #005188;'>Revitalized Cells</span>
+		and a <span style='color: #005188;'> Healthy Alternative</span> to regular Tap and Bottled Water
+	</div>
+	<div class='img-container'>
+		<img src="https://drive.google.com/uc?export=view&id=1YYLmLe77S7-8uCT-GLA7bgujuvcVH53y">
+	</div>
+</div>
+<div class="section">
+	<div class="left-col equal-width-on-small">
+		<div class='para'>
+			<span style='color: #005188;'>Kangen Water®...</span> (aka electrolyzed reduced water (ERW), or hydrogen water) begins as tap water.
+			The Enagic® machine filters out chlorine and other impurities from the tap water, then separates the
+			hydrogen and oxygen with a process known as electrolysis. This process adds an electron to the hydrogen
+			creating a new molecule called diatomic molecular hydrogen gas. When this is added to your drinking water,
+			it produces antioxidant-rich Kangen Water®
+		</div>
+	</div>
+	<div class="left-col no-display-on-small">
+		<div class='para'>
+			<img src="https://drive.google.com/uc?export=view&id=1lx5LgZ86olFbBlULSyHM8rMNk44xS4fo">
+		</div>
+	</div>
+	<div class="right-col equal-width-on-small">
+		<div class='para'>
+			Oxidant, by definition, is an oxidizing agent, while <span style='color: #005188;'>antioxidant</span> is any substance that acts to slow or prevent
+			the oxidation of another chemical. In the human body, oxidative damage has been implicated in many of our modern
+			day diseases such as cancer, heart disease, and diabetes. Antioxidants, on the other hand, act to tame the free
+			radicals (or highly reactive chemicals) in the body that have potential to harm cells and cause disease.
+		</div>
+	</div>
+</div>
+<div class="section">
+	<div class="left-col left-col-1">
+		<img src="https://drive.google.com/uc?export=view&id=1DHkr7xsMNop3sWxotzR7YDXuh306_QRu" style='height: 100%;'>
+	</div>
+	<div class="right-col right-col-1">
+		<div class="para" style="background: #005188; padding: 10px 20px; margin-bottom: 0; height: 30%">
+			<div class="para-header-1" style="color: white; margin: 0;">In a scientific study by the National Institute of Health, it was discovered</div>
+		</div>
+		<div class="para para-1" style="background: #E2F3FF; padding: 36px; margin-bottom: 0; color: #005188; height: 70%">
+			The consumption of hydrogen rich water for 8 weeks resulted in a 39% increase (p&#60;0.05) in antioxidant enzyme superoxide dismutase
+			(SOD) and a 43% decrease (p&#60;0.05) in thiobarbituric acid reactive substances (TBARS) in urine. Further, subjects demonstrated an 8%
+			increase in high density lipoprotein (HDL) cholesterol and a 13% decrease in total cholesterol/HDL cholesterol from baseline to 4 weeks.
+		</div>
+	</div>
+</div>
+<div class="section" style="display: block;">
+	<div class="para">
+		<span style='color: #005188; font-weight: bold;'>What does this mean?</span> According to this study, those who drank hydrogen-rich water showed a substantial
+		increase in their antioxidant enzymes and a massive decrease in acid in the urine. Further, participants
+		showed a significant increase in HDL the "good cholesterol," and a significant decrease in the "bad cholesterol."
+	</div>
+	<div class="para">
+		'Electrolyzed Reduced Water' (aka Kangen Water® or hydrogen water) has been used in hospitals in Japan for
+		decades. <span style='color: #005188; font-weight: bold;'>And, now you can make the same alkaline, antioxidant, mineral-rich, pure, safe, and healthy drinking
+		water right in your own home.</span>
+	</div>
+</div>
+<hr class="separator">
+<div class="img-section">
+	<div class="para-header" style="margin-bottom: 10px;">How Does <span style='color: #005188;'>Kangen Water®...</span> Compare to Common Drinks?</div>
+	<div class="para" style="text-align: center;">
+		These videos show pH meters measuring the pH reading in common drinks. All of the tested products
+		(including bottled water) show a reading within the acidic range. Only the Kangen Water® has a
+		negative or alkaline reading.
+	</div>
+</div>
+<div class="section">
+	<div class="left-col" style="text-align: center;">
+		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=1xbJ4sDbvezxaKdRohVXINoBZlr46kkkL" controls>
+			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/kdemo/orp.mp4" type="video/mp4">
+		</video>
+		<div class="para-header-2" style="margin-bottom: 0;">Oxidant or Anti-Oxidant?</div>
+		<div class="para">Compare the oxidation levels (ORP) of common drinks to Kangen Water®!</div>
+	</div>
+	<div class="right-col" style="text-align: center;">
+		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=1daRhVk31YFciTd6gg_QrPRlzXHNMwZc_" controls>
+			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/demo/ph.mp4" type="video/mp4">
+		</video>
+		<div class="para-header-2" style="margin-bottom: 0;">Common Drinks and their pH Levels</div>
+		<div class="para">Compare the pH (acid/alkaline) levels of common drinks to Kangen Water®!</div>
+	</div>
+</div>
+<div class="img-section">
+	<div class="para-header" style="color: #005188;">Kangen Water® has many other amazing uses beyond drinking water!</div>
+	<div class="img-container">
+		<img src="https://drive.google.com/uc?export=view&id=1nqbSzwXmqBZjAP1KVNkevlDd734HEyre">
+	</div>
+	<div class="para last-para" style="text-align: center; padding: 0 40px; margin-bottom: 18px;">
+		Kangen Water® machines can produce incredible waters that can replace household chemicals! Find out more about the MANY usages on the <a>Usage</a> page!
+        <style>
+            a:hover {color: #005188;}
+        </style>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class='page-container'>
+	<div class='main-content'>
+		<router-outlet></router-outlet>
+	</div>
+	<div id='contact' class='footer-container'>
+        <div class="col-container">
+            <div class="left-col">
+                <div class="para-header-2">Your Representative</div>
+                <div>
+                    <img src="{{VARS.profileImg}}">
+                    <div class="para">{{VARS.distributor}}</div>
+                    <div class="para">{{VARS.location}}</div>
+                    <div class="para">{{VARS.phone}}</div>
+                    <div class="para"><a href="mailto:{{VARS.personalEmail}}"><u>{{VARS.personalEmail}}</u></a></div>
+                </div>
+            </div>
+            <div class='middle-col'>
+                <div class="para-header-2">Quick Links</div>
+                <div class="para"><a href="">Home</a></div>
+                <div class="para"><a href="/usage">Usage</a></div>
+                <div class="para"><a href="/products">Products</a></div>
+                <div class="para"><a href="/contact">Contact</a></div>
+            </div>
+            <div class='right-col'>
+                <div class="para-header-2"><b>Social Media</b></div>
+                <div class="icons-container">
+                    <a href="{{VARS.facebook}}" target='_blank' class='fa fa-facebook'></a>
+                    <a href='{{VARS.linkedin}}' target='_blank' class='fa fa-linkedin'></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright-sec">
+            Copyright © 2006-2020 EnagicWebSystem.com All Rights Reserved.<br>
+            <b>privacy policy</b>
+        </div> -->
+	</div>
+</div>

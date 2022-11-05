@@ -1,0 +1,128 @@
+@import 'src/styles.scss';
+
+.banner {
+    @extend %ext-banner;
+    background: url(https://drive.google.com/uc?export=view&id=198noq-4CbRVvv8X4Hnl3PWeTOuPhUBgR) no-repeat;
+    background-size: cover;
+}
+
+.nav-bar {
+    @extend %ext-nav-bar;
+}
+
+.sec-container {
+    display: flex;
+
+    >.left {
+        width: 70%;
+        padding: 25px 20px 40px;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
+
+        .para-header-2, .checkbox-container, .agree {
+            margin-bottom: 10px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            margin-top: 2px;
+
+            .left {
+                @media screen and (max-width: 425px) {
+                    width: 50%;
+                }
+            }
+
+            .right {
+                margin-left: 40px;
+
+                @media screen and (max-width: 425px) {
+                    margin: 0;
+                    width: 50%;
+                }
+            }
+        }
+
+        input, textarea {
+            border-radius: 3px;
+            border: 1.1px solid grey;
+            padding: 1px 6px;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 8px;
+
+            .input1 {
+                width: 49.3%;
+                margin-right: 1.4%;
+            }
+
+            .input2 {
+                width: 49.3%;
+            }
+        }
+
+        .msg-box {
+            width: 100%;
+            min-height: 100px;
+        }
+
+        .send-button {
+            margin: 10px 0;
+            background: rgb(0, 200, 255);
+            color: white;
+            padding: 2px 10px;
+        }
+
+        .send-status {
+            display: none;
+            color: red;
+            margin-left: 10px;
+        }
+    }
+
+    >.right {
+        width: 30%;
+        padding: 15px;
+        text-align: center;
+        background: #FFF url(http://kangenblessing.com/affsites/e2/images/bg_sidebar_light.jpg) repeat center top;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .header {
+            margin-bottom: 10px;
+            line-height: 18px;
+        }
+
+        > input {
+            margin-bottom: 8px;
+            border-radius: 3px;
+            border: 1.1px solid grey;
+            padding: 1px 6px;
+        }
+
+        .input1 {
+            width: 90%;
+        }
+
+        .checkbox {
+            font-size: 12px;
+
+            input {
+                margin-right: 5px;
+            }
+        }
+
+        .send-button {
+            margin: 10px 0;
+            background: rgb(0, 200, 255);
+            color: white;
+            padding: 2px 10px;
+        }
+    }
+}
