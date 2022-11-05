@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import * as $ from 'jquery';
-import * as VARS from './../../vars.json';
+import { DbService } from './db.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,10 @@ import * as VARS from './../../vars.json';
 })
 export class AppComponent {
 
-    VARS: any = (VARS as any).default;
+	websiteName = '';
+	VARS = {};
 
-	constructor() {}
+	constructor(private dbService: DbService) {}
 
 	ngOnInit() {
 		// $(window).scroll(() => {
@@ -22,5 +24,14 @@ export class AppComponent {
 		// 		$('.header-container').removeClass('active');
 		// 	}
 		// });
+		this.dbService.getWebsiteName().subscribe(
+            res => {
+                this.websiteName = res.body.websiteName;
+                this.VARS = environment.vars.default.data[environment.vars.default.indexes[this.websiteName]]
+            },
+            err => {
+                console.log(err)
+            }
+        )
 	}
 }

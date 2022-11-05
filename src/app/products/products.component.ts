@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../email.service';
 import { DbService } from '../db.service';
 import * as $ from 'jquery';
-import * as VARS from './../../../vars.json';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-products',
@@ -11,11 +11,21 @@ import * as VARS from './../../../vars.json';
 })
 export class ProductsComponent implements OnInit {
 
-    VARS: any = (VARS as any).default;
+    websiteName = '';
+    VARS = {};
 
     constructor(private emailService: EmailService, private dbService: DbService) { }
 
     ngOnInit() {
+        this.dbService.getWebsiteName().subscribe(
+            res => {
+                this.websiteName = res.body.websiteName;
+                this.VARS = environment.vars.default.data[environment.vars.default.indexes[this.websiteName]]
+            },
+            err => {
+                console.log(err)
+            }
+        )
     }
 
     sendEbook(firstname, lastname, email, phone) {

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../email.service';
 import { DbService } from '../db.service';
 import * as $ from 'jquery';
-import * as VARS from './../../../vars.json';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -21,11 +21,21 @@ export class ContactComponent implements OnInit {
         "sd501-plat": "Leveluk SD501 PLATINUM 5-LANGUAGE",
         "k8": "Leveluk K8"
     };
-    VARS: any = (VARS as any).default;
+    websiteName = '';
+    VARS = {};
 
   constructor(private emailService: EmailService, private dbService: DbService) { }
 
   ngOnInit() {
+    this.dbService.getWebsiteName().subscribe(
+        res => {
+            this.websiteName = res.body.websiteName;
+            this.VARS = environment.vars.default.data[environment.vars.default.indexes[this.websiteName]]
+        },
+        err => {
+            console.log(err)
+        }
+    )
 
     for (let i=0; i<this.machineTypes.length; i++) {
         $(`.${this.machineTypes[i]}`).on('click', () => {
@@ -37,7 +47,6 @@ export class ContactComponent implements OnInit {
             }
         });
     }
-
   }
 
     sendEmail(firstname, lastname, email, phone, city, country, message) {

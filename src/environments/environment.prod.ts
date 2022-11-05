@@ -1,3 +1,6 @@
+import * as VARS from './vars.json';
+
 export const environment = {
-  production: true
+  production: true,
+  vars: VARS
 };

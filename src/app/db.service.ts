@@ -22,5 +22,9 @@ export class DbService {
 
     addEbookUser(body) {
       return this.http.post(`${this.uri}/ebookUser/add`, body, {observe: 'response'});
-  }
+    }
+    
+    getWebsiteName() {
+      return this.http.get(`${this.uri}/websiteName`, {observe: 'response'});
+    }
 }

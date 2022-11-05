@@ -5,13 +5,14 @@ const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const mongoose = require('mongoose');
-// const wakeUpDyno = require("./wakeUpDyno");
 const OAuth2 = google.auth.OAuth2;
 import newsletterSubscriberSchema from './models/newsletterSubscriber';
 import ebookUser from './models/ebookUser';
-import * as VARS from './vars.json';
+import * as VARS_DATA from './src/environments/vars.json';
 const dotenv = require('dotenv');
 dotenv.config();
+
+const VARS = VARS_DATA.data[VARS_DATA.indexes[process.env.website]]
 
 const app = express();
 
@@ -22,9 +23,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Create link to Angular build directory
 app.use(express.static(path.join(__dirname, "/dist/kangen/")));
 
-// non-root requests being redirected
-app.get('/*', function (req, res) {
-	res.sendFile(path.join(__dirname, "/dist/kangen/index.html"));
+// get websiteName
+app.get("/api/websiteName", (req, res) => {
+    res.status(200).send(JSON.stringify({websiteName: process.env.website}));
 });
 
 const port = process.env.PORT || 8080;
@@ -184,4 +185,9 @@ app.post("/api/ebookUser/add", (req, res) => {
             console.log("ebookUser added successfully!");
         }
     });
+});
+
+// non-root requests being redirected
+app.get('/*', function (req, res) {
+	res.sendFile(path.join(__dirname, "/dist/kangen/index.html"));
 });
