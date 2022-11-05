@@ -89,7 +89,7 @@ export class ContactComponent implements OnInit {
                         $(".city-1").val("");
                         $(".country-1").val("");
                         $(".msg-box").val("");
-                        alert('Something went wrong while sending the email !!');
+                        alert('Something went wrong while sending the email!!');
                         $('.loader-1').css('display', 'none');
                     }
                 );
@@ -127,7 +127,7 @@ export class ContactComponent implements OnInit {
                     $('.phone-num').val('');
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
-                    alert('Something went wrong while sending the email !!');
+                    alert('Something went wrong while sending the email!!');
                     $('.loader-2').css('display', 'none');
                 }
             );

@@ -158,6 +158,34 @@ app.post('/api/sendEbook', (req, res) => {
         }
         smtpTransport.close();
     });
+
+    let websiteName = process.env.website.split("kangen")[1];
+    websiteName = websiteName.charAt(0).toUpperCase() + websiteName.slice(1);
+    const mailOptions2 = {
+        from: VARS.officeEmail,
+        to: 'denisltc@gmail.com',
+        subject: `New eBook Download at Kangen ${websiteName}`,
+        generateTextFromHTML: true,
+        html: `
+            <b>FROM:</b>
+            <div>${user.firstname} ${user.lastname}</div>
+            <div>${user.phone}</div>
+            <div><a href="mailto:${user.email}">${user.email}</a></div>
+        `
+    };
+
+    smtpTransport.sendMail(mailOptions2, (error, response) => {
+        if (error) {
+            console.log(error);
+            res.status(400).send(error);
+            res.send({error: 'Failed to send email!'});
+        } else {
+            console.log(response);
+            res.status(200).send(response);
+            res.send('Email sent!');
+        }
+        smtpTransport.close();
+    });
 });
 
 // add newsletterSubscriber
