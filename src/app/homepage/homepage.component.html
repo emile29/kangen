@@ -101,7 +101,9 @@
                     <div><input class='send-newsletter' type="checkbox"></div>
                     <div class='text'>Yes! Please also send the newsletter</div>
                 </div>
-                <button (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">SEND THE EBOOK &#187;</button>
+				<button class='send-button' (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+					<div>GET EBOOK &#187;<div class="loader"></div></div>
+				</button>
             </div>
         </div>
         <div class="col-container-on-xs">
@@ -119,7 +121,9 @@
                 <div><input class='send-newsletter' type="checkbox"></div>
                 <div class='text'>Yes! Please also send the newsletter</div>
             </div>
-            <button (click)="sendEbook(firstname1.value, lastname1.value, email1.value, phone1.value)">SEND THE EBOOK &#187;</button>
+			<button class='send-button' (click)="sendEbook(firstname1.value, lastname1.value, email1.value, phone1.value)">
+				<div>GET EBOOK &#187;<div class="loader"></div></div>
+			</button>
         </div>
     </div>
 </div>

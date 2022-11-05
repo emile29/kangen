@@ -37,6 +37,7 @@ export class ProductsComponent implements OnInit {
                 email,
                 phone
             };
+            $('.loader').css('display', 'block');
             this.emailService.sendEbook(body).subscribe(
                 res => {
                     if (res.status == 200) {
@@ -46,6 +47,7 @@ export class ProductsComponent implements OnInit {
                         $('.phone-num').val('');
                         $('.email').val('');
                         $('.send-newsletter').prop('checked', false);
+                        $('.loader').css('display', 'none');
                     }
                 },
                 err => {
@@ -56,6 +58,7 @@ export class ProductsComponent implements OnInit {
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
                     alert('Invalid email!! Please try again.');
+                    $('.loader').css('display', 'none');
                 }
             );
 

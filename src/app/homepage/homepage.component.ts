@@ -36,6 +36,7 @@ export class HomepageComponent implements OnInit {
                 email: email.toLowerCase(),
                 phone
             };
+            $('.loader').css('display', 'block');
             this.emailService.sendEbook(body).subscribe(
                 res => {
                     if (res.status == 200) {
@@ -45,6 +46,7 @@ export class HomepageComponent implements OnInit {
                         $('.phone-num').val('');
                         $('.email').val('');
                         $('.send-newsletter').prop('checked', false);
+                        $('.loader').css('display', 'none');
                     }
                 },
                 err => {
@@ -54,7 +56,8 @@ export class HomepageComponent implements OnInit {
                     $('.phone-num').val('');
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
-                    alert('Invalid email!! Please try again.');
+                    alert('Something went wrong while sending the email!');
+                    $('.loader').css('display', 'none');
                 }
             );
 

@@ -261,11 +261,24 @@
                     }
                 }
 
-                button {
+                .send-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
                     height: 36px;
                     width: 90%;
                     background: #5ddc02;
                     font-weight: bold;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        .loader {
+                            display: none;
+                            margin-left: 5px;
+                        }
+                    }
                 }
             }
         }
@@ -318,11 +331,24 @@
                 }
             }
 
-            button {
+            .send-button {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
                 height: 36px;
                 width: 90%;
                 background: #5ddc02;
                 font-weight: bold;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    .loader {
+                        display: none;
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

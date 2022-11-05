@@ -311,6 +311,8 @@
         <input class="email input1" placeholder="email *" #email>
         <input class="phone-num input1" placeholder="phone *" #phone>
         <div class="checkbox"><input type="checkbox" class='send-newsletter'>Yes! Please also send the Newsletter</div>
-        <button class="send-button" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">SEND THE EBOOK &#187;</button>
+        <button class="send-button" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+            <div>GET EBOOK &#187;<div class="loader"></div></div>
+        </button>
     </div>
 </div>

@@ -65,7 +65,9 @@
         </div>
         <textarea class="msg-box" placeholder="Enter a message (optional)" #message></textarea>
         <div class="agree">* By submitting this form you consent to be contacted by the distributor.</div>
-        <button class="send-button" (click)="sendEmail(firstname1.value, lastname1.value, email1.value, phone1.value, city1.value, country1.value, message.value)">SEND MESSAGE &#187;</button>
+        <button class="send-button-1" (click)="sendEmail(firstname1.value, lastname1.value, email1.value, phone1.value, city1.value, country1.value, message.value)">
+            <div>SEND MESSAGE &#187;<div class="loader loader-1"></div></div>
+        </button>
         <div class="send-status">Message sent!</div>
     </div>
     <div class="right">
@@ -75,6 +77,8 @@
         <input class="email input1" placeholder="email *" #email>
         <input class="phone-num input1" placeholder="phone *" #phone>
         <div class="checkbox"><input type="checkbox" class='send-newsletter'>Yes! Please also send the Newsletter</div>
-        <button class="send-button" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">SEND THE EBOOK &#187;</button>
+        <button class="send-button-2" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+            <div>GET EBOOK &#187;<div class="loader loader-2"></div></div>
+        </button>
     </div>
 </div>

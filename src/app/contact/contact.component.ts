@@ -57,6 +57,7 @@ export class ContactComponent implements OnInit {
                 alert('Enter a valid phone number!!');
             } else {
                 let currentTypeFull = this.machineFullNames[this.currentType];
+                $('.loader-1').css('display', 'block');
                 this.emailService.sendEmail(currentTypeFull, firstname, lastname,
                                                     city, country, phone, email.toLowerCase(), message).subscribe(
                     res => {
@@ -71,6 +72,7 @@ export class ContactComponent implements OnInit {
                             $(".country-1").val("");
                             $(".msg-box").val("");
                             $(".send-status").css({display: "inline-block"});
+                            $('.loader-1').css('display', 'none');
                             setTimeout(() => {
                                 $(".send-status").css({display: "none"});
                             }, 2000);
@@ -87,6 +89,7 @@ export class ContactComponent implements OnInit {
                         $(".country-1").val("");
                         $(".msg-box").val("");
                         alert('Invalid email!! Please try again.');
+                        $('.loader-1').css('display', 'none');
                     }
                 );
             }
@@ -103,6 +106,7 @@ export class ContactComponent implements OnInit {
                 email: email.toLowerCase(),
                 phone
             };
+            $('.loader-2').css('display', 'block');
             this.emailService.sendEbook(body).subscribe(
                 res => {
                     if (res.status == 200) {
@@ -112,6 +116,7 @@ export class ContactComponent implements OnInit {
                         $('.phone-num').val('');
                         $('.email').val('');
                         $('.send-newsletter').prop('checked', false);
+                        $('.loader-2').css('display', 'none');
                     }
                 },
                 err => {
@@ -122,6 +127,7 @@ export class ContactComponent implements OnInit {
                     $('.email').val('');
                     $('.send-newsletter').prop('checked', false);
                     alert('Invalid email!! Please try again.');
+                    $('.loader-2').css('display', 'none');
                 }
             );
 
