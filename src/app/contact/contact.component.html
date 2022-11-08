@@ -1,18 +1,4 @@
-<div class='banner'>
-    <div class="para-header">Contact</div>
-    <div class="icon-area">
-        <div class="left">
-            <img src="{{VARS.profileImg}}">
-        </div>
-        <div class="right">
-            <div>
-                <div class="para">{{VARS.distributor}}</div>
-                <div class="para">{{VARS.location}}</div>
-                <div class="para">{{VARS.phone}}</div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-banner backgroundImg="https://drive.google.com/uc?export=view&id=198noq-4CbRVvv8X4Hnl3PWeTOuPhUBgR" bannerTitle="Contact"></app-banner>
 <div class='nav-bar'>
     <div class='left-section'>
         <div class="text-container">
@@ -34,8 +20,8 @@
         </div>
     </div>
 </div>
-<div class="sec-container">
-    <div class="left">
+<div class="main-container">
+    <form class="left" (submit)="sendEmail(firstname1.value, lastname1.value, email1.value, phone1.value, city1.value, country1.value, message.value)">
         <div class="para-header-2">Fill out the form and we'll get back to you as soon as possible!</div>
         <div><b>I'm interested in:</b></div>
         <div class="checkbox-container">
@@ -53,33 +39,28 @@
             </div>
         </div>
         <div class='info-row'>
-            <input class='first-name-1 input1' placeholder="first name *" #firstname1>
-            <input class='last-name-1 input2' placeholder="last name *" #lastname1>
+            <input type="text" class='first-name-1 input1' placeholder="first name *" #firstname1 required>
+            <input type="text" class='last-name-1 input2' placeholder="last name *" #lastname1 required>
         </div>
         <div class='info-row'>
-            <input class='email-1 input1' placeholder="email *" #email1>
-            <input class='phone-num-1 input2' placeholder="phone (incl. country code)*" #phone1>
+            <input type="email" class='email-1 input1' placeholder="email *" #email1 required>
+            <input type="text" class='phone-num-1 input2' placeholder="phone (incl. country code)*" #phone1 required>
         </div>
         <div class='info-row'>
-            <input class='city-1 input1' placeholder="city *" #city1>
-            <input class='country-1 input2' placeholder="country *" #country1>
+            <input type="text" class='city-1 input1' placeholder="city *" #city1 required>
+            <input type="text" class='country-1 input2' placeholder="country *" #country1 required>
         </div>
-        <textarea class="msg-box" placeholder="Enter a message (optional)" #message></textarea>
+        <textarea type="text" class="msg-box" placeholder="Enter a message (optional)" #message></textarea>
         <div class="agree">* By submitting this form you consent to be contacted by the distributor.</div>
-        <button class="send-button-1" (click)="sendEmail(firstname1.value, lastname1.value, email1.value, phone1.value, city1.value, country1.value, message.value)">
+        <button type="submit" class="send-button-1">
             <div>SEND MESSAGE &#187;<div class="loader loader-1"></div></div>
         </button>
         <div class="send-status">Message sent!</div>
-    </div>
+    </form>
     <div class="right">
-        <div class="header">Get your FREE Healthy Water eBook!</div>
-        <input class="first-name input1" placeholder="first name *" #firstname>
-        <input class="last-name input1" placeholder="last name *" #lastname>
-        <input class="email input1" placeholder="email *" #email>
-        <input class="phone-num input1" placeholder="phone *" #phone>
-        <div class="checkbox"><input type="checkbox" class='send-newsletter'>Yes! Please also send the Newsletter</div>
-        <button class="send-button-2" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
-            <div>GET EBOOK &#187;<div class="loader loader-2"></div></div>
-        </button>
+        <app-send-ebook-box2></app-send-ebook-box2>
     </div>
+</div>
+<div class="send-ebook-box-1-container">
+    <app-send-ebook-box1></app-send-ebook-box1>
 </div>

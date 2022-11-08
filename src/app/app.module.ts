@@ -13,6 +13,9 @@ import { ProductsComponent } from './products/products.component';
 import { VideosComponent } from './videos/videos.component';
 import { UsageComponent } from './usage/usage.component';
 import { ContactComponent } from './contact/contact.component';
+import { SendEbookBox1Component } from './common/send-ebook-box1/send-ebook-box1.component';
+import { SendEbookBox2Component } from './common/send-ebook-box2/send-ebook-box2.component';
+import { BannerComponent } from './common/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ContactComponent } from './contact/contact.component';
     ProductsComponent,
     VideosComponent,
     UsageComponent,
-    ContactComponent
+    ContactComponent,
+    SendEbookBox1Component,
+    SendEbookBox2Component,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

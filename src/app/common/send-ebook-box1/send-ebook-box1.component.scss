@@ -1,0 +1,161 @@
+@import 'src/styles.scss';
+
+._checkbox-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: left;
+
+    > div {
+        display: flex;
+        align-items: center;
+
+        .text {
+            margin-left: 10px;
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+
+._send-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 36px;
+    width: 100%;
+    margin: 0 auto;
+    background: #5ddc02;
+    font-weight: bold;
+
+    .send-button-inner {
+        display: flex;
+        align-items: center;
+
+        .loader {
+            display: none;
+            margin-left: 5px;
+        }
+    }
+}
+
+.send-ebook-box-1  {
+    padding: 16px 38px 34px;
+    border-radius: 6px;
+    background: #015cac;
+    width: 100%;
+
+    @media screen and (max-width: 425px) {
+        padding: 15px 16px 26px;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+        font-weight: normal;
+        line-height: 34px;
+        margin: 6px 0 22px;
+
+        @media screen and (max-width: 425px) {
+            margin: 0;
+            margin-bottom: 12px;
+            line-height: 32px;
+        }
+    }
+
+    .rows-container {
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .first-name, .last-name, .email, .phone-num {
+            width: 100%;
+            height: 36px;
+            border: 1.1px solid grey;
+            padding: 0 8px;
+        }
+
+        .row1 {
+            height: 36px;
+            margin-bottom: 2%;
+            display: flex;
+
+            .col1, .col2 {
+                width: 34%;
+                margin-right: 2%;
+            }
+
+            .col3 {
+                width: 28%;
+            }
+
+            .checkbox-container {
+                @extend ._checkbox-container;
+            }
+        }
+
+        .row2 {
+            display: flex;
+
+            .col1, .col2 {
+                width: 34%;
+                margin-right: 2%;
+            }
+
+            .col3 {
+                width: 28%;
+            }
+
+            .send-button {
+                @extend ._send-button;
+            }
+        }
+    }
+
+    .rows-container-on-xs {
+        @extend .rows-container;
+        display: none;
+        text-align: center;
+
+        @media screen and (max-width: 425px) {
+            display: inline-block;
+        }
+
+        .row1 {
+            .col1 {
+                width: 49%;
+                margin-right: 2%;
+            }
+
+            .col2 {
+                width: 49%;
+                margin-right: 0;
+            }
+        }
+
+        .row2 {
+            .col1 {
+                width: 49%;
+                margin-right: 2%;
+            }
+
+            .col2 {
+                width: 49%;
+                margin-right: 0;
+            }
+        }
+
+        .checkbox-container {
+            @extend ._checkbox-container;
+            margin: 10px 0 8px;
+        }
+
+        .send-button {
+            @extend ._send-button;
+
+            @media screen and (max-width: 425px) {
+                width: 90%;
+            }
+        }
+    }
+}
