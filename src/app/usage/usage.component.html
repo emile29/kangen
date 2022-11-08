@@ -1,4 +1,18 @@
-<app-banner backgroundImg="https://drive.google.com/uc?export=view&id=1hPw7PBjX8bI_jufyYyaRiFNz2rOTjgD2" bannerTitle="Usage"></app-banner>
+<div class='banner'>
+    <div class="para-header">Usage</div>
+    <div class="icon-area">
+        <div class="left">
+            <img src="https://drive.google.com/uc?export=view&id=1Gk2nE4HMNwjq_Wj--Zh2nl9WwzarobbG">
+        </div>
+        <div class="right">
+            <div>
+                <div class="para">{{VARS.distributor}}</div>
+                <div class="para">{{VARS.location}}</div>
+                <div class="para">{{VARS.phone}}</div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class='nav-bar'>
     <div class='left-section'>
         <div class="text-container">
@@ -20,7 +34,7 @@
         </div>
     </div>
 </div>
-<div class="main-container">
+<div class="sec-container">
     <div class="left">
         <div class="sec-1">
             <div class="para-header-1">Different Types of Water</div>
@@ -291,6 +305,14 @@
         </div>
     </div>
     <div class="right">
-        <app-send-ebook-box2></app-send-ebook-box2>
+        <div class="header">Get your FREE Healthy Water eBook!</div>
+        <input class="first-name input1" placeholder="first name *" #firstname>
+        <input class="last-name input1" placeholder="last name *" #lastname>
+        <input class="email input1" placeholder="email *" #email>
+        <input class="phone-num input1" placeholder="phone *" #phone>
+        <div class="checkbox"><input type="checkbox" class='send-newsletter'>Yes! Please also send the Newsletter</div>
+        <button class="send-button" (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+            <div>GET EBOOK &#187;<div class="loader"></div></div>
+        </button>
     </div>
 </div>

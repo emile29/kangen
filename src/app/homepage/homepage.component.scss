@@ -40,9 +40,9 @@
         }
 
         .image {
-            width: 130px;
+            width: 110px;
             border-radius: 50%;
-            margin: 2px 0 10px;
+            margin-bottom: 14px;
             border: 3px solid white;
         }
 
@@ -158,7 +158,7 @@
         margin-bottom: 5px;
 
         @media screen and (max-width: 425px) {
-            margin-bottom: 2px;
+            margin-bottom: 0;
         }
 	}
 
@@ -197,4 +197,159 @@
 
 .sec-1 {
     padding-top: 30px;
+}
+
+.newsletter-sec {
+    .container {
+        padding: 15px 30px 30px;
+        border-radius: 6px;
+        background: #015cac;
+
+        @media screen and (max-width: 425px) {
+            padding: 15px 16px 30px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            font-weight: normal;
+        }
+
+        .col-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+
+            .first-name, .last-name, .email, .phone-num {
+                width: 90%;
+                height: 36px;
+                border-radius: 3px;
+                border: 1.1px solid grey;
+                padding: 0 8px;
+            }
+
+            .first-name, .email, .checkbox-container {
+                margin-bottom: 15px;
+            }
+
+            .left-col {
+                width: 34%;
+            }
+
+            .mid-col {
+                width: 33%;
+            }
+
+            .right-col {
+                width: 33%;
+
+                .checkbox-container {
+                    display: flex;
+                    margin-left: 5%;
+                    width: 90%;
+                    height: 36px;
+                    text-align: left;
+
+                    .text {
+                        line-height: 20px;
+                        margin-left: 10px;
+                        color: white;
+                    }
+                }
+
+                .send-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 36px;
+                    width: 90%;
+                    background: #5ddc02;
+                    font-weight: bold;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        .loader {
+                            display: none;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-container-on-xs {
+            display: none;
+            text-align: center;
+
+            @media screen and (max-width: 425px) {
+                display: inline-block;
+            }
+
+            .inner-container {
+                display: flex;
+
+                .first-name, .last-name, .email, .phone-num {
+                    width: 90%;
+                    height: 36px;
+                    border-radius: 3px;
+                    border: 1.1px solid grey;
+                    padding: 0 8px;
+                }
+
+                .first-name, .email, .checkbox-container {
+                    margin-bottom: 15px;
+                }
+
+                .left-col {
+                    width: 50%;
+                }
+
+                .right-col {
+                    width: 50%;
+                }
+            }
+
+            .checkbox-container {
+                display: flex;
+                margin: 5px auto 0;
+                justify-content: space-around;
+                padding: 0 12px;
+                width: 90%;
+                height: 36px;
+                text-align: left;
+
+                .text {
+                    line-height: 22px;
+                    margin-left: 10px;
+                    color: white;
+                }
+            }
+
+            .send-button {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 36px;
+                width: 90%;
+                background: #5ddc02;
+                font-weight: bold;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    .loader {
+                        display: none;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
 }

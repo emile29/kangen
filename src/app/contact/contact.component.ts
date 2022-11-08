@@ -6,9 +6,9 @@ import { environment } from 'src/environments/environment';
 import * as varTemplate from 'src/environments/varTemplate.json';
 
 @Component({
-    selector: 'app-contact',
-    templateUrl: './contact.component.html',
-    styleUrls: ['./contact.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
     currentType = "";
@@ -26,40 +26,61 @@ export class ContactComponent implements OnInit {
     websiteName = '';
     VARS = varTemplate;
 
-    constructor(private emailService: EmailService, private dbService: DbService) { }
+  constructor(private emailService: EmailService, private dbService: DbService) { }
 
-    ngOnInit() {
-        this.dbService.getWebsiteName().subscribe(
-            (res) => {
-                this.websiteName = (res.body as any).websiteName;
-                this.VARS = (environment.vars as any).default[this.websiteName];
-            },
-            err => {
-                console.log(err)
-            }
-        )
-
-        for (let i = 0; i < this.machineTypes.length; i++) {
-            $(`.${this.machineTypes[i]}`).on('click', () => {
-                this.currentType = this.machineTypes[i];
-                for (let j = 0; j < this.machineTypes.length; j++) {
-                    if (this.machineTypes[j] != `${this.machineTypes[i]}` && ($(`.${this.machineTypes[j]}`).is(':checked'))) {
-                        $(`.${this.machineTypes[j]}`).prop('checked', false);
-                    }
-                }
-            });
+  ngOnInit() {
+    this.dbService.getWebsiteName().subscribe(
+        (res) => {
+            this.websiteName = (res.body as any).websiteName;
+            this.VARS = (environment.vars as any).default.data[(environment.vars as any).default.indexes[this.websiteName]];
+        },
+        err => {
+            console.log(err)
         }
+    )
+
+    for (let i=0; i<this.machineTypes.length; i++) {
+        $(`.${this.machineTypes[i]}`).on('click', () => {
+            this.currentType = this.machineTypes[i];
+            for (let j=0; j<this.machineTypes.length; j++) {
+                if (this.machineTypes[j] != `${this.machineTypes[i]}` && ($(`.${this.machineTypes[j]}`).is(':checked'))) {
+                    $(`.${this.machineTypes[j]}`).prop('checked', false);
+                }
+            }
+        });
     }
+  }
 
     sendEmail(firstname, lastname, email, phone, city, country, message) {
-        if (this.currentType != "") {
-            let currentTypeFull = this.machineFullNames[this.currentType];
-            $('.loader-1').css('display', 'block');
-            this.emailService.sendEmail(currentTypeFull, firstname, lastname, city, 
-                                        country, phone, email.toLowerCase(), message).subscribe(
-                res => {
-                    if (res.status == 200) {
-                        console.log('Email sent successfully');
+        if (firstname != "" && lastname != "" && email != "" && this.currentType != "" &&
+            phone != "" && city != "" && country != "") {
+            if (phone.length < 7) {
+                alert('Enter a valid phone number!!');
+            } else {
+                let currentTypeFull = this.machineFullNames[this.currentType];
+                $('.loader-1').css('display', 'block');
+                this.emailService.sendEmail(currentTypeFull, firstname, lastname,
+                                                    city, country, phone, email.toLowerCase(), message).subscribe(
+                    res => {
+                        if (res.status == 200) {
+                            console.log('Email sent successfully');
+                            $(`.${this.currentType}`).prop('checked', false);
+                            $(".first-name-1").val("");
+                            $(".last-name-1").val("");
+                            $(".email-1").val("");
+                            $(".phone-num-1").val("");
+                            $(".city-1").val("");
+                            $(".country-1").val("");
+                            $(".msg-box").val("");
+                            $(".send-status").css({display: "inline-block"});
+                            $('.loader-1').css('display', 'none');
+                            setTimeout(() => {
+                                $(".send-status").css({display: "none"});
+                            }, 2000);
+                        }
+                    },
+                    err => {
+                        console.log(err);
                         $(`.${this.currentType}`).prop('checked', false);
                         $(".first-name-1").val("");
                         $(".last-name-1").val("");
@@ -68,29 +89,81 @@ export class ContactComponent implements OnInit {
                         $(".city-1").val("");
                         $(".country-1").val("");
                         $(".msg-box").val("");
-                        $(".send-status").css({ display: "inline-block" });
+                        alert('Something went wrong while sending the email!!');
                         $('.loader-1').css('display', 'none');
-                        setTimeout(() => {
-                            $(".send-status").css({ display: "none" });
-                        }, 2000);
+                    }
+                );
+            }
+        } else {
+            alert('Some fields are missing!!');
+        }
+    }
+
+    sendEbook(firstname, lastname, email, phone) {
+        if (firstname != '' && lastname != '' && email != '' && phone != '') {
+            let body = {
+                firstname,
+                lastname,
+                email: email.toLowerCase(),
+                phone
+            };
+            $('.loader-2').css('display', 'block');
+            this.emailService.sendEbook(body).subscribe(
+                res => {
+                    if (res.status == 200) {
+                        console.log('Ebook sent successfully!');
+                        $('.first-name').val('');
+                        $('.last-name').val('');
+                        $('.phone-num').val('');
+                        $('.email').val('');
+                        $('.send-newsletter').prop('checked', false);
+                        $('.loader-2').css('display', 'none');
                     }
                 },
                 err => {
                     console.log(err);
-                    $(`.${this.currentType}`).prop('checked', false);
-                    $(".first-name-1").val("");
-                    $(".last-name-1").val("");
-                    $(".email-1").val("");
-                    $(".phone-num-1").val("");
-                    $(".city-1").val("");
-                    $(".country-1").val("");
-                    $(".msg-box").val("");
+                    $('.first-name').val('');
+                    $('.last-name').val('');
+                    $('.phone-num').val('');
+                    $('.email').val('');
+                    $('.send-newsletter').prop('checked', false);
                     alert('Something went wrong while sending the email!!');
-                    $('.loader-1').css('display', 'none');
+                    $('.loader-2').css('display', 'none');
                 }
             );
+
+            if ($('.send-newsletter').is(':checked')) {
+                this.addSubscriber(body);
+            }
+            this.addEbookUser(body);
         } else {
-            alert('Subject of interest missing!! Please choose one.');
+            alert('Some fields are missing!!');
         }
+    }
+
+    addSubscriber(body) {
+        this.dbService.addSubscriber(body).subscribe(
+            res => {
+                if (res.status == 200) {
+                    console.log('Subscriber added successfully!');
+                }
+            },
+            err => {
+                console.log('Email already registered in the system');
+            }
+        );
+    }
+
+    addEbookUser(body) {
+        this.dbService.addEbookUser(body).subscribe(
+            res => {
+                if (res.status == 200) {
+                    console.log('ebookUser added successfully!');
+                }
+            },
+            err => {
+                console.log('Email already registered in the system');
+            }
+        );
     }
 }

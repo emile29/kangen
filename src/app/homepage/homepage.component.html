@@ -62,7 +62,6 @@
 		<img src="https://drive.google.com/uc?export=view&id=1Vea2tUGnvbjBsls0bo8GvAi6HoPSC6F4">
 	</div>
 </div>
-<app-send-ebook-box1 class="section"></app-send-ebook-box1>
 <div class='section'>
 	<div class="left-col">
 		<img class="glasses-img" src='https://drive.google.com/uc?export=view&id=1DC3hxUHTP8rfdF6R72sGCWOaZ_KP9pBv'>
@@ -85,7 +84,49 @@
 		</video>
 	</div>
 </div>
-<hr class="separator">
+<div class='section newsletter-sec'>
+    <div class="container">
+        <div class="header para-header">Get your FREE Healthy Water eBook!</div>
+        <div class="col-container">
+            <div class="left-col">
+                <input class="first-name" placeholder="first name *" #firstname>
+                <input class="last-name" placeholder="last name *" #lastname>
+            </div>
+            <div class="mid-col">
+                <input class="email" placeholder="email *" #email>
+                <input class="phone-num" placeholder="phone *" #phone>
+            </div>
+            <div class="right-col">
+                <div class='checkbox-container'>
+                    <div><input class='send-newsletter' type="checkbox"></div>
+                    <div class='text'>Yes! Please also send the newsletter</div>
+                </div>
+				<button class='send-button' (click)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+					<div>GET EBOOK &#187;<div class="loader"></div></div>
+				</button>
+            </div>
+        </div>
+        <div class="col-container-on-xs">
+            <div class="inner-container">
+                <div class="left-col">
+                    <input class="first-name" placeholder="first name *" #firstname1>
+                    <input class="last-name" placeholder="last name *" #lastname1>
+                </div>
+                <div class="right-col">
+                    <input class="email" placeholder="email *" #email1>
+                    <input class="phone-num" placeholder="phone *" #phone1>
+                </div>
+            </div>
+            <div class='checkbox-container'>
+                <div><input class='send-newsletter' type="checkbox"></div>
+                <div class='text'>Yes! Please also send the newsletter</div>
+            </div>
+			<button class='send-button' (click)="sendEbook(firstname1.value, lastname1.value, email1.value, phone1.value)">
+				<div>GET EBOOK &#187;<div class="loader"></div></div>
+			</button>
+        </div>
+    </div>
+</div>
 <div class='img-section'>
 	<div class="para-header" style="margin-bottom: 18px;">The <span style='color: #005188;'>Truth</span> about the $13 billion dollar Bottled Water Industry</div>
 	<div class='img-container'>
@@ -125,9 +166,7 @@
 		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=1aQk0Tlc1l4J-N61x7I7LTdye1spdNEo9" controls>
 			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/abc_bottledwater.mp4" type="video/mp4">
 		</video>
-		<a href='https://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>
-			<div style="font-size: 12px; line-break: anywhere; line-height: 20px; margin-bottom: 10px;">https://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</div>
-		</a>
+		<a style="font-size: 12px; line-break: anywhere;" href='http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</a>
 	</div>
 </div>
 <div class="section" style="padding-top: 0;">
@@ -169,9 +208,7 @@
 		<video style='outline: none;' width="100%" height="240px" frameborder="0" poster="https://drive.google.com/uc?export=view&id=114sKEQ1GfKFHDLmxakt61e83-ldje7dx" controls>
 			<source src="https://d3cjo7vgaopk6d.cloudfront.net/ews/video/affsites/abc_bottledwater.mp4" type="video/mp4">
 		</video>
-		<a href='https://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>
-			<div style="font-size: 12px; line-break: anywhere; line-height: 20px; margin-bottom: 10px;">https://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</div>
-		</a>
+		<a style="font-size: 12px; line-break: anywhere;" href='http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028'>http://abcnews.go.com/WNT/video/bottled-water-tap-water-difference-21202028</a>
 		<div class="para-header-2">NY Times: Tainted Tap Water in U.S.</div>
 		<div class="para">
 			Thirty-five years after the U.S. Congress passed the Safe Drinking Water Act, some regulators and environmentalists
@@ -224,13 +261,13 @@
 </div>
 <div class="section">
 	<div class="left-col left-col-1">
-		<img src="https://drive.google.com/uc?export=view&id=1DHkr7xsMNop3sWxotzR7YDXuh306_QRu" style='height: 100%; width: 100%'>
+		<img src="https://drive.google.com/uc?export=view&id=1DHkr7xsMNop3sWxotzR7YDXuh306_QRu" style='height: 100%;'>
 	</div>
 	<div class="right-col right-col-1">
-		<div class="para" style="background: #005188; padding: 0 30px; margin-bottom: 0; line-height: 34px; height: 30%; display: flex; align-items: center;">
+		<div class="para" style="background: #005188; padding: 10px 20px; margin-bottom: 0; height: 30%">
 			<div class="para-header-1" style="color: white; margin: 0;">In a scientific study by the National Institute of Health, it was discovered</div>
 		</div>
-		<div class="para para-1" style="background: #E2F3FF; padding: 30px; margin-bottom: 0; color: #005188; height: 70%;">
+		<div class="para para-1" style="background: #E2F3FF; padding: 36px; margin-bottom: 0; color: #005188; height: 70%">
 			The consumption of hydrogen rich water for 8 weeks resulted in a 39% increase (p&#60;0.05) in antioxidant enzyme superoxide dismutase
 			(SOD) and a 43% decrease (p&#60;0.05) in thiobarbituric acid reactive substances (TBARS) in urine. Further, subjects demonstrated an 8%
 			increase in high density lipoprotein (HDL) cholesterol and a 13% decrease in total cholesterol/HDL cholesterol from baseline to 4 weeks.
@@ -280,9 +317,9 @@
 		<img src="https://drive.google.com/uc?export=view&id=1nqbSzwXmqBZjAP1KVNkevlDd734HEyre">
 	</div>
 	<div class="para last-para" style="text-align: center; padding: 0 40px; margin-bottom: 18px;">
-		Kangen Water® machines can produce incredible waters that can replace household chemicals! Find out more about the MANY usages on the <a style="color: #005188;">Usage</a> page!
+		Kangen Water® machines can produce incredible waters that can replace household chemicals! Find out more about the MANY usages on the <a>Usage</a> page!
         <style>
-            a:hover {text-decoration: underline;}
+            a:hover {color: #005188;}
         </style>
     </div>
 </div>

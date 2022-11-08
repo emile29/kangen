@@ -6,25 +6,25 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class DbService {
-  uri = "";
+    uri = "";
 
-  constructor(private http: HttpClient) {
-    if (environment.production) {
-      this.uri = '/api';
-    } else {
-      this.uri = 'http://localhost:8080/api';
+    constructor(private http: HttpClient) {
+        if (environment.production) {
+          this.uri = '/api';
+        } else {
+          this.uri = 'http://localhost:8080/api';
+        }
     }
-  }
 
-  addSubscriber(body) {
-    return this.http.post(`${this.uri}/newsletterSubscribers/add`, body, { observe: 'response' });
-  }
+    addSubscriber(body) {
+        return this.http.post(`${this.uri}/newsletterSubscribers/add`, body, {observe: 'response'});
+    }
 
-  addEbookUser(body) {
-    return this.http.post(`${this.uri}/ebookUser/add`, body, { observe: 'response' });
-  }
-
-  getWebsiteName() {
-    return this.http.get(`${this.uri}/websiteName`, { observe: 'response' });
-  }
+    addEbookUser(body) {
+      return this.http.post(`${this.uri}/ebookUser/add`, body, {observe: 'response'});
+    }
+    
+    getWebsiteName() {
+      return this.http.get(`${this.uri}/websiteName`, {observe: 'response'});
+    }
 }
