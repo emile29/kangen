@@ -103,7 +103,7 @@ export function initAPI(app, websiteName) {
             subject: `Kangen Water eBook`,
             generateTextFromHTML: true,
             html: `
-                <b>Enagic® Distributor:</b>
+                <b>${VARS.title}</b>
                 <div>${VARS.distributor}</div>
                 <div>${VARS.location}</div>
                 <div>${VARS.phone}</div>

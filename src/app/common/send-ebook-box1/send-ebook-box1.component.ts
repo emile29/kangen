@@ -20,6 +20,9 @@ export class SendEbookBox1Component implements OnInit {
     $("#form").submit(function(e) {
       e.preventDefault();
     });
+    $("#form1").submit(function(e) {
+      e.preventDefault();
+    });
   }
 
   sendEbook(firstname, lastname, email, phone) {
@@ -56,8 +59,8 @@ export class SendEbookBox1Component implements OnInit {
     );
 
     if ($('.send-newsletter').is(':checked')) {
-      this.dbService.addSubscriber(body).subscribe();
+      this.dbService.addSubscriber(body).subscribe(res=>{},err=>{});
     }
-    this.dbService.addEbookUser(body).subscribe();
+    this.dbService.addEbookUser(body).subscribe(res=>{},err=>{});
   }
 }

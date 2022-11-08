@@ -56,8 +56,8 @@ export class SendEbookBox2Component implements OnInit {
     );
 
     if ($('.send-newsletter').is(':checked')) {
-      this.dbService.addSubscriber(body).subscribe();
+      this.dbService.addSubscriber(body).subscribe(res=>{},err=>{});
     }
-    this.dbService.addEbookUser(body).subscribe();
+    this.dbService.addEbookUser(body).subscribe(res=>{},err=>{});
   }
 }
