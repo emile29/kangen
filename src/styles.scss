@@ -65,6 +65,16 @@ body {
         }
 	}
 
+    input, textarea {
+        border-radius: 3px;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
 	.dropdown-toggle::after {
 		display: none;
 	}
@@ -82,6 +92,7 @@ body {
 	.para-header {
 		font-size: 32px;
         font-weight: bold;
+        line-height: 36px;
 
         @media screen and (max-width: 425px) {
             font-size: 30px;
@@ -100,17 +111,14 @@ body {
 	.para-header-2 {
 		font-size: 20px;
         font-weight: bold;
-
-        @media screen and (max-width: 425px) {
-            font-size: 18px;
-        }
+        line-height: 24px;
     }
 
     .para {
         font-size: 16px;
 
         @media screen and (max-width: 425px) {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 

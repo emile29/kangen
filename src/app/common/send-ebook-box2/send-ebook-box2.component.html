@@ -1,0 +1,13 @@
+<form class="send-ebook-box-2" id='form' (submit)="sendEbook(firstname.value, lastname.value, email.value, phone.value)">
+    <div class="header">Get your FREE Healthy Water eBook!</div>
+    <input type="text" class="first-name input1" placeholder="first name *" #firstname required>
+    <input type="text" class="last-name input1" placeholder="last name *" #lastname required>
+    <input type="email" class="email input1" placeholder="email *" #email required>
+    <input type="text" class="phone-num input1" placeholder="phone *" minlength="9" #phone required>
+    <div class="checkbox">
+        <div><input type="checkbox" class='send-newsletter'><div class="text">Yes! Please also send the Newsletter</div></div>
+    </div>
+    <button type="submit" class="send-button-2">
+        <div>GET EBOOK &#187;<div class="loader sendEbook2-loader"></div></div>
+    </button>
+</form>

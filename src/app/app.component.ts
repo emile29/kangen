@@ -29,19 +29,15 @@ export class AppComponent {
 		this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
-                this.VARS = (environment.vars as any).default.data[(environment.vars as any).default.indexes[this.websiteName]];
+                this.VARS = (environment.vars as any).default[this.websiteName];
 
 				// set page title dynamically
-				let title = 'Kangen ' + this.capitalizeFirstLetter(this.websiteName.split('kangen')[1]);
-				this.titleService.setTitle(title);
+				let pageTitle = this.VARS.pageTitle;
+				this.titleService.setTitle(pageTitle);
             },
             err => {
                 console.log(err)
             }
         )
-	}
-
-	capitalizeFirstLetter(string) {
-		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 }

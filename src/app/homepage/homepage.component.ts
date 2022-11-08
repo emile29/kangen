@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit {
         this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
-                this.VARS = (environment.vars as any).default.data[(environment.vars as any).default.indexes[this.websiteName]];
+                this.VARS = (environment.vars as any).default[this.websiteName];
             },
             err => {
                 console.log(err)
