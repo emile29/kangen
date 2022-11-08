@@ -5,9 +5,13 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const sslRedirect = require('heroku-ssl-redirect');
 dotenv.config();
 
 const app = express();
+
+// reditect to https in production
+app.use(sslRedirect());
 
 app.use(cors());
 app.use(bodyParser.json());
