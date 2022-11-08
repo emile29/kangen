@@ -1,17 +1,17 @@
 import { initAPI } from './api';
+import sslRedirect from 'heroku-ssl-redirect';
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const sslRedirect = require('heroku-ssl-redirect');
 dotenv.config();
 
 const app = express();
 
 // reditect to https in production
-app.use(sslRedirect());
+app.use(sslRedirect(['production'], 301));
 
 app.use(cors());
 app.use(bodyParser.json());
