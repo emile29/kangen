@@ -124,38 +124,37 @@ export function initAPI(app, websiteName) {
                 console.log('Failed to send ebook');
                 res.send(error);
             } else {
-                // send report to main_email
-                let pageTitle = VARS.pageTitle;
-                let newsletterMsg = 'Does not want to receive newsletter.';
-                if (user.newsletter) {
-                    newsletterMsg = 'Also wants to receive newsletter.';
-                }
-                const mailOptions2 = {
-                    from: VARS.officeEmail,
-                    to: MAIN_EMAIL,
-                    subject: `New eBook Download at ${pageTitle}`,
-                    generateTextFromHTML: true,
-                    html: `
-                        <div>Note: ${newsletterMsg}</div><br/>
-                        <b>FROM:</b>
-                        <div>${user.firstname} ${user.lastname}</div>
-                        <div>${user.phone}</div>
-                        <div><a href="mailto:${user.email}">${user.email}</a></div>
-                    `
-                };
-            
-                smtpTransport.sendMail(mailOptions2, (error1, response1) => {
-                    if (error1) {
-                        console.log('Failed to send email');
-                        res.send(error1);
-                    } else {
-                        console.log('Ebook sent successfully');
-                        res.send(response);
-                        console.log('Report sent successfully');
-                        res.send(response1);
-                    }
-                    smtpTransport.close();
-                });
+                console.log('Ebook sent successfully');
+                res.send(response);
+            }
+            smtpTransport.close();
+        });
+
+        // send report to main_email
+        let pageTitle = VARS.pageTitle;
+        let newsletterMsg = 'Does not want to receive newsletter.';
+        if (user.newsletter) {
+            newsletterMsg = 'Also wants to receive newsletter.';
+        }
+        const mailOptions2 = {
+            from: VARS.officeEmail,
+            to: MAIN_EMAIL,
+            subject: `New eBook Download at ${pageTitle}`,
+            generateTextFromHTML: true,
+            html: `
+                <div>Note: ${newsletterMsg}</div><br/>
+                <b>FROM:</b>
+                <div>${user.firstname} ${user.lastname}</div>
+                <div>${user.phone}</div>
+                <div><a href="mailto:${user.email}">${user.email}</a></div>
+            `
+        };
+    
+        smtpTransport.sendMail(mailOptions2, (error1, response1) => {
+            if (error1) {
+                console.log('Failed to send report');
+            } else {
+                console.log('Report sent successfully');
             }
             smtpTransport.close();
         });
