@@ -30,9 +30,9 @@
     },
     "kangenghana": {
         "distributor": "Aris Ilunga",
-        "location": "Accra, Ghana | London, Canada | DR Congo",
+        "location": "Accra, Ghana | London, Canada",
         "flagImg": "https://drive.google.com/uc?export=view&id=171nkmTwoK87la0IJPHVRKWFDsYdk6n-K",
-        "phone": "+233-50-160-7732 | +1-519-868-4375",
+        "phone": "+1-519-868-4375",
         "officeEmail": "kangenghana.info@gmail.com",
         "personalEmail": "arilunga@gmail.com",
         "herokuURL": "https://kangenghana.herokuapp.com",
