@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SendEbookBox1Component } from './common/send-ebook-box1/send-ebook-box1.component';
 import { SendEbookBox2Component } from './common/send-ebook-box2/send-ebook-box2.component';
 import { BannerComponent } from './common/banner/banner.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BannerComponent } from './common/banner/banner.component';
     ContactComponent,
     SendEbookBox1Component,
     SendEbookBox2Component,
-    BannerComponent
+    BannerComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
