@@ -100,9 +100,18 @@ export function initAPI(app, websiteName) {
         const mailOptions = {
             from: VARS.officeEmail,
             to: `${user.email}`,
-            subject: `Kangen Water eBook`,
+            subject: `📗 ${user.firstname}, Here's the Healthy Water eBook you requested!`,
             generateTextFromHTML: true,
             html: `
+                <div>Hi ${user.firstname}!</div>
+                <b>Your "Healthy Water eBook" is here !</b>
+                <div>The eBook you requested is attached to this email.</div>
+                <div>I am so happy for you to discover this amazing water just like I did! I could hardly believe it when they told me that changing my water could change my life.</div>
+                <div>But, I'm so delighted I took the time to discover Kangen Water, because it truly has changed my life!</div>
+                <div>Don't delay! Dig in! Call me, text me, email me, I have incredible stories from thousands of other people to share with you! Can't wait to hear from you!</div>
+                <h4><em>Change Your Water, Change Your Life!</em></h4>
+                
+                <div>All the best,</div>
                 <b>${VARS.title}</b>
                 <div>${VARS.distributor}</div>
                 <div>${VARS.location}</div>
