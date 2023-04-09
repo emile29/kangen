@@ -121,8 +121,12 @@ export function initAPI(app, websiteName) {
             `,
             attachments: [
                 {
-                    filename: 'FREE_Healthy_Water_eBook.pdf',
-                    path: 'https://drive.google.com/uc?export=view&id=1NML-d1C2P1n92O39McnzBZphaYtAT-wJ'
+                    filename: 'FREE_Healthy_Water_eBook_EN.pdf',
+                    path: 'https://drive.google.com/uc?export=view&id=1Jqu0wgVadCNy_RtHAW-c0HRQ2Z12g6rd'
+                },
+                {
+                    filename: 'FREE_Healthy_Water_eBook_FR.pdf',
+                    path: 'https://drive.google.com/uc?export=view&id=1-UKf55BFdJJQRlTeznaxQG7nHcweC40K'
                 }
             ]
         };
