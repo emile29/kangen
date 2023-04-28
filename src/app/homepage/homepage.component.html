@@ -14,8 +14,10 @@
         <img class="image" src='{{VARS.profileImg}}'>
         <div class="para-header-2">{{VARS.distributor}}</div>
         <div class="para-header-2">{{VARS.title}}</div>
-		<div class="para-header-2">{{VARS.location}}</div>
-        <div class="para-header-2">{{VARS.phone}}</div>
+		<div *ngFor="let item of locPhone">
+			<div class="para-header-2">{{item.loc}}</div>
+        	<div class="para-header-2">{{item.phone}}</div>
+		</div>
 		<div class="para"><a href='/contact'><u>Make Contact Today!</u></a></div>
         <!-- <div class="para-header-2"><a href="mailto:{{VARS.personalEmail}}">{{VARS.personalEmail}}</a></div> -->
     </div>
