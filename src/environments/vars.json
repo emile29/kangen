@@ -75,9 +75,9 @@
     },
     "kangennigeria": {
         "distributor": "Denis Cheong",
-        "location": "Lagos | Abuja, Nigeria",
+        "location": "Lagos, Abuja (Nigeria)",
         "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
-        "phone": "+1-647-389-8798 | +1-647-389-8798",
+        "phone": "+1-647-389-8798",
         "officeEmail": "kangennigeria@gmail.com",
         "personalEmail": "denisltc@gmail.com",
         "herokuURL": "https://kangennigeria.herokuapp.com",
