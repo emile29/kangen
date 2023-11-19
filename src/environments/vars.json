@@ -30,9 +30,9 @@
     },
     "kangenghana": {
         "distributor": "Dio Elikem T. Tay",
-        "location": "Accra, Ghana / Toronto, Canada",
+        "location": "Accra, Ghana | Toronto, Canada",
         "flagImg": "https://drive.google.com/uc?export=view&id=171nkmTwoK87la0IJPHVRKWFDsYdk6n-K",
-        "phone": "+233 24 434 1260 / +1 514 515 7905",
+        "phone": "+233 24 434 1260 | +1 514 515 7905",
         "officeEmail": "kangenghana.info@gmail.com",
         "personalEmail": "dioelikem@yahoo.com",
         "herokuURL": "https://kangenghana.herokuapp.com",
@@ -75,7 +75,7 @@
     },
     "kangennigeria": {
         "distributor": "Denis Cheong",
-        "location": "Lagos | Abuja, Nigeria",
+        "location": "Lagos / Abuja (Nigeria)",
         "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
         "phone": "+1-647-389-8798",
         "officeEmail": "kangennigeria@gmail.com",

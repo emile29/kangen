@@ -22,8 +22,8 @@ export class HomepageComponent implements OnInit {
             res => {
                 this.websiteName = (res.body as any).websiteName;
                 this.VARS = (environment.vars as any).default[this.websiteName];
-                let loc = this.VARS.location.split("/");
-                let phone = this.VARS.phone.split("/");
+                let loc = this.VARS.location.split("|");
+                let phone = this.VARS.phone.split("|");
                 for (let i=0; i<loc.length; i++) {
                     this.locPhone.push({loc: loc[i].trim(), phone: phone[i].trim()});
                 }
