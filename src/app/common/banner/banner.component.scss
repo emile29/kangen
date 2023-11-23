@@ -1,10 +1,5 @@
 @import 'src/styles.scss';
 
 .banner {
-    @extend %ext-banner;
-
-    .icon-area .left img {
-        width: 100px;
-        margin-right: 8px;
-    }
+    @extend %ext-banner;   
 }

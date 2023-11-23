@@ -12,16 +12,16 @@ import * as varTemplate from 'src/environments/varTemplate.json';
 })
 export class ContactComponent implements OnInit {
     currentType = "";
-    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "other"];
+    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "other", "freetrial"];
     machineFullNames = {
         "anespa": "ANESPA DX",
-        "r": "Leveluk R",
         "jriv": "Leveluk JRIV",
         "super501": "Leveluk SUPER 501",
         "sd501": "Leveluk SD501",
         "sd501-plat": "Leveluk SD501 PLATINUM 5-LANGUAGE",
         "k8": "Leveluk K8",
-        "other": "other"
+        "other": "Other",
+        "freetrial": "FREE TRIAL of Kangen Water"
     };
     websiteName = '';
     VARS = varTemplate;
