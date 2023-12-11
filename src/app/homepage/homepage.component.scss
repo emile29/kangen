@@ -66,10 +66,6 @@
     }
 }
 
-.nav-bar {
-    @extend %ext-nav-bar;
-}
-
 .separator {
 	border-color: rgba(80, 80, 80, 0.3);
 	border-width: 1px;

@@ -1,9 +1,5 @@
 @import 'src/styles.scss';
 
-.nav-bar {
-    @extend %ext-nav-bar;
-}
-
 .send-button {
     margin: 10px 0;
     background: rgb(0, 200, 255);

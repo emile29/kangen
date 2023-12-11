@@ -1,5 +1,48 @@
 @import 'src/styles.scss';
 
 .banner {
-    @extend %ext-banner;   
+    padding: 20px 30px;
+    color: white;
+
+    .para, .para-header, .para-header-1, .para-header-2 {
+        text-shadow: 1px 0 2px black;
+    }
+
+    .para-header {
+        margin-top: 20px;
+
+        @media screen and (max-width: 425px) {
+            margin-top: 0;
+        }
+    }
+
+    .icon-area {
+        display: flex;
+        margin: 60px 0;
+
+        @media screen and (max-width: 425px) {
+            margin: 20px 0;
+        }
+
+        .left {
+            img {
+                width: 100px;
+                margin-right: 8px;
+                border-radius: 50%;
+                border: 3px solid white;
+
+                @media screen and (max-width: 425px) {
+                    width: 78px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .right {
+            padding-left: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
 }

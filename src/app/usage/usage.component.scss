@@ -1,13 +1,8 @@
 @import 'src/styles.scss';
 
 .banner {
-    @extend %ext-banner;
     background: url(https://drive.google.com/uc?export=view&id=1hPw7PBjX8bI_jufyYyaRiFNz2rOTjgD2) no-repeat;
     background-size: cover;
-}
-
-.nav-bar {
-    @extend %ext-nav-bar;
 }
 
 .main-container {

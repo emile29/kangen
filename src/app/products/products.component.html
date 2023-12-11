@@ -1,29 +1,512 @@
 <app-banner backgroundImg="https://drive.google.com/uc?export=view&id=1XlanTB1i4XiynyQ3v291Zz1PK0hexPLA" bannerTitle="Products"></app-banner>
-<div class='nav-bar'>
-    <div class='left-section'>
-        <div class="text-container">
-            <img class="logo" src="https://drive.google.com/uc?export=view&id=11Up7UF9N5zTCKtsiSjdDlukePst5RL_x">
-            <div class='text'><a href=''>Kangen Water<span style="font-size: 12px; float: right; padding: 5px 0 0 2px;">®</span></a></div>
-        </div>
-    </div>
-    <div class='right-section'>
-        <div class='sub-header'><a href=''>Home</a></div>
-        <div class='sub-header'><a href='/usage'>Usage</a></div>
-        <div class='sub-header'><a href='/products'>Products</a></div>
-        <div class='sub-header'><a href='/contact'>Contact</a></div>
-        <div class='menu-dropdown' ngbDropdown>
-            <button ngbDropdownToggle><i class="fa fa-bars"></i></button>
-            <div ngbDropdownMenu>
-                <div ngbDropdownMenuItem><a href=''>Home</a></div>
-                <div ngbDropdownMenuItem><a href='/usage'>Usage</a></div>
-                <div ngbDropdownMenuItem><a href='/products'>Products</a></div>
-                <div ngbDropdownMenuItem><a href='/contact'>Contact</a></div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-navbar></app-navbar>
 <div class="main-container">
     <div class="left">
+        <!-- Leveluk K8 -->
+        <div class="machine-type" style="margin-bottom: 40px;">
+            <div class="header para-header-1">Leveluk K8</div>
+            <div class="image-area">
+                <div class='image'>
+                    <img src="https://drive.google.com/uc?export=view&id=1EvZbOYt3DPNIglEaNLluYATP1N7clUN3">
+                </div>
+                <div class="info">
+                    <div class="info-header para-header-2">The Mighty 8-Plate Anti-Oxidizer</div>
+                    <div class="info-text">
+                        The Kangen® 8 (K8) is Enagic®'s most powerful antioxidant machine - featuring 8 platinum-dipped titanium plates for improved water ionization and increased antioxidant production potential. You can enjoy this Kangen Water® machine in any country, thanks to its worldwide multi-voltage power supply and interchangeable plug capability (sold separately). If you're looking for a powerful and versatile machine with plenty of user-friendly and energy-saving automated features, the Kangen® 8 is for you.
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons-inner-container">
+                    <div class="price-dropdown" ngbDropdown>
+                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
+                        <div class="price-dropdown-menu" ngbDropdownMenu>
+                            <div>US$ 4980</div>
+                            <div>CA$ 5700</div>
+                            <div>€ 4200</div>
+                        </div>
+                    </div>
+                    <a href="/contact"><button class="buy">BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Electrode plates:</div>
+                <div class='right'>8
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
+                            (Platinum coated titanium)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Plate size: (mm)</div>
+                <div class='right'>135 x 75</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Negative ORP: (mV)</div>
+                <div class='right'>-850
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
+                            (depends on water quality and flow rate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>pH Range:</div>
+                <div class='right'>2.5 - 11.5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Generates:</div>
+                <div class='right'>5 water types
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
+                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Wattage: (W)</div>
+                <div class='right'>230</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Total weight: (kg)</div>
+                <div class='right'>5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Dimensions WHD: (mm)</div>
+                <div class='right'>345 x 279 x 147</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Production rate: (l/min)</div>
+                <div class='right'>Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Ease of Use:</div>
+                <div class='right'>Fully automatic, very simple to operate</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Languages:</div>
+                <div class='right'>8
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-lang' ngbDropdownMenu>
+                            Japanese, English, Spanish, French, Italian, German, Portuguese, Chinese(Mandarin)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Warranty: (years)</div>
+                <div class='right'>5</div>
+            </div>
+        </div>
+        <!-- Leveluk SD501 PLATINUM 5-LANGUAGE -->
+        <div class="machine-type">
+            <div class="header para-header-1">Leveluk SD501 PLATINUM 5-LANGUAGE</div>
+            <div class="image-area">
+                <div class='image'>
+                    <img src="https://drive.google.com/uc?export=view&id=1d4c5dMWtopS_pHpiOl_YbGebgR0zZIOn">
+                </div>
+                <div class="info">
+                    <div class="info-header para-header-2">The Ultimate Home Use Model</div>
+                    <div class="info-text">
+                        Introducing the BRAND NEW 5-Language SD501 Platinum! The all new Platinum features a revamped modern design that coordinates beautifully with today's stylish kitchens. It has the same powerful performance in an all-new package. Smart New Look, Same Reliable SD 501!
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons-inner-container">
+                    <div class="price-dropdown" ngbDropdown>
+                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
+                        <div class="price-dropdown-menu" ngbDropdownMenu>
+                            <div>US$ 4280</div>
+                            <div>CA$ 4950</div>
+                            <div>€ 3500</div>
+                        </div>
+                    </div>
+                    <a href="/contact"><button class="buy">BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Electrode plates:</div>
+                <div class='right'>7
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
+                            (Platinum coated titanium)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Plate size: (mm)</div>
+                <div class='right'>135 x 75</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Negative ORP: (mV)</div>
+                <div class='right'>-800
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
+                            (depends on water quality and flow rate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>pH Range:</div>
+                <div class='right'>2.5 - 11.5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Generates:</div>
+                <div class='right'>5 water types
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
+                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Wattage: (W)</div>
+                <div class='right'>230</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Total weight: (kg)</div>
+                <div class='right'>6.3</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Dimensions WHD: (mm)</div>
+                <div class='right'>264 x 338 x 171</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Production rate: (l/min)</div>
+                <div class='right'>
+                    Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Ease of Use:</div>
+                <div class='right'>Fully automatic, very simple to operate</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Languages:</div>
+                <div class='right'>5
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-lang' ngbDropdownMenu>
+                            English, German, French, Italian and Spanish
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Warranty: (years)</div>
+                <div class='right'>5</div>
+            </div>
+        </div>
+        <!-- Leveluk SD501 -->
+        <div class="machine-type">
+            <div class="header para-header-1">Leveluk SD501</div>
+            <div class="image-area">
+                <div class='image'>
+                    <img src="https://drive.google.com/uc?export=view&id=1plpRIZ7GERUrfzJcEeq6M4-R3brm6XuK">
+                </div>
+                <div class="info">
+                    <div class="info-header para-header-2">The Ultimate Home Use Model</div>
+                    <div class="info-text">
+                        Leveluk SD501 is the most popular home model, and the perfect machine for you and your family. This industry-leading machine conveniently connects to your kitchen faucet and generates enough of the 5 types of Enagic® water (see below) for you to share with your community and loved ones. Although it is incredibly powerful, the SD501 is also very compact and perfectly suitable for your kitchen cabinet. The fully featured LCD screen is attractive and simple to operate. The SD501 is Enagic's "Flagship" model because it provides additional stable oxygen and higher negative ORP levels. Like all 501 models, the SD501 uses innovative electrolysis technology with 7 platinum-coated 99.97% pure titanium electrode plates.
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons-inner-container">
+                    <div class="price-dropdown" ngbDropdown>
+                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
+                        <div class="price-dropdown-menu" ngbDropdownMenu>
+                            <div>US$ 3980</div>
+                            <div>CA$ 4700</div>
+                            <div>€ 3280</div>
+                        </div>
+                    </div>
+                    <a href="/contact"><button class="buy">BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Electrode plates:</div>
+                <div class='right'>7
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
+                            (Platinum coated titanium)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Plate size: (mm)</div>
+                <div class='right'>135 x 75</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Negative ORP: (mV)</div>
+                <div class='right'>-800
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
+                            (depends on water quality and flow rate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>pH Range:</div>
+                <div class='right'>2.5 - 11.5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Generates:</div>
+                <div class='right'>5 water types
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
+                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Wattage: (W)</div>
+                <div class='right'>230</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Total weight: (kg)</div>
+                <div class='right'>6.3</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Dimensions WHD: (mm)</div>
+                <div class='right'>264 x 338 x 171</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Production rate: (l/min)</div>
+                <div class='right'>
+                    Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Ease of Use:</div>
+                <div class='right'>Fully automatic, very simple to operate</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Languages:</div>
+                <div class='right'>English</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Warranty: (years)</div>
+                <div class='right'>5</div>
+            </div>
+        </div>
+        <!-- Leveluk SUPER 501 -->
+        <div class="machine-type">
+            <div class="header para-header-1">Leveluk SUPER 501</div>
+            <div class="image-area">
+                <div class='image'>
+                    <img src="https://drive.google.com/uc?export=view&id=1MJmfAp5CXWw2V5_NrdLn8E1vTeKwcrJo">
+                </div>
+                <div class="info">
+                    <div class="info-header para-header-2">For Heavy Home Use</div>
+                    <div class="info-text">
+                        This powerful Enagic® machine is a large family unit, and the top of the line model for heavy home use or for small businesses. Nursing homes, agricultural colleges, and spas can all benefit greatly by having the high-performance Super501! With 12 platinum-coated 99.97% pure titanium electrode plates, this highly productive machine generates all 5 different types of Enagic® water (see below) for countless uses around your home or business. If you're looking for a super-sized SD501, the Super501 is exactly what you need.
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons-inner-container">
+                    <div class="price-dropdown" ngbDropdown>
+                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
+                        <div class="price-dropdown-menu" ngbDropdownMenu>
+                            <div>US$ 5980</div>
+                            <div>CA$ n/a</div>
+                            <div>€ n/a</div>
+                        </div>
+                    </div>
+                    <a href="/contact"><button class="buy">BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Electrode plates:</div>
+                <div class='right'>7 & 5
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-1' style="min-width: 200px;" ngbDropdownMenu>
+                            (Platinum coated titanium, 7 plates for Strong Acidic/Strong Kangen and 5 plates for Kangen/Acidic water)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Plate size: (mm)</div>
+                <div class='right'>135 x 75</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Negative ORP: (mV)</div>
+                <div class='right'>-800
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
+                            (depends on water quality and flow rate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>pH Range:</div>
+                <div class='right'>2.5 - 11.5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Generates:</div>
+                <div class='right'>5 water types
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
+                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Wattage: (W)</div>
+                <div class='right'>200</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Total weight: (kg)</div>
+                <div class='right'>10.1</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Dimensions WHD: (mm)</div>
+                <div class='right'>352 x 384 x 250</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Production rate: (l/min)</div>
+                <div class='right'>Kangen Water®: 4.9 - 7.9<br>Acidic Water: 1.9 - 3.0<br>Strong Acidic water: 1.1 - 3.0</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Ease of Use:</div>
+                <div class='right'>Fully automatic, very simple to operate</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Languages:</div>
+                <div class='right'>English</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Warranty: (years)</div>
+                <div class='right'>3</div>
+            </div>
+        </div>
+        <!-- Leveluk JRIV -->
+        <div class="machine-type">
+            <div class="header para-header-1">Leveluk JRIV</div>
+            <div class="image-area">
+                <div class='image'>
+                    <img src="https://drive.google.com/uc?export=view&id=1H8yHSR9HHO5QiEXbjiqwFaxtPz5g75tO">
+                </div>
+                <div class="info">
+                    <div class="info-header para-header-2">The Junior Model</div>
+                    <div class="info-text">
+                        The JRIV has four solid electrode plates, which reduces the energy consumption. Due to the lower power consumption and fewer plates, this machine is considered one of Enagic's "starter" models. If you're looking for an Enagic machine that generates all 5 types of water, this model is a good entry level choice, and you can always upgrade to the flagship K8 model in the future! Families should consider one of the more robust models (SD501 or Super501) that can produce an ample supply of all 5 types of Enagic waters for everyday hydration, cleaning, and personal hygiene.
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons-inner-container">
+                    <div class="price-dropdown" ngbDropdown>
+                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
+                        <div class="price-dropdown-menu" ngbDropdownMenu>
+                            <div>US$ 2980</div>
+                            <div>CA$ 4000</div>
+                            <div>€ 2700</div>
+                        </div>
+                    </div>
+                    <a href="/contact"><button class="buy">BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Electrode plates:</div>
+                <div class='right'>4
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
+                            (Platinum coated titanium)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Plate size: (mm)</div>
+                <div class='right'>135 x 75</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Negative ORP: (mV)</div>
+                <div class='right'>-550
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
+                            (depends on water quality and flow rate)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>pH Range:</div>
+                <div class='right'>2.5 - 11.5</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Generates:</div>
+                <div class='right'>5 water types
+                    <div class='dropdown' ngbDropdown>
+                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
+                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
+                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Wattage: (W)</div>
+                <div class='right'>120</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Total weight: (kg)</div>
+                <div class='right'>5.8</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Dimensions WHD: (mm)</div>
+                <div class='right'>264 x 338 x 171</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Production rate: (l/min)</div>
+                <div class='right'>
+                    Kangen Water®: 3.0 - 4.9<br>Acidic Water: 0.2 - 1.9<br>Strong Acidic water: 0.3 - 0.7
+                </div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Ease of Use:</div>
+                <div class='right'>Fully automatic</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Languages:</div>
+                <div class='right'>English</div>
+            </div>
+            <div class="spec-container">
+                <div class='left'>Warranty: (years)</div>
+                <div class='right'>3</div>
+            </div>
+        </div>
         <!-- ANESPA DX -->
         <div class="machine-type">
             <div class="header para-header-1">ANESPA DX</div>
@@ -222,511 +705,6 @@
                 <div class='right'>3</div>
             </div>
         </div> -->
-        <!-- Leveluk JRIV -->
-        <div class="machine-type">
-            <div class="header para-header-1">Leveluk JRIV</div>
-            <div class="image-area">
-                <div class='image'>
-                    <img src="https://drive.google.com/uc?export=view&id=1H8yHSR9HHO5QiEXbjiqwFaxtPz5g75tO">
-                </div>
-                <div class="info">
-                    <div class="info-header para-header-2">The Junior Model</div>
-                    <div class="info-text">
-                        The JRIV has four solid electrode plates, which reduces the energy consumption. Due to the lower power consumption and fewer plates, this machine is considered one of Enagic's "starter" models. If you're looking for an Enagic machine that generates all 5 types of water, this model is a good entry level choice, and you can always upgrade to the flagship K8 model in the future! Families should consider one of the more robust models (SD501 or Super501) that can produce an ample supply of all 5 types of Enagic waters for everyday hydration, cleaning, and personal hygiene.
-                    </div>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <div class="buttons-inner-container">
-                    <div class="price-dropdown" ngbDropdown>
-                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
-                        <div class="price-dropdown-menu" ngbDropdownMenu>
-                            <div>US$ 2980</div>
-                            <div>CA$ 4000</div>
-                            <div>€ 2700</div>
-                        </div>
-                    </div>
-                    <a href="/contact"><button class="buy">BUY NOW</button></a>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Electrode plates:</div>
-                <div class='right'>4
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
-                            (Platinum coated titanium)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Plate size: (mm)</div>
-                <div class='right'>135 x 75</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Negative ORP: (mV)</div>
-                <div class='right'>-550
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
-                            (depends on water quality and flow rate)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>pH Range:</div>
-                <div class='right'>2.5 - 11.5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Generates:</div>
-                <div class='right'>5 water types
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
-                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Wattage: (W)</div>
-                <div class='right'>120</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Total weight: (kg)</div>
-                <div class='right'>5.8</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Dimensions WHD: (mm)</div>
-                <div class='right'>264 x 338 x 171</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Production rate: (l/min)</div>
-                <div class='right'>
-                    Kangen Water®: 3.0 - 4.9<br>Acidic Water: 0.2 - 1.9<br>Strong Acidic water: 0.3 - 0.7
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Ease of Use:</div>
-                <div class='right'>Fully automatic</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Languages:</div>
-                <div class='right'>English</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Warranty: (years)</div>
-                <div class='right'>3</div>
-            </div>
-        </div>
-        <!-- Leveluk SUPER 501 -->
-        <div class="machine-type">
-            <div class="header para-header-1">Leveluk SUPER 501</div>
-            <div class="image-area">
-                <div class='image'>
-                    <img src="https://drive.google.com/uc?export=view&id=1MJmfAp5CXWw2V5_NrdLn8E1vTeKwcrJo">
-                </div>
-                <div class="info">
-                    <div class="info-header para-header-2">For Heavy Home Use</div>
-                    <div class="info-text">
-                        This powerful Enagic® machine is a large family unit, and the top of the line model for heavy home use or for small businesses. Nursing homes, agricultural colleges, and spas can all benefit greatly by having the high-performance Super501! With 12 platinum-coated 99.97% pure titanium electrode plates, this highly productive machine generates all 5 different types of Enagic® water (see below) for countless uses around your home or business. If you're looking for a super-sized SD501, the Super501 is exactly what you need.
-                    </div>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <div class="buttons-inner-container">
-                    <div class="price-dropdown" ngbDropdown>
-                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
-                        <div class="price-dropdown-menu" ngbDropdownMenu>
-                            <div>US$ 5980</div>
-                            <div>CA$ n/a</div>
-                            <div>€ n/a</div>
-                        </div>
-                    </div>
-                    <a href="/contact"><button class="buy">BUY NOW</button></a>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Electrode plates:</div>
-                <div class='right'>7 & 5
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-1' style="min-width: 200px;" ngbDropdownMenu>
-                            (Platinum coated titanium, 7 plates for Strong Acidic/Strong Kangen and 5 plates for Kangen/Acidic water)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Plate size: (mm)</div>
-                <div class='right'>135 x 75</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Negative ORP: (mV)</div>
-                <div class='right'>-800
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
-                            (depends on water quality and flow rate)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>pH Range:</div>
-                <div class='right'>2.5 - 11.5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Generates:</div>
-                <div class='right'>5 water types
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
-                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Wattage: (W)</div>
-                <div class='right'>200</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Total weight: (kg)</div>
-                <div class='right'>10.1</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Dimensions WHD: (mm)</div>
-                <div class='right'>352 x 384 x 250</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Production rate: (l/min)</div>
-                <div class='right'>Kangen Water®: 4.9 - 7.9<br>Acidic Water: 1.9 - 3.0<br>Strong Acidic water: 1.1 - 3.0</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Ease of Use:</div>
-                <div class='right'>Fully automatic, very simple to operate</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Languages:</div>
-                <div class='right'>English</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Warranty: (years)</div>
-                <div class='right'>3</div>
-            </div>
-        </div>
-        <!-- Leveluk SD501 -->
-        <div class="machine-type">
-            <div class="header para-header-1">Leveluk SD501</div>
-            <div class="image-area">
-                <div class='image'>
-                    <img src="https://drive.google.com/uc?export=view&id=1plpRIZ7GERUrfzJcEeq6M4-R3brm6XuK">
-                </div>
-                <div class="info">
-                    <div class="info-header para-header-2">The Ultimate Home Use Model</div>
-                    <div class="info-text">
-                        Leveluk SD501 is the most popular home model, and the perfect machine for you and your family. This industry-leading machine conveniently connects to your kitchen faucet and generates enough of the 5 types of Enagic® water (see below) for you to share with your community and loved ones. Although it is incredibly powerful, the SD501 is also very compact and perfectly suitable for your kitchen cabinet. The fully featured LCD screen is attractive and simple to operate. The SD501 is Enagic's "Flagship" model because it provides additional stable oxygen and higher negative ORP levels. Like all 501 models, the SD501 uses innovative electrolysis technology with 7 platinum-coated 99.97% pure titanium electrode plates.
-                    </div>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <div class="buttons-inner-container">
-                    <div class="price-dropdown" ngbDropdown>
-                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
-                        <div class="price-dropdown-menu" ngbDropdownMenu>
-                            <div>US$ 3980</div>
-                            <div>CA$ 4700</div>
-                            <div>€ 3280</div>
-                        </div>
-                    </div>
-                    <a href="/contact"><button class="buy">BUY NOW</button></a>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Electrode plates:</div>
-                <div class='right'>7
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
-                            (Platinum coated titanium)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Plate size: (mm)</div>
-                <div class='right'>135 x 75</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Negative ORP: (mV)</div>
-                <div class='right'>-800
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
-                            (depends on water quality and flow rate)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>pH Range:</div>
-                <div class='right'>2.5 - 11.5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Generates:</div>
-                <div class='right'>5 water types
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
-                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Wattage: (W)</div>
-                <div class='right'>230</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Total weight: (kg)</div>
-                <div class='right'>6.3</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Dimensions WHD: (mm)</div>
-                <div class='right'>264 x 338 x 171</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Production rate: (l/min)</div>
-                <div class='right'>
-                    Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Ease of Use:</div>
-                <div class='right'>Fully automatic, very simple to operate</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Languages:</div>
-                <div class='right'>English</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Warranty: (years)</div>
-                <div class='right'>5</div>
-            </div>
-        </div>
-        <!-- Leveluk SD501 PLATINUM 5-LANGUAGE -->
-        <div class="machine-type">
-            <div class="header para-header-1">Leveluk SD501 PLATINUM 5-LANGUAGE</div>
-            <div class="image-area">
-                <div class='image'>
-                    <img src="https://drive.google.com/uc?export=view&id=1d4c5dMWtopS_pHpiOl_YbGebgR0zZIOn">
-                </div>
-                <div class="info">
-                    <div class="info-header para-header-2">The Ultimate Home Use Model</div>
-                    <div class="info-text">
-                        Introducing the BRAND NEW 5-Language SD501 Platinum! The all new Platinum features a revamped modern design that coordinates beautifully with today's stylish kitchens. It has the same powerful performance in an all-new package. Smart New Look, Same Reliable SD 501!
-                    </div>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <div class="buttons-inner-container">
-                    <div class="price-dropdown" ngbDropdown>
-                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
-                        <div class="price-dropdown-menu" ngbDropdownMenu>
-                            <div>US$ 4280</div>
-                            <div>CA$ 4950</div>
-                            <div>€ 3500</div>
-                        </div>
-                    </div>
-                    <a href="/contact"><button class="buy">BUY NOW</button></a>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Electrode plates:</div>
-                <div class='right'>7
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
-                            (Platinum coated titanium)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Plate size: (mm)</div>
-                <div class='right'>135 x 75</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Negative ORP: (mV)</div>
-                <div class='right'>-800
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
-                            (depends on water quality and flow rate)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>pH Range:</div>
-                <div class='right'>2.5 - 11.5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Generates:</div>
-                <div class='right'>5 water types
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
-                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Wattage: (W)</div>
-                <div class='right'>230</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Total weight: (kg)</div>
-                <div class='right'>6.3</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Dimensions WHD: (mm)</div>
-                <div class='right'>264 x 338 x 171</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Production rate: (l/min)</div>
-                <div class='right'>
-                    Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Ease of Use:</div>
-                <div class='right'>Fully automatic, very simple to operate</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Languages:</div>
-                <div class='right'>5
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-lang' ngbDropdownMenu>
-                            English, German, French, Italian and Spanish
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Warranty: (years)</div>
-                <div class='right'>5</div>
-            </div>
-        </div>
-        <!-- Leveluk K8 -->
-        <div class="machine-type" style="margin-bottom: 40px;">
-            <div class="header para-header-1">Leveluk K8</div>
-            <div class="image-area">
-                <div class='image'>
-                    <img src="https://drive.google.com/uc?export=view&id=1EvZbOYt3DPNIglEaNLluYATP1N7clUN3">
-                </div>
-                <div class="info">
-                    <div class="info-header para-header-2">The Mighty 8-Plate Anti-Oxidizer</div>
-                    <div class="info-text">
-                        The Kangen® 8 (K8) is Enagic®'s most powerful antioxidant machine - featuring 8 platinum-dipped titanium plates for improved water ionization and increased antioxidant production potential. You can enjoy this Kangen Water® machine in any country, thanks to its worldwide multi-voltage power supply and interchangeable plug capability (sold separately). If you're looking for a powerful and versatile machine with plenty of user-friendly and energy-saving automated features, the Kangen® 8 is for you.
-                    </div>
-                </div>
-            </div>
-            <div class="buttons-container">
-                <div class="buttons-inner-container">
-                    <div class="price-dropdown" ngbDropdown>
-                        <button class="price-dropdown-toggle" ngbDropdownToggle>Price per unit</button>
-                        <div class="price-dropdown-menu" ngbDropdownMenu>
-                            <div>US$ 4980</div>
-                            <div>CA$ 5700</div>
-                            <div>€ 4200</div>
-                        </div>
-                    </div>
-                    <a href="/contact"><button class="buy">BUY NOW</button></a>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Electrode plates:</div>
-                <div class='right'>8
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-1' ngbDropdownMenu>
-                            (Platinum coated titanium)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Plate size: (mm)</div>
-                <div class='right'>135 x 75</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Negative ORP: (mV)</div>
-                <div class='right'>-850
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-2' ngbDropdownMenu>
-                            (depends on water quality and flow rate)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>pH Range:</div>
-                <div class='right'>2.5 - 11.5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Generates:</div>
-                <div class='right'>5 water types
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-3' ngbDropdownMenu>
-                            Strong Kangen, Kangen, Neutral(Clean), Acidic, Strong Acidic
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Wattage: (W)</div>
-                <div class='right'>230</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Total weight: (kg)</div>
-                <div class='right'>5</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Dimensions WHD: (mm)</div>
-                <div class='right'>345 x 279 x 147</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Production rate: (l/min)</div>
-                <div class='right'>Kangen Water®: 4.5 - 7.6<br>Acidic Water: 1.5 - 2.6<br>Strong Acidic water: 0.6 - 1.1</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Ease of Use:</div>
-                <div class='right'>Fully automatic, very simple to operate</div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Languages:</div>
-                <div class='right'>8
-                    <div class='dropdown' ngbDropdown>
-                        <button class='dropdown-toggle' ngbDropdownToggle><i class="fa fa-question-circle"></i></button>
-                        <div class='dropdown-menu dropdown-menu-lang' ngbDropdownMenu>
-                            Japanese, English, Spanish, French, Italian, German, Portuguese, Chinese(Mandarin)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="spec-container">
-                <div class='left'>Warranty: (years)</div>
-                <div class='right'>5</div>
-            </div>
-        </div>
     </div>
     <div class="right">
         <app-send-ebook-box2></app-send-ebook-box2>

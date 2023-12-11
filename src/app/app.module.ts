@@ -17,6 +17,7 @@ import { SendEbookBox1Component } from './common/send-ebook-box1/send-ebook-box1
 import { SendEbookBox2Component } from './common/send-ebook-box2/send-ebook-box2.component';
 import { BannerComponent } from './common/banner/banner.component';
 import { PopupComponent } from './popup/popup.component';
+import { NavbarComponent } from './common/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PopupComponent } from './popup/popup.component';
     SendEbookBox1Component,
     SendEbookBox2Component,
     BannerComponent,
-    PopupComponent
+    PopupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
