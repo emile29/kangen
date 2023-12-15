@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class='banner'>
     <div class="left-section">
         <div class="para-header-1">
@@ -15,14 +16,13 @@
         <div class="para-header-2">{{VARS.distributor}}</div>
         <div class="para-header-2">{{VARS.title}}</div>
 		<div *ngFor="let item of locPhone">
-			<div class="para-header-2">{{item.loc}}</div>
+			<div class="para-header-2" style="overflow-wrap: break-word;">{{item.loc}}</div>
         	<div class="para-header-2">{{item.phone}}</div>
 		</div>
 		<div class="para"><a href='/contact'><u>Make Contact Today!</u></a></div>
         <!-- <div class="para-header-2"><a href="mailto:{{VARS.personalEmail}}">{{VARS.personalEmail}}</a></div> -->
     </div>
 </div>
-<app-navbar></app-navbar>
 <div class='img-section sec-1'>
 	<div class="para-header">People everywhere are discovering the life-changing power of Kangen Water®</div>
 	<div class='img-container'>

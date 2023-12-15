@@ -7,9 +7,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    margin-top: 55px;
 
     @media screen and (max-width: 425px) {
         padding: 20px;
+        margin-top: 45px;
     }
 
     .para, .para-header, .para-header-1, .para-header-2 {

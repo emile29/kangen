@@ -5,13 +5,15 @@ import { UsageComponent } from './usage/usage.component';
 import { ProductsComponent } from './products/products.component';
 import { VideosComponent } from './videos/videos.component';
 import { ContactComponent } from './contact/contact.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'usage', component: UsageComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'videos', component: VideosComponent }
+  { path: 'videos', component: VideosComponent },
+  { path: 'testimonials', component: TestimonialsComponent }
 ];
 
 @NgModule({
@@ -24,5 +26,6 @@ export const routingComponents = [
   UsageComponent,
   ProductsComponent,
   ContactComponent,
-  VideosComponent
+  VideosComponent,
+  TestimonialsComponent
 ];

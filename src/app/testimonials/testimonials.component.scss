@@ -1,0 +1,99 @@
+@import 'src/styles.scss';
+
+.ttml-banner {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
+      ), url(https://drive.google.com/uc?export=view&id=1JzMtOHxq2XeXLM-_53TG6RwXGfgnO3ls) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 120px;
+    margin-top: 55px;
+
+    @media screen and (max-width: 425px) {
+        margin-top: 45px;
+    }
+
+    @media screen and (max-width: 425px) {
+        padding: 60px 20px;
+    }
+
+    .para-header, .para-header-2 {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .para-header {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+}
+
+.main-container {
+    .ttml-section {
+        display: flex;
+        padding: 100px 120px;
+        align-items: center;
+
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .text-container {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .image-container {
+            padding-right: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .sec-1 {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.2), 
+            rgba(0, 0, 0, 0.2)
+        ), url(https://drive.google.com/uc?export=view&id=1hkqPv5hIvbZy1JmcyLZTDmtmUjZFCh1e) no-repeat;
+        background-size: cover;
+    }
+
+    .ttml-section-small {
+        display: none;
+        padding: 50px 40px;
+
+        @media screen and (max-width: 425px) {
+            display: block;
+        }
+
+        .text-container {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .image-container {
+            padding-bottom: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -7,6 +7,14 @@
     justify-content: space-between;
     height: 55px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 64%;
+    z-index: 1;
+
+    @media screen and (max-width: 425px) {
+        width: 100%;
+    }
 
     a {
         color: white;

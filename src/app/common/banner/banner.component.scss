@@ -3,6 +3,11 @@
 .banner {
     padding: 20px 30px;
     color: white;
+    margin-top: 55px;
+
+    @media screen and (max-width: 425px) {
+        margin-top: 45px;
+    }
 
     .para, .para-header, .para-header-1, .para-header-2 {
         text-shadow: 1px 0 2px black;
