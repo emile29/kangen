@@ -39,5 +39,9 @@ export class AppComponent {
                 console.log(err)
             }
         )
+
+		if (window.location.href.includes("testimonials")) {
+			$('.main-content').css('background-color', '#50a8ff80');
+		}
 	}
 }

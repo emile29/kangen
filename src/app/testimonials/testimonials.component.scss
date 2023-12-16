@@ -8,7 +8,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-around;
-    padding: 100px 120px;
+    padding: 120px;
     margin-top: 55px;
 
     @media screen and (max-width: 425px) {
@@ -16,7 +16,7 @@
     }
 
     @media screen and (max-width: 425px) {
-        padding: 60px 20px;
+        padding: 150px 20px;
     }
 
     .para-header, .para-header-2 {
@@ -32,6 +32,12 @@
 }
 
 .main-container {
+    .separator {
+        border-color: rgba(255, 255, 255, 0.4);
+        border-width: 1px;
+        margin: 10px 0;
+    }
+
     .ttml-section {
         display: flex;
         padding: 100px 120px;
@@ -49,28 +55,26 @@
             width: 50%;
         }
 
+        .left.image-container {
+            padding-right: 50px;
+        }
+
+        .right.image-container {
+            padding-left: 50px;
+        }
+
         .text-container {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             color: white;
-            text-shadow: 1px 1px 1px black;
+            text-shadow: 1px 1px 4px black;
         }
 
         .image-container {
-            padding-right: 50px;
-
             img {
                 width: 100%;
             }
         }
-    }
-
-    .sec-1 {
-        background: linear-gradient(
-            rgba(0, 0, 0, 0.2), 
-            rgba(0, 0, 0, 0.2)
-        ), url(https://drive.google.com/uc?export=view&id=1hkqPv5hIvbZy1JmcyLZTDmtmUjZFCh1e) no-repeat;
-        background-size: cover;
     }
 
     .ttml-section-small {
