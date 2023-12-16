@@ -41,7 +41,7 @@ export class AppComponent {
         )
 
 		if (window.location.href.includes("testimonials")) {
-			$('.main-content').css('background-color', '#50a8ff80');
+			$('.main-content').css('background-color', '#0082ff59');
 		}
 	}
 }
