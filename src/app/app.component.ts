@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as $ from 'jquery';
 import { DbService } from './db.service';
 import { Title } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
@@ -39,9 +38,5 @@ export class AppComponent {
                 console.log(err)
             }
         )
-
-		if (window.location.href.includes("testimonials")) {
-			$('.main-content').css('background-color', '#0082ff59');
-		}
 	}
 }
