@@ -44,17 +44,17 @@
         "pageTitle": "Kangen Ghana"
     },
     "kangenkenya": {
-        "distributor": "Lynn Mbobua",
+        "distributor": "Sam Kangau",
         "location": "Nairobi, Kenya",
         "flagImg": "https://drive.google.com/uc?export=view&id=16BisqHhtHNCtGmwNmtKM4wvnKgP1uO18",
-        "phone": "254-727-687-013",
+        "phone": "+254-722-223-789",
         "officeEmail": "kangenkenya.info@gmail.com",
-        "personalEmail": "kmbobua@gmail.com",
+        "personalEmail": "sam@kangau.com",
         "herokuURL": "https://kangenkenya.herokuapp.com",
         "domainName": "http://www.kangenkenya.com",
         "profileImg": "https://drive.google.com/uc?export=view&id=1zmbxXEfN-2SRTV05COiWsCRnxQAjFmKs",
-        "facebook": "https://www.facebook.com/lynn.mbobua",
-        "linkedin": "https://www.linkedin.com/in/lynn-mbobua",
+        "facebook": "",
+        "linkedin": "",
         "title": "Global Ambassador",
         "pageTitle": "Kangen Kenya"
     },

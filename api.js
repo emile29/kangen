@@ -97,6 +97,7 @@ export function initAPI(app, websiteName) {
         console.log("New ebook inquiry request received");
         let user = req.body;
 
+        // send ebook email
         const mailOptions = {
             from: VARS.officeEmail,
             to: `${user.email}`,
@@ -130,8 +131,6 @@ export function initAPI(app, websiteName) {
                 }
             ]
         };
-
-        // send ebook email
         smtpTransport.sendMail(mailOptions, (error, response) => {
             if (error) {
                 console.log('Failed to send ebook');
@@ -143,12 +142,14 @@ export function initAPI(app, websiteName) {
             smtpTransport.close();
         });
 
-        // send report to main_email
+        
         let pageTitle = VARS.pageTitle;
         let newsletterMsg = 'Does not want to receive newsletter.';
         if (user.newsletter) {
             newsletterMsg = 'Also wants to receive newsletter.';
         }
+
+        // send report to main_email
         const mailOptions2 = {
             from: VARS.officeEmail,
             to: MAIN_EMAIL,
@@ -162,8 +163,30 @@ export function initAPI(app, websiteName) {
                 <div><a href="mailto:${user.email}">${user.email}</a></div>
             `
         };
-    
         smtpTransport.sendMail(mailOptions2, (error1, response1) => {
+            if (error1) {
+                console.log('Failed to send report');
+            } else {
+                console.log('Report sent successfully');
+            }
+            smtpTransport.close();
+        });
+
+        // send report to personal_email
+        const mailOptions3 = {
+            from: VARS.officeEmail,
+            to: VARS.personalEmail,
+            subject: `New eBook Download at ${pageTitle}`,
+            generateTextFromHTML: true,
+            html: `
+                <div>Note: ${newsletterMsg}</div><br/>
+                <b>FROM:</b>
+                <div>${user.firstname} ${user.lastname}</div>
+                <div>${user.phone}</div>
+                <div><a href="mailto:${user.email}">${user.email}</a></div>
+            `
+        };
+        smtpTransport.sendMail(mailOptions3, (error1, response1) => {
             if (error1) {
                 console.log('Failed to send report');
             } else {
