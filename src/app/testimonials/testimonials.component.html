@@ -9,148 +9,69 @@
 </div>
 </div>
 <div class="main-container">
-    <div class="ttml-section sec-1">
-        <div class="left image-container">
-            <img src="https://drive.google.com/uc?export=view&id=164hpmlt7zY4xz4NdZ9GYPqttEy5GEvBx">
-        </div>
-        <div class="right text-container">
-            <div>
-                <p><b>Super hydrated, sleep peacefully, healthy skin</b></p>
-                <p>"After only a few days drinking Kangen Water, my family and myself could feel super hydrated and sleep 
-                peacefully despite a long tiring day.</p>
-                <p>And during my holidays in Dubai where I had to drink bottled water, I realized that Kangen water is much 
-                lighter to drink and has a much more pleasant taste. I also noticed pimples on my face and my skin turned dry. 
-                These were remedied as soon I resumed with Kangen water, upon my return to Mauritius.</p>
-                <p>Kangen water has definitely changed our lives. It's the best investment that I could have ever made so far."</p>
+    <div *ngFor="let testimonial of testimonials; let i = index; let odd = odd; let even = even">
+    <div *ngIf="even">
+        <div class="ttml-section">
+            <div class="left image-container">
+                <img src="{{testimonial.img}}">
             </div>
-            <div style="float: right">
-                <div style="text-align: left;">
-                    <div><b>- Mamta Ramlugun (<em>Vacoas, Mauritius</em>)</b></div>
-                    <div><b>mamtaramlugun@gmail.com</b></div>
-                    <div><b>+230 5252 0710</b></div>
+            <div class="right text-container">
+                <div>
+                    <p><b>{{testimonial.header}}</b></p>
+                    <p>"{{testimonial.para1}}</p>
+                    <p>{{testimonial.para2}}</p>
+                    <p>{{testimonial.para3}}"</p>
+                </div>
+                <div style="float: right">
+                    <div style="text-align: left;">
+                        <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
+                        <div><b>{{testimonial.email}}</b></div>
+                        <div><b>{{testimonial.phone}}</b></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="ttml-section-small sec-1">
-        <div class="image-container">
-            <img src="https://drive.google.com/uc?export=view&id=164hpmlt7zY4xz4NdZ9GYPqttEy5GEvBx">
-        </div>
-        <div class="text-container">
-            <div>
-                <p><b>Super hydrated, sleep peacefully, healthy skin</b></p>
-                <p>"After only a few days drinking Kangen Water, my family and myself could feel super hydrated and sleep 
-                peacefully despite a long tiring day.</p>
-                <p>And during my holidays in Dubai where I had to drink bottled water, I realized that Kangen water is much 
-                lighter to drink and has a much more pleasant taste. I also noticed pimples on my face and my skin turned dry. 
-                These were remedied as soon I resumed with Kangen water, upon my return to Mauritius.</p>
-                <p>Kangen water has definitely changed our lives. It's the best investment that I could have ever made so far."</p>
-            </div>
-            <div>
-                <div><b>- Mamta Ramlugun (<em>Vacoas, Mauritius</em>)</b></div>
-                <div><b>mamtaramlugun@gmail.com</b></div>
-                <div><b>+230 5252 0710</b></div>
-            </div>
-        </div>
-    </div>
-    <hr class="separator">
-
-    <div class="ttml-section sec-2">
-        <div class="left text-container">
-            <div>
-                <p><b>Improved sleep, better digestion, energy up</b></p>
-                <p>"Kangen water was truly an eye opener for me, with its good hydration benefits.</p>
-                <p>Having had a car accident a year ago and having to spend quite a chuck of the year immobile, my body was 
-                quite lethargic. I was also dealing with insomnia and frequent indigestion and heartburn. 3 days into the
-                Kangen water trial my energy was up, i was able to walk distances that i was previously struggling with. 
-                My sleeping greatly improved as well as gut issues.</p>
-                <p>I highly recommend Kangen water to those willing to improve their health in a natural way."</p>
-            </div>
-            <div style="float: right">
-                <div style="text-align: left;">
-                    <div><b>- Lynn Mbobua (<em>Nairobi, Kenya</em>)</b></div>
-                    <div><b>kmbobua@gmail.com</b></div>
-                    <div><b>+254 727 687 013</b></div>
+    <div *ngIf="odd">
+        <div class="ttml-section">
+            <div class="left text-container">
+                <div>
+                    <p><b>{{testimonial.header}}</b></p>
+                    <p>"{{testimonial.para1}}</p>
+                    <p>{{testimonial.para2}}</p>
+                    <p>{{testimonial.para3}}"</p>
+                </div>
+                <div style="float: right">
+                    <div style="text-align: left;">
+                        <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
+                        <div><b>{{testimonial.email}}</b></div>
+                        <div><b>{{testimonial.phone}}</b></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="right image-container">
-            <img src="https://drive.google.com/uc?export=view&id=1Al5Sh_0jpsdoqmOQ30ka5vO5vWPmUlS1">
+            <div class="right image-container">
+                <img src="{{testimonial.img}}">
+            </div>
         </div>
     </div>
-    <div class="ttml-section-small sec-2">
+    <div class="ttml-section-small">
         <div class="image-container">
-            <img src="https://drive.google.com/uc?export=view&id=1Al5Sh_0jpsdoqmOQ30ka5vO5vWPmUlS1">
+            <img src="{{testimonial.img}}">
         </div>
         <div class="text-container">
             <div>
-                <p><b>Improved sleep, better digestion, energy up</b></p>
-                <p>"Kangen water was truly an eye opener for me, with its good hydration benefits.</p>
-                <p>Having had a car accident a year ago and having to spend quite a chuck of the year immobile, my body was 
-                quite lethargic. I was also dealing with insomnia and frequent indigestion and heartburn. 3 days into the
-                Kangen water trial my energy was up, i was able to walk distances that i was previously struggling with. 
-                My sleeping greatly improved as well as gut issues.</p>
-                <p>I highly recommend Kangen water to those willing to improve their health in a natural way."</p>
+                <p><b>{{testimonial.header}}</b></p>
+                <p>"{{testimonial.para1}}</p>
+                <p>{{testimonial.para2}}</p>
+                <p>{{testimonial.para3}}"</p>
             </div>
             <div>
-                <div><b>- Lynn Mbobua (<em>Nairobi, Kenya</em>)</b></div>
-                <div><b>kmbobua@gmail.com</b></div>
-                <div><b>+254 727 687 013</b></div>
+                <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
+                <div><b>{{testimonial.email}}</b></div>
+                <div><b>{{testimonial.phone}}</b></div>
             </div>
         </div>
     </div>
-    <hr class="separator">
-
-    <div class="ttml-section sec-3">
-        <div class="left image-container">
-            <img src="https://drive.google.com/uc?export=view&id=12A3Z3uMBnRPK4Nb5qOfbbiKBWdzRYBmf">
-        </div>
-        <div class="right text-container">
-            <div>
-                <p><b>Improved blood tests, more immune, bottled water savings</b></p>
-                <p>"2 years ago, I was overwhelmed with my work and managing my life, no time for sports and how worried I was 
-                    getting about my health. My general blood tests was not too good. I was feeling tired all the time, 
-                    couldn't sleep well, obesity and swollen feet.</p>
-                <p>It is now 1.5 years since I bought my K8 Machine and consuming solely KANGEN water. I must admit I 
-                    could only experience good results. My blood tests continued to improve and I am now within the required 
-                    range. I sleep well and i feel more energetic. I lost around 10 kg and the swelling has reduced.</p>
-                <p>My whole family is enjoying the benefits of KANGEN water. We love the taste. My 3 kids used to be 
-                    vulnerable to the climate change. Now they are more immune to the seasonal flu. My hubby is also 
-                    feeling more energetic and his body pain has lessen.  We have minimised our spending on medicines 
-                    and saved, I would say, approx. U$600 annually on bottled water."</p>
-            </div>
-            <div style="float: right">
-                <div style="text-align: left;">
-                    <div><b>- Neena Soorjun (<em>Melrose, Mauritius</em>)</b></div>
-                    <div><b>neenasoorjun@gmail.com</b></div>
-                    <div><b>+230 5719 1524</b></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="ttml-section-small sec-3">
-        <div class="image-container">
-            <img src="https://drive.google.com/uc?export=view&id=12A3Z3uMBnRPK4Nb5qOfbbiKBWdzRYBmf">
-        </div>
-        <div class="text-container">
-            <div>
-                <p><b>Improved blood tests, more immune, bottled water savings</b></p>
-                <p>"2 years ago, I was overwhelmed with my work and managing my life, no time for sports and how worried I was 
-                    getting about my health. My general blood tests was not too good. I was feeling tired all the time, 
-                    couldn't sleep well, obesity and swollen feet.</p>
-                <p>It is now 1.5 years since I bought my K8 Machine and consuming solely KANGEN water. I must admit I 
-                    could only experience good results. My blood tests continued to improve and I am now within the required 
-                    range. I sleep well and i feel more energetic. I lost around 10 kg and the swelling has reduced.</p>
-                <p>My whole family is enjoying the benefits of KANGEN water. We love the taste. My 3 kids used to be 
-                    vulnerable to the climate change. Now they are more immune to the seasonal flu. My hubby is also 
-                    feeling more energetic and his body pain has lessen.  We have minimised our spending on medicines 
-                    and saved, I would say, approx. U$600 annually on bottled water."</p>
-            </div>
-            <div>
-                <div><b>- Neena Soorjun (<em>Melrose, Mauritius</em>)</b></div>
-                <div><b>neenasoorjun@gmail.com</b></div>
-                <div><b>+230 5719 1524</b></div>
-            </div>
-        </div>
+    <hr *ngIf="i < testimonials.length - 1" class="separator">
     </div>
 </div>
