@@ -120,16 +120,7 @@ export function initAPI(app, websiteName) {
                 <div><a href='mailto:${VARS.personalEmail}'>${VARS.personalEmail}</a></div>
                 <div><a href='${VARS.domainName}'>${VARS.domainName}</a></div>
             `,
-            attachments: [
-                {
-                    filename: 'FREE_Healthy_Water_eBook_EN.pdf',
-                    path: 'https://drive.google.com/uc?export=view&id=1Jqu0wgVadCNy_RtHAW-c0HRQ2Z12g6rd'
-                },
-                {
-                    filename: 'FREE_Healthy_Water_eBook_FR.pdf',
-                    path: 'https://drive.google.com/uc?export=view&id=1-UKf55BFdJJQRlTeznaxQG7nHcweC40K'
-                }
-            ]
+            attachments: VARS.attachments
         };
         smtpTransport.sendMail(mailOptions, (error, response) => {
             if (error) {

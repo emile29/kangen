@@ -11,7 +11,17 @@
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen 77"
+        "pageTitle": "Kangen 77",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     },
     "kangencameroun": {
         "distributor": "Denis Cheong",
@@ -26,7 +36,17 @@
         "facebook": "",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen Cameroun"
+        "pageTitle": "Kangen Cameroun",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     },
     "kangenghana": {
         "distributor": "Dio Elikem T. Tay",
@@ -41,7 +61,17 @@
         "facebook": "https://www.facebook.com/dioelikem.tay",
         "linkedin": "https://linkedin.com/in/dio-elikem-t-tay-7a192724",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen Ghana"
+        "pageTitle": "Kangen Ghana",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     },
     "kangenkenya": {
         "distributor": "Sam Kangau",
@@ -56,7 +86,13 @@
         "facebook": "",
         "linkedin": "",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen Kenya"
+        "pageTitle": "Kangen Kenya",
+        "attachments": [
+            {
+                "filename": "AlkalineBodyBalance_eBook.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1_ECdc94ujZbHUF0ss-5OTL-WLlri879P"
+            }
+        ]
     },
     "kangenluxembourg": {
         "distributor": "Denis Cheong",
@@ -71,7 +107,17 @@
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Global Ambassador",
-        "pageTitle": "Kangen Luxembourg"
+        "pageTitle": "Kangen Luxembourg",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     },
     "kangennigeria": {
         "distributor": "Denis Cheong",
@@ -86,7 +132,17 @@
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen Nigeria"
+        "pageTitle": "Kangen Nigeria",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     },
     "kangensouthafrica": {
         "distributor": "Denis Cheong",
@@ -101,6 +157,16 @@
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Enagic® Global Distributor",
-        "pageTitle": "Kangen South Africa"
+        "pageTitle": "Kangen South Africa",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     }
 }
