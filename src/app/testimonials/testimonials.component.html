@@ -17,10 +17,10 @@
             </div>
             <div class="right text-container">
                 <div>
-                    <p><b>{{testimonial.header}}</b></p>
-                    <p>"{{testimonial.para1}}</p>
-                    <p>{{testimonial.para2}}</p>
-                    <p>{{testimonial.para3}}"</p>
+                    <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
+                    <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
+                    <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
+                    <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
                 </div>
                 <div style="float: right">
                     <div style="text-align: left;">
@@ -36,10 +36,10 @@
         <div class="ttml-section">
             <div class="left text-container">
                 <div>
-                    <p><b>{{testimonial.header}}</b></p>
-                    <p>"{{testimonial.para1}}</p>
-                    <p>{{testimonial.para2}}</p>
-                    <p>{{testimonial.para3}}"</p>
+                    <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
+                    <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
+                    <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
+                    <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
                 </div>
                 <div style="float: right">
                     <div style="text-align: left;">
@@ -60,10 +60,10 @@
         </div>
         <div class="text-container">
             <div>
-                <p><b>{{testimonial.header}}</b></p>
-                <p>"{{testimonial.para1}}</p>
-                <p>{{testimonial.para2}}</p>
-                <p>{{testimonial.para3}}"</p>
+                <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
+                <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
+                <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
+                <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
             </div>
             <div>
                 <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>

@@ -89,6 +89,18 @@ export class TestimonialsComponent implements OnInit {
         place: "London, Canada",
         email: "jaassilu@gmail.com",
         phone: "+1-519-282-6290"
+      },
+      {
+        img: "assets/images/testimonials/dio.jpg",
+        header: "",
+        para1: "Thank you, Nestle Alumni, Denis Cheong, for all your assistance and the Kangen Water 💧 to keep me in super health for new challenges in Canada !",
+        para2: "",
+        para3: "Kangen Water has provided me with greater stamina and mental focus to cope with my demanding post graduate study in Canada. \
+        Myself and my family could all feel the difference, with Kangen Water. Kangen Water is Life !",
+        name: "Dio Elikem Tay",
+        place: "Ottawa, Canada",
+        email: "dioelikem@yahoo.com",
+        phone: "+1-514-515-7905"
       }
     ];
     constructor(private dbService: DbService) { }
