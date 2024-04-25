@@ -1,7 +1,7 @@
 # KangenWater Distributor Website
 
-Currently hosting replicas for the following domain suffixes:
-- cameroun
+Currently hosting for the following domain suffixes:
+- southafrica
 - ghana
 - kenya
 - nigeria
