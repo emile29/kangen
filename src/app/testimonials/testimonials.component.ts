@@ -36,20 +36,20 @@ export class TestimonialsComponent implements OnInit {
         email: "arilunga@gmail.com",
         phone: "+1-519-868-4375"
       },
-      {
-        img: "assets/images/testimonials/lynn.jpg",
-        header: "improved sleep, better digestion, energy up",
-        para1: "Kangen water was truly an eye opener for me, with its good hydration benefits.",
-        para2: "Having had a car accident a year ago and having to spend quite a chuck of the year immobile, my body was \
-        quite lethargic. I was also dealing with insomnia and frequent indigestion and heartburn. 3 days into the \
-        Kangen water trial my energy was up, i was able to walk distances that i was previously struggling with. \
-        My sleeping greatly improved as well as gut issues.",
-        para3: "I highly recommend Kangen water to those willing to improve their health in a natural way.",
-        name: "Lynn Mbobua",
-        place: "Nairobi, Kenya",
-        email: "kmbobua@gmail.com",
-        phone: "+254-727-687-013"
-      },
+      // {
+      //   img: "assets/images/testimonials/lynn.jpg",
+      //   header: "improved sleep, better digestion, energy up",
+      //   para1: "Kangen water was truly an eye opener for me, with its good hydration benefits.",
+      //   para2: "Having had a car accident a year ago and having to spend quite a chuck of the year immobile, my body was \
+      //   quite lethargic. I was also dealing with insomnia and frequent indigestion and heartburn. 3 days into the \
+      //   Kangen water trial my energy was up, i was able to walk distances that i was previously struggling with. \
+      //   My sleeping greatly improved as well as gut issues.",
+      //   para3: "I highly recommend Kangen water to those willing to improve their health in a natural way.",
+      //   name: "Lynn Mbobua",
+      //   place: "Nairobi, Kenya",
+      //   email: "kmbobua@gmail.com",
+      //   phone: "+254-727-687-013"
+      // },
       {
         img: "assets/images/testimonials/diane.png",
         header: "more energy, so shining, less throat pain",
