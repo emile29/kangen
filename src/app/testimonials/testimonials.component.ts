@@ -36,6 +36,18 @@ export class TestimonialsComponent implements OnInit {
         email: "arilunga@gmail.com",
         phone: "+1-519-868-4375"
       },
+      {
+        img: "assets/images/testimonials/edith.jpg",
+        header: "",
+        para1: "I have been battling with recurrent heartburns (acid reflux) since my late teenage years and of course it gets worse during pregnancy. Doctors have prescribed antacids which give me some temporary relief but nothing in the long term.",
+        para2: "Fast forward, my husband's friend introduced us to Kangen water. \
+        My husband tried it first, then he recommended it to the entire family. For a few weeks, I didn't think anything of it, till I realised I could not remember the last time I had those nasty heartburns.",
+        para3: "I asked myself, what I'm I doing differently, and it dawned on me that I had changed my water. Wish I had tried it earlier. My body is happy and I'm happy!",
+        name: "Edith Mills",
+        place: "Ottawa, Canada",
+        email: "edmill83@gmail.com",
+        phone: "+1-613-407-7134"
+      },
       // {
       //   img: "assets/images/testimonials/lynn.jpg",
       //   header: "improved sleep, better digestion, energy up",
@@ -106,16 +118,16 @@ export class TestimonialsComponent implements OnInit {
     constructor(private dbService: DbService) { }
 
     ngOnInit() { 
-      this.dbService.getWebsiteName().subscribe(
-        res => {
-          this.websiteName = (res.body as any).websiteName;
-          if (this.websiteName == "kangenkenya") {
-            $(".main-container").html('<div style="padding: 50px; text-align: center">coming soon</div>');
-          }
-        },
-        err => {
-          console.log(err)
-        }
-      );
+      // this.dbService.getWebsiteName().subscribe(
+      //   res => {
+      //     this.websiteName = (res.body as any).websiteName;
+      //     if (this.websiteName == "kangenkenya") {
+      //       $(".main-container").html('<div style="padding: 50px; text-align: center">coming soon</div>');
+      //     }
+      //   },
+      //   err => {
+      //     console.log(err)
+      //   }
+      // );
     }
 }
