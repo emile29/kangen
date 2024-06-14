@@ -69,7 +69,7 @@ export class TestimonialsComponent implements OnInit {
         para2: "I then sent some Kangen water to my brother-in-law, in Yaoundé. He has cancer of throat. Before he had pain throat and a persistent cough. Now, after drinking Kangen, the pain has lessened and he coughs less. I begin proposing Kangen water now to other sick people.",
         para3: "My eyes are opened now. I saw the KANGEN light.",
         name: "Diane Anaba",
-        place: "Cameroon, Canada",
+        place: "Douala, Cameroon",
         email: "tsogoanaba@gmail.com",
         phone: "+237-677-645-674"
       },
