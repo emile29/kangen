@@ -16,3 +16,6 @@ Built using the MEAN Stack which stands for MongoDB, Express.js, Angular and Nod
 ## Deployment
 
 Deployed and hosted on **Heroku** (more info at https://www.heroku.com).
+
+##
+Learn more about Kangen Water and it's benefits at https://www.enagic.com/en/what-is-kangen-water
