@@ -113,6 +113,21 @@ export class TestimonialsComponent implements OnInit {
         place: "Ottawa, Canada",
         email: "dioelikem@yahoo.com",
         phone: "+1-514-515-7905"
+      },
+      {
+        img: "assets/images/testimonials/usman.jpg",
+        header: "",
+        para1: "I was fortunate to hear about Kangen Water from a friend. \
+        Then I met Mr. Denis Cheong and my life changed completely from that day.",
+        para2: "Denis introduced to me the health benefits of Kangen water and the business opportunity of Enagic. \
+        Long story short, after several zoom calls with Denis, I finally bought my K8 Kangen machine. \
+        Once I started drinking kangen water, me and my family can never go back.",
+        para3: "I'm looking forward to changing lives in Nigeria and Africa at large with Kangen Water. \
+        Thank you Denis & Enagic.",
+        name: "Nuruddeen Usman",
+        place: "Kano, Nigeria",
+        email: "nuruddeen666@gmail.com",
+        phone: "+234-703-497-7586"
       }
     ];
     constructor(private dbService: DbService) { }
