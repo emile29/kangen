@@ -62,17 +62,17 @@ export class TestimonialsComponent implements OnInit {
       //   email: "kmbobua@gmail.com",
       //   phone: "+254-727-687-013"
       // },
-      {
-        img: "assets/images/testimonials/diane.png",
-        header: "more energy, so shining, less throat pain",
-        para1: 'I am Diane Anaba from Douala, Cameroun. I discovered KANGEN water through a good friend. I wanted to do KANGEN experience. The water is just great. I feel good in my body, sleep better, more energy and lighter. My companion said to me that" you are particulary so shining". ',
-        para2: "I then sent some Kangen water to my brother-in-law, in Yaoundé. He has cancer of throat. Before he had pain throat and a persistent cough. Now, after drinking Kangen, the pain has lessened and he coughs less. I begin proposing Kangen water now to other sick people.",
-        para3: "My eyes are opened now. I saw the KANGEN light.",
-        name: "Diane Anaba",
-        place: "Douala, Cameroon",
-        email: "tsogoanaba@gmail.com",
-        phone: "+237-677-645-674"
-      },
+      // {
+      //   img: "assets/images/testimonials/diane.png",
+      //   header: "more energy, so shining, less throat pain",
+      //   para1: 'I am Diane Anaba from Douala, Cameroun. I discovered KANGEN water through a good friend. I wanted to do KANGEN experience. The water is just great. I feel good in my body, sleep better, more energy and lighter. My companion said to me that" you are particulary so shining". ',
+      //   para2: "I then sent some Kangen water to my brother-in-law, in Yaoundé. He has cancer of throat. Before he had pain throat and a persistent cough. Now, after drinking Kangen, the pain has lessened and he coughs less. I begin proposing Kangen water now to other sick people.",
+      //   para3: "My eyes are opened now. I saw the KANGEN light.",
+      //   name: "Diane Anaba",
+      //   place: "Douala, Cameroon",
+      //   email: "tsogoanaba@gmail.com",
+      //   phone: "+237-677-645-674"
+      // },
       {
         img: "assets/images/testimonials/neena.jpg",
         header: "improved blood tests, more immune, bottled water savings",
@@ -128,6 +128,19 @@ export class TestimonialsComponent implements OnInit {
         place: "Kano, Nigeria",
         email: "nuruddeen666@gmail.com",
         phone: "+234-703-497-7586"
+      },
+      {
+        img: "assets/images/testimonials/steph.jpg",
+        header: "",
+        para1: "I have been drinking Kangen Water since I acquired my JRIV in May 2024.",
+        para2: "Having played volley ball at national level for Mauritius for over 20 years, I have always been mindful on how to cope after sports retirement. \
+        Kangen Water was the perfect answer. Few days after trying Kangen Water I felt fully energised and hydrated, slept better and lost weight.",
+        para3: "The whole family now enjoys Kangen Water, not only for drinking but also for washing vegetables, beauty water, watering plants etc. \
+        Kangen Water was definitely an excellent long term health investment for me and my family !",
+        name: "Stephanie Neta",
+        place: "Albion, Mauritius",
+        email: "ebwoodycraft@gmail.com",
+        phone: "+230-5710-0761"
       }
     ];
     constructor(private dbService: DbService) { }
