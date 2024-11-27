@@ -168,5 +168,30 @@
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
         ]
+    },
+    "kangenprofessional": {
+        "distributor": "Denis Cheong",
+        "location": "Toronto, Canada",
+        "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
+        "phone": "+1-647-389-8798",
+        "officeEmail": "kangenprofessional@gmail.com",
+        "personalEmail": "denisltc@gmail.com",
+        "herokuURL": "https://kangenprofessional-d9c0f73b87dd.herokuapp.com/",
+        "domainName": "http://www.kangenprofessional.com",
+        "profileImg": "assets/images/denis_profile_pic.jpg",
+        "facebook": "https://www.facebook.com/denis.li.7",
+        "linkedin": "https://www.linkedin.com/in/denischeong/",
+        "title": "Enagic® Global Distributor",
+        "pageTitle": "Kangen Professional",
+        "attachments": [
+            {
+                "filename": "FREE_Healthy_Water_eBook_EN.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=15TglxsKHSRmvvvQxXQ33MeXfTIhl3U-N"
+            },
+            {
+                "filename": "FREE_Healthy_Water_eBook_FR.pdf",
+                "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
+            }
+        ]
     }
 }
