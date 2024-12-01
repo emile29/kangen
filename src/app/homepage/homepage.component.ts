@@ -22,7 +22,7 @@ export class HomepageComponent implements OnInit {
         this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
-                if (this.websiteName.includes('professional')) {
+                if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
                     this.isPersonalWebsite = true;
                 }
                 this.VARS = (environment.vars as any).default[this.websiteName];

@@ -58,7 +58,7 @@
         "flagImg": "assets/images/ghana_flag.jpg",
         "phone": "+233 24 434 1260 | +1 514 515 7905",
         "officeEmail": "kangenghana.info@gmail.com",
-        "personalEmail": "dioelikem@yahoo.com",
+        "personalEmail": "denisltc@gmail.com",
         "herokuURL": "https://kangenghana.herokuapp.com",
         "domainName": "http://www.kangenghana.com",
         "profileImg": "assets/images/profile_pic_ghana.jpg",
@@ -100,7 +100,7 @@
     "kangenkenya": {
         "distributor": "Sam Kangau",
         "_location": "Nairobi, Kenya",
-        "location": "Kenya | Worldwide",
+        "location": "Nairobi, Kenya",
         "flagImg": "assets/images/kenya_flag.jpg",
         "phone": "+254-722-223-789",
         "officeEmail": "kangenkenya.info@gmail.com",
@@ -110,7 +110,7 @@
         "profileImg": "assets/images/profile_pic_kenya.jpg",
         "facebook": "",
         "linkedin": "",
-        "title": "Enagic® Global Distributors",
+        "title": "Enagic® Global Distributor",
         "pageTitle": "Kangen Kenya",
         "attachments": [
             {

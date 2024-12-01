@@ -14,6 +14,7 @@ export class BannerComponent implements OnInit {
   @Input() bannerTitle: string;
   websiteName = '';
   VARS = varTemplate;
+  isPersonalWebsite = false;
 
   constructor(private dbService: DbService) { }
 
@@ -22,6 +23,9 @@ export class BannerComponent implements OnInit {
       (res) => {
         this.websiteName = (res.body as any).websiteName;
         this.VARS = (environment.vars as any).default[this.websiteName];
+        if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
+          this.isPersonalWebsite = true;
+        }
       },
       err => {
         console.log(err)
