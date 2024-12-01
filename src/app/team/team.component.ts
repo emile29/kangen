@@ -23,7 +23,11 @@ export class TeamComponent implements OnInit {
           this.websiteName = (res.body as any).websiteName;
           this.VARS = (environment.vars as any).default[this.websiteName];
           this.teamMembers = this.VARS.teamMembers;
+          let screenWidth = window.innerWidth;
           this.numOfRows = Math.ceil(this.teamMembers.length / 3);
+          if (screenWidth <= 425) {
+            this.numOfRows = Math.ceil(this.teamMembers.length / 2);
+          }
           // if (this.websiteName == "kangenkenya") {
           //   $(".main-container").html('<div style="padding: 50px; text-align: center">coming soon</div>');
           // }

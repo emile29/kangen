@@ -19,7 +19,7 @@
     <div class="team-header">Team Members</div>
     <div *ngFor="let row of [].constructor(numOfRows); let i = index">
     <div class="common-row">
-        <div *ngFor="let member of teamMembers.slice(i*3,i+3); let j = index" class="common-col">
+        <div *ngFor="let member of teamMembers.slice(i*3,i*3+3); let j = index" class="common-col">
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>
@@ -41,7 +41,7 @@
     <div class="team-header">Team Members</div>
     <div *ngFor="let row of [].constructor(numOfRows); let i = index">
     <div class="common-row">
-        <div *ngFor="let member of teamMembers.slice(i*2,i+2); let j = index" class="common-col">
+        <div *ngFor="let member of teamMembers.slice(i*2,i*2+2); let j = index" class="common-col">
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>

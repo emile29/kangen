@@ -84,7 +84,7 @@
                 "location": "Ottawa, Canada",
                 "email": "dioelikem@yahoo.com",
                 "phone": "+1-514-515-7905",
-                "testimonial": "/testimonials#dio-elikem-tay"
+                "testimonial": "testimonials#dio-elikem-tay"
             },
             {
                 "img": "assets/images/team/edith.JPG",
@@ -93,7 +93,7 @@
                 "location": "Ottawa, Canada",
                 "email": "edmill83@gmail.com",
                 "phone": "+1-613-407-7134",
-                "testimonial": "/testimonials#edith-mills"
+                "testimonial": "testimonials#edith-mills"
             }
         ]
     },
