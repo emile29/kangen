@@ -13,6 +13,7 @@ export class AppComponent {
 
 	websiteName = '';
 	VARS = varTemplate;
+	isPersonalWebsite = false;
 
 	constructor(private dbService: DbService, private titleService: Title) {}
 
@@ -28,6 +29,9 @@ export class AppComponent {
 		this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
+				if (this.websiteName.includes('professional')) {
+                    this.isPersonalWebsite = true;
+                }
                 this.VARS = (environment.vars as any).default[this.websiteName];
 
 				// set page title dynamically

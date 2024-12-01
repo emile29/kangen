@@ -7,7 +7,13 @@
         <div class="col-container">
             <div class="left-col">
                 <div class="para-header-2">Your Representative</div>
-                <div>
+                <div *ngIf="!isPersonalWebsite">
+                    <img src="{{VARS.flagImg}}">
+                    <div class="para"><u>{{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} Team</u></div>
+                    <div class="para">{{VARS.title}}</div>
+                    <div class="para">{{VARS.location}}</div>
+                </div>
+                <div *ngIf="isPersonalWebsite">
                     <img src="{{VARS.profileImg}}">
                     <div class="para">{{VARS.distributor}}</div>
                     <div class="para">{{VARS.location}}</div>

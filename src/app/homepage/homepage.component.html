@@ -11,7 +11,7 @@
             Change Your Water - Change Your Life!®
         </div>
     </div>
-    <div class="right-section">
+    <div *ngIf="!isPersonalWebsite" class="right-section">
         <img class="image" src='{{VARS.flagImg}}'>
         <div class="para-header-1"><u>{{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} Team</u></div>
         <div class="para-header-2">{{VARS.title}}</div>
@@ -22,6 +22,14 @@
 		</div> -->
 		<div class="para"><a href='/contact'><u>Make Contact Today!</u></a></div>
         <!-- <div class="para-header-2"><a href="mailto:{{VARS.personalEmail}}">{{VARS.personalEmail}}</a></div> -->
+    </div>
+	<div *ngIf="isPersonalWebsite" class="right-section">
+        <img class="image" src='{{VARS.profileImg}}'>
+        <div class="para-header-1">{{VARS.distributor}}</div>
+        <div class="para-header-2">{{VARS.title}}</div>
+		<div class="para-header-2">{{VARS.location}}</div>
+		<div class="para-header-2">{{VARS.phone}}</div>
+		<div class="para"><a href='/contact'><u>Make Contact Today!</u></a></div>
     </div>
 </div>
 <div class='img-section sec-1'>

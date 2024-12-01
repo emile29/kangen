@@ -14,6 +14,7 @@ export class HomepageComponent implements OnInit {
     websiteName = '';
     VARS = varTemplate;
     locPhone = [];
+    isPersonalWebsite = false;
 
     constructor(private emailService: EmailService, private dbService: DbService) { }
 
@@ -21,6 +22,9 @@ export class HomepageComponent implements OnInit {
         this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
+                if (this.websiteName.includes('professional')) {
+                    this.isPersonalWebsite = true;
+                }
                 this.VARS = (environment.vars as any).default[this.websiteName];
                 let loc = this.VARS.location.split("|");
                 let phone = this.VARS.phone.split("|");
