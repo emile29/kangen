@@ -4,7 +4,7 @@
     background: linear-gradient(
         rgba(0, 0, 0, 0.1), 
         rgba(0, 0, 0, 0.1)
-      ), url('src/assets/images/testimonials/banner_pic.jpg') no-repeat;
+      ), url('src/assets/images/testimonials/banner_pic.png') no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-around;
@@ -73,6 +73,7 @@
         .image-container {
             img {
                 width: 100%;
+                border-radius: 8px;
             }
         }
     }
@@ -97,6 +98,7 @@
 
             img {
                 width: 100%;
+                border-radius: 8px;
             }
         }
     }

@@ -19,12 +19,14 @@ import { BannerComponent } from './common/banner/banner.component';
 import { PopupComponent } from './popup/popup.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     ProductsComponent,
+    TeamComponent,
     VideosComponent,
     UsageComponent,
     ContactComponent,

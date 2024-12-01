@@ -9,7 +9,7 @@
 </div>
 </div>
 <div class="main-container">
-    <div *ngFor="let testimonial of testimonials; let i = index; let odd = odd; let even = even">
+    <div *ngFor="let testimonial of testimonials; let i = index; let odd = odd; let even = even" id="{{testimonial.name.toLowerCase().split(' ').join('-')}}">
     <div *ngIf="even">
         <div class="ttml-section">
             <div class="left image-container">

@@ -21,12 +21,14 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangencameroun": {
         "distributor": "Denis Cheong",
-        "location": "Douala, Cameroun",
-        "flagImg": "https://drive.google.com/uc?export=view&id=1pGsmBQQhseQ0qkIr2u9kc4T0hahSOxx2",
+        "_location": "Douala, Cameroun",
+        "location": "Cameroun | Worldwide",
+        "flagImg": "assets/images/cameroun_flag.jpg",
         "phone": "+1-647-389-8798",
         "officeEmail": "kangencameroun@gmail.com",
         "personalEmail": "denisltc@gmail.com",
@@ -35,7 +37,7 @@
         "profileImg": "assets/images/denis_profile_pic.jpg",
         "facebook": "",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
-        "title": "Enagic® Global Distributor",
+        "title": "Enagic® Global Distributors",
         "pageTitle": "Kangen Cameroun",
         "attachments": [
             {
@@ -46,12 +48,14 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangenghana": {
         "distributor": "Dio Elikem T. Tay",
-        "location": "Accra, Ghana | Toronto, Canada",
-        "flagImg": "https://drive.google.com/uc?export=view&id=171nkmTwoK87la0IJPHVRKWFDsYdk6n-K",
+        "_location": "Accra, Ghana | Toronto, Canada",
+        "location": "Ghana | Worldwide",
+        "flagImg": "assets/images/ghana_flag.jpg",
         "phone": "+233 24 434 1260 | +1 514 515 7905",
         "officeEmail": "kangenghana.info@gmail.com",
         "personalEmail": "dioelikem@yahoo.com",
@@ -60,7 +64,7 @@
         "profileImg": "assets/images/profile_pic_ghana.jpg",
         "facebook": "https://www.facebook.com/dioelikem.tay",
         "linkedin": "https://linkedin.com/in/dio-elikem-t-tay-7a192724",
-        "title": "Enagic® Global Distributor",
+        "title": "Enagic® Global Distributors",
         "pageTitle": "Kangen Ghana",
         "attachments": [
             {
@@ -71,12 +75,33 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
+        ],
+        "teamMembers": [
+            {
+                "img": "assets/images/team/dio.JPG",
+                "name": "Dio Elikem Tay",
+                "title": "Enagic Global Distributor",
+                "location": "Ottawa, Canada",
+                "email": "dioelikem@yahoo.com",
+                "phone": "+1-514-515-7905",
+                "testimonial": "/testimonials#dio-elikem-tay"
+            },
+            {
+                "img": "assets/images/team/edith.JPG",
+                "name": "Edith Mills",
+                "title": "Enagic Global Distributor",
+                "location": "Ottawa, Canada",
+                "email": "edmill83@gmail.com",
+                "phone": "+1-613-407-7134",
+                "testimonial": "/testimonials#edith-mills"
+            }
         ]
     },
     "kangenkenya": {
         "distributor": "Sam Kangau",
-        "location": "Nairobi, Kenya",
-        "flagImg": "https://drive.google.com/uc?export=view&id=16BisqHhtHNCtGmwNmtKM4wvnKgP1uO18",
+        "_location": "Nairobi, Kenya",
+        "location": "Kenya | Worldwide",
+        "flagImg": "assets/images/kenya_flag.jpg",
         "phone": "+254-722-223-789",
         "officeEmail": "kangenkenya.info@gmail.com",
         "personalEmail": "sam.kangau@gmail.com",
@@ -85,19 +110,21 @@
         "profileImg": "assets/images/profile_pic_kenya.jpg",
         "facebook": "",
         "linkedin": "",
-        "title": "Enagic® Global Distributor",
+        "title": "Enagic® Global Distributors",
         "pageTitle": "Kangen Kenya",
         "attachments": [
             {
                 "filename": "AlkalineBodyBalance_eBook.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1_ECdc94ujZbHUF0ss-5OTL-WLlri879P"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangenluxembourg": {
         "distributor": "Denis Cheong",
-        "location": "Luxembourg",
-        "flagImg": "https://drive.google.com/uc?export=view&id=1m2iQxvTNEbwJK3opwP8jp_VjWbixutaA",
+        "_location": "Luxembourg",
+        "location": "Luxembourg | Worldwide",
+        "flagImg": "assets/images/luxembourg_flag.jpg",
         "phone": "+1-647-389-8798 ",
         "officeEmail": "kangenluxembourg.info@gmail.com",
         "personalEmail": "denisltc@gmail.com",
@@ -117,12 +144,14 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangennigeria": {
         "distributor": "Denis Cheong",
-        "location": "Nigeria",
-        "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
+        "_location": "Nigeria",
+        "location": "Nigeria | Worldwide",
+        "flagImg": "assets/images/nigeria_flag.jpg",
         "phone": "+1-647-389-8798 / +234-803-722-7395 (Abuja) / +234-703-497-7586 (Kano)",
         "officeEmail": "kangennigeria@gmail.com",
         "personalEmail": "denisltc@gmail.com",
@@ -131,7 +160,7 @@
         "profileImg": "assets/images/denis_profile_pic.jpg",
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
-        "title": "Enagic® Global Distributor",
+        "title": "Enagic® Global Distributors",
         "pageTitle": "Kangen Nigeria",
         "attachments": [
             {
@@ -142,12 +171,14 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangensouthafrica": {
         "distributor": "Denis Cheong",
-        "location": "South Africa",
-        "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
+        "_location": "South Africa",
+        "location": "South Africa | Worldwide",
+        "flagImg": "assets/images/southafrica_flag.jpg",
         "phone": "+1-647-389-8798",
         "officeEmail": "kangensouthafrica.info@gmail.com",
         "personalEmail": "denisltc@gmail.com",
@@ -156,7 +187,7 @@
         "profileImg": "assets/images/denis_profile_pic.jpg",
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
-        "title": "Enagic® Global Distributor",
+        "title": "Enagic® Global Distributors",
         "pageTitle": "Kangen South Africa",
         "attachments": [
             {
@@ -167,7 +198,8 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     },
     "kangenprofessional": {
         "distributor": "Denis Cheong",
@@ -192,6 +224,7 @@
                 "filename": "FREE_Healthy_Water_eBook_FR.pdf",
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
-        ]
+        ],
+        "teamMembers": []
     }
 }

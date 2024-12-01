@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+<div class='team-banner'>
+<div *ngIf="websiteName">
+    <div class="para-header header">Change Your Water - Change Your Life</div>
+    <div class="para-header custom-color">
+        Contact our {{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} Team<br>
+        in {{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} & Worldwide<br>
+        to discover & try Kangen Water for free
+    </div>
+    <div class="para-header">Hydrate | Elevate | Prosper</div>
+</div>
+</div>
+<div class="main-container">
+    <div *ngIf="teamMembers.length === 0" class="empty-page-message">
+        <em>Currently onboarding new members<br>
+        Check back again later</em>
+    </div>
+    <div class="team-header">Team Members</div>
+    <div *ngIf="teamMembers.length !== 0">
+    <div *ngFor="let row of [].constructor(numOfRows); let i = index">
+    <div class="common-row">
+        <div *ngFor="let member of teamMembers.slice(i*3,i+3); let j = index" class="common-col">
+            <img src="{{member.img}}">
+            <div class="name">{{member.name}}</div>
+            <div>{{member.title}}</div>
+            <div>{{member.location}}</div>
+            <div>{{member.email}}</div>
+            <div>{{member.phone}}</div>
+            <div><a href="{{member.testimonial}}">Read {{member.name.split(' ')[0]}}'s testimonial</a></div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="main-container-small">
+    <div *ngIf="teamMembers.length === 0" class="empty-page-message">
+        <em>Currently onboarding new members<br>
+        Check back again later</em>
+    </div>
+    <div class="team-header">Team Members</div>
+    <div *ngIf="teamMembers.length !== 0">
+    <div *ngFor="let row of [].constructor(numOfRows); let i = index">
+    <div class="common-row">
+        <div *ngFor="let member of teamMembers.slice(i*2,i+2); let j = index" class="common-col">
+            <img src="{{member.img}}">
+            <div class="name">{{member.name}}</div>
+            <div>{{member.title}}</div>
+            <div>{{member.location}}</div>
+            <div>{{member.email}}</div>
+            <div>{{member.phone}}</div>
+            <div><a href="{{member.testimonial}}">Read {{member.name.split(' ')[0]}}'s testimonial</a></div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>

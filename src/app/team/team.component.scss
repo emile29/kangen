@@ -1,0 +1,130 @@
+@import 'src/styles.scss';
+
+.team-banner {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
+      ), url('src/assets/images/team/banner_pic.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    margin-top: 55px;
+
+    @media screen and (max-width: 425px) {
+        margin-top: 45px;
+        padding: 90px 20px;
+    }
+
+    .para-header, .para-header-2 {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .para-header {
+        margin-bottom: 20px;
+        font-size: 36px;
+
+        @media screen and (max-width: 425px) {
+            font-size: 30px;
+
+            &.header {
+                font-size: 34px;
+            }
+        }
+
+        &.custom-color {
+            color: rgb(255, 192, 0);
+        }
+    }
+}
+
+.main-container {
+    padding: 25px;
+
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+
+    .empty-page-message {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .team-header {
+        padding-left: 35px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .common-row {
+        display: flex;
+
+        .common-col {
+            width: 33.33%;
+            padding: 30px;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .name {
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main-container-small {
+    display: none;
+    padding: 15px;
+
+    @media screen and (max-width: 425px) {
+        display: block;
+    }
+
+    .empty-page-message {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .team-header {
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .common-row {
+        display: flex;
+
+        .common-col {
+            width: 50%;
+            padding: 15px;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .name {
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
