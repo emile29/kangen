@@ -15,8 +15,8 @@
         <em>Currently onboarding new members<br>
         Check back again later</em>
     </div>
-    <div class="team-header">Team Members</div>
     <div *ngIf="teamMembers.length !== 0">
+    <div class="team-header">Team Members</div>
     <div *ngFor="let row of [].constructor(numOfRows); let i = index">
     <div class="common-row">
         <div *ngFor="let member of teamMembers.slice(i*3,i+3); let j = index" class="common-col">
@@ -37,8 +37,8 @@
         <em>Currently onboarding new members<br>
         Check back again later</em>
     </div>
-    <div class="team-header">Team Members</div>
     <div *ngIf="teamMembers.length !== 0">
+    <div class="team-header">Team Members</div>
     <div *ngFor="let row of [].constructor(numOfRows); let i = index">
     <div class="common-row">
         <div *ngFor="let member of teamMembers.slice(i*2,i+2); let j = index" class="common-col">
