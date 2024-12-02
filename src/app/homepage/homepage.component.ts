@@ -15,6 +15,7 @@ export class HomepageComponent implements OnInit {
     VARS = varTemplate;
     locPhone = [];
     isPersonalWebsite = false;
+    teamName = "";
 
     constructor(private emailService: EmailService, private dbService: DbService) { }
 
@@ -22,6 +23,10 @@ export class HomepageComponent implements OnInit {
         this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
+                this.teamName = this.websiteName.split('kangen')[1].charAt(0).toUpperCase() + this.websiteName.split('kangen')[1].slice(1);
+                if (this.websiteName.includes('southafrica')) {
+                    this.teamName = "South Africa";
+                }
                 if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
                     this.isPersonalWebsite = true;
                 }

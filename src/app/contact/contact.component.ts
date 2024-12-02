@@ -12,7 +12,7 @@ import * as varTemplate from 'src/environments/varTemplate.json';
 })
 export class ContactComponent implements OnInit {
     currentType = "";
-    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "other", "freetrial"];
+    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "emguarde", "other", "freetrial"];
     machineFullNames = {
         "anespa": "ANESPA DX",
         "jriv": "Leveluk JRIV",
@@ -20,6 +20,7 @@ export class ContactComponent implements OnInit {
         "sd501": "Leveluk SD501",
         "sd501-plat": "Leveluk SD501 PLATINUM 5-LANGUAGE",
         "k8": "Leveluk K8",
+        "emguarde": "emGuarde",
         "other": "Other",
         "freetrial": "FREE TRIAL of Kangen Water"
     };

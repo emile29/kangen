@@ -15,6 +15,7 @@ export class BannerComponent implements OnInit {
   websiteName = '';
   VARS = varTemplate;
   isPersonalWebsite = false;
+  teamName = "";
 
   constructor(private dbService: DbService) { }
 
@@ -22,6 +23,10 @@ export class BannerComponent implements OnInit {
     this.dbService.getWebsiteName().subscribe(
       (res) => {
         this.websiteName = (res.body as any).websiteName;
+        this.teamName = this.websiteName.split('kangen')[1].charAt(0).toUpperCase() + this.websiteName.split('kangen')[1].slice(1);
+        if (this.websiteName.includes('southafrica')) {
+          this.teamName = "South Africa";
+        }
         this.VARS = (environment.vars as any).default[this.websiteName];
         if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
           this.isPersonalWebsite = true;
