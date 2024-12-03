@@ -14,6 +14,7 @@ export class AppComponent {
 	websiteName = '';
 	VARS = varTemplate;
 	isPersonalWebsite = false;
+	teamName = "";
 
 	constructor(private dbService: DbService, private titleService: Title) {}
 
@@ -29,7 +30,11 @@ export class AppComponent {
 		this.dbService.getWebsiteName().subscribe(
             res => {
                 this.websiteName = (res.body as any).websiteName;
-				if (this.websiteName.includes('professional')) {
+				this.teamName = this.websiteName.split('kangen')[1].charAt(0).toUpperCase() + this.websiteName.split('kangen')[1].slice(1);
+                if (this.websiteName.includes('southafrica')) {
+                    this.teamName = "South Africa";
+                }
+				if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
                     this.isPersonalWebsite = true;
                 }
                 this.VARS = (environment.vars as any).default[this.websiteName];

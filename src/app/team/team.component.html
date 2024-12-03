@@ -2,9 +2,14 @@
 <div class='team-banner'>
 <div *ngIf="websiteName">
     <div class="para-header header">Change Your Water - Change Your Life</div>
-    <div class="para-header custom-color">
-        Contact our {{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} Team<br>
-        in {{websiteName.split('kangen')[1].charAt(0).toUpperCase() + websiteName.split('kangen')[1].slice(1)}} & Worldwide<br>
+    <div *ngIf="!isPersonalWebsite" class="para-header custom-color">
+        Contact our {{teamName}} Team<br>
+        in {{teamName}} & Worldwide<br>
+        to discover & try Kangen Water for free
+    </div>
+    <div *ngIf="isPersonalWebsite" class="para-header custom-color">
+        Contact our {{teamName}} Team<br>
+        in Canada & Worldwide<br>
         to discover & try Kangen Water for free
     </div>
     <div class="para-header">Hydrate | Elevate | Prosper</div>

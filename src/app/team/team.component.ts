@@ -15,12 +15,22 @@ export class TeamComponent implements OnInit {
     VARS = varTemplate;
     teamMembers = [];
     numOfRows = 0;
+    teamName = "";
+    isPersonalWebsite = false;
+
     constructor(private dbService: DbService) { }
 
     ngOnInit() { 
       this.dbService.getWebsiteName().subscribe(
         res => {
           this.websiteName = (res.body as any).websiteName;
+          this.teamName = this.websiteName.split('kangen')[1].charAt(0).toUpperCase() + this.websiteName.split('kangen')[1].slice(1);
+          if (this.websiteName.includes('southafrica')) {
+            this.teamName = "South Africa";
+          }
+          if (this.websiteName.includes('professional')) {
+            this.isPersonalWebsite = true;
+          }
           this.VARS = (environment.vars as any).default[this.websiteName];
           this.teamMembers = this.VARS.teamMembers;
           let screenWidth = window.innerWidth;
