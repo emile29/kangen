@@ -28,7 +28,7 @@ export class BannerComponent implements OnInit {
           this.teamName = "South Africa";
         }
         this.VARS = (environment.vars as any).default[this.websiteName];
-        if (this.websiteName.includes('professional') || this.websiteName.includes('kenya')) {
+        if (this.websiteName.includes('kenya')) {
           this.isPersonalWebsite = true;
         }
       },

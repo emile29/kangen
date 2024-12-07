@@ -9,7 +9,8 @@
                 <div class="para-header-2">Your Representative</div>
                 <div *ngIf="!isPersonalWebsite">
                     <img src="{{VARS.flagImg}}">
-                    <div class="para"><a href='/team'><u>{{teamName}} Team</u></a></div>
+                    <div *ngIf="!websiteName.includes('professional')" class="para"><a href='/team'><u>{{teamName}} Team</u></a></div>
+                    <div *ngIf="websiteName.includes('professional')" class="para"><a href='/team'><u>Kangen {{teamName}} Team</u></a></div>
                     <div class="para">{{VARS.title}}</div>
                     <div class="para">{{VARS.location}}</div>
                 </div>

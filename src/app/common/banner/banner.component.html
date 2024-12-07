@@ -7,7 +7,8 @@
         </div>
         <div class="right">
             <div *ngIf="!isPersonalWebsite">
-                <div class="para-header-2"><a href='/team'><u>{{teamName}} Team</u></a></div>
+                <div *ngIf="!websiteName.includes('professional')" class="para-header-2"><a href='/team'><u>{{teamName}} Team</u></a></div>
+                <div *ngIf="websiteName.includes('professional')" class="para-header-2"><a href='/team'><u>Kangen {{teamName}} Team</u></a></div>
                 <div class="para">{{VARS.title}}</div>
                 <div class="para">{{VARS.location}}</div>
             </div>
