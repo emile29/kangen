@@ -32,7 +32,7 @@
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>
-            <div *ngIf="member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
+            <div *ngIf="isPersonalWebsite && member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
             <div>{{member.location}}</div>
             <div>{{member.email}}</div>
             <div>{{member.phone}}</div>
@@ -55,7 +55,7 @@
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>
-            <div *ngIf="member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
+            <div *ngIf="isPersonalWebsite && member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
             <div>{{member.location}}</div>
             <div>{{member.email}}</div>
             <div>{{member.phone}}</div>
