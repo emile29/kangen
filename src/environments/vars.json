@@ -172,7 +172,26 @@
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
         ],
-        "teamMembers": []
+        "teamMembers": [
+            {
+                "img": "assets/images/team/usman.jpg",
+                "name": "Nuruddeen Usman",
+                "title": "Enagic Global Distributor",
+                "location": "Nigeria (Kano)",
+                "email": "nuruddeen666@gmail.com",
+                "phone": "+234-703-497-7586",
+                "testimonial": "testimonials#nuruddeen-usman"
+            },
+            {
+                "img": "assets/images/team/denis.jpg",
+                "name": "Denis Cheong",
+                "title": "Enagic Global Distributor",
+                "location": "Nigeria (Abuja)",
+                "email": "denisltc@gmail.com",
+                "phone": "+1-647-389-8798",
+                "testimonial": "testimonials#denis-cheong"
+            }
+        ]
     },
     "kangensouthafrica": {
         "distributor": "Denis Cheong",
@@ -199,18 +218,28 @@
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
         ],
-        "teamMembers": []
+        "teamMembers": [
+            {
+                "img": "assets/images/team/denis.jpg",
+                "name": "Denis Cheong",
+                "title": "Enagic Global Distributor",
+                "location": "South Africa (Johannesburg)",
+                "email": "denisltc@gmail.com",
+                "phone": "+1-647-389-8798",
+                "testimonial": "testimonials#denis-cheong"
+            }
+        ]
     },
     "kangenprofessional": {
         "distributor": "Denis Cheong",
-        "location": "Toronto, Canada",
+        "location": "Home | Out-of-home",
         "flagImg": "https://drive.google.com/uc?export=view&id=1qR29WZHPsT6Qu14j42g5C0EDZWWrQhRs",
         "phone": "+1-647-389-8798",
         "officeEmail": "kangenprofessional@gmail.com",
         "personalEmail": "denisltc@gmail.com",
         "herokuURL": "https://kangenprofessional-d9c0f73b87dd.herokuapp.com/",
         "domainName": "http://www.kangenprofessional.com",
-        "profileImg": "assets/images/kangenprofessional.jpeg",
+        "profileImg": "assets/images/kangenprofessional.png",
         "facebook": "https://www.facebook.com/denis.li.7",
         "linkedin": "https://www.linkedin.com/in/denischeong/",
         "title": "Enagic® Global Distributor",
@@ -225,6 +254,43 @@
                 "path": "https://drive.google.com/uc?export=view&id=1rA8B-xsbgQQSmIwulvf54wEqbEPCY4LB"
             }
         ],
-        "teamMembers": []
+        "teamMembers": [
+            {
+                "img": "assets/images/team/denis.jpg",
+                "name": "Denis Cheong",
+                "title": "Enagic Global Distributor",
+                "location": "Canada/Mauritius/Worldwide",
+                "email": "denisltc@gmail.com",
+                "phone": "+1-647-389-8798",
+                "testimonial": "testimonials#denis-cheong"
+            },
+            {
+                "img": "assets/images/team/dio.JPG",
+                "name": "Dio Elikem Tay",
+                "title": "Enagic Global Distributor",
+                "location": "Ottawa, Canada",
+                "email": "dioelikem@yahoo.com",
+                "phone": "+1-514-515-7905",
+                "testimonial": "testimonials#dio-elikem-tay"
+            },
+            {
+                "img": "assets/images/team/usman.jpg",
+                "name": "Nuruddeen Usman",
+                "title": "Enagic Global Distributor",
+                "location": "Nigeria (Kano)",
+                "email": "nuruddeen666@gmail.com",
+                "phone": "+234-703-497-7586",
+                "testimonial": "testimonials#nuruddeen-usman"
+            },
+            {
+                "img": "assets/images/team/steph.jpg",
+                "name": "Stephanie Neta",
+                "title": "Enagic Global Distributor",
+                "location": "Mauritius (Albion)",
+                "email": "ebwoodycraft@gmail.com",
+                "phone": "+230-5710-0761",
+                "testimonial": "testimonials#stephanie-neta"
+            }
+        ]
     }
 }

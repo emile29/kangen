@@ -4,15 +4,19 @@
     <div class="para-header header">Change Your Water - Change Your Life</div>
     <div *ngIf="!isPersonalWebsite" class="para-header custom-color">
         Contact our {{teamName}} Team<br>
-        in {{teamName}} & Worldwide<br>
-        to discover & try Kangen Water for free
+        to elevate the Wellness of your<br>
+        Family and Team in {{teamName}} and Worldwide
     </div>
     <div *ngIf="isPersonalWebsite" class="para-header custom-color">
-        Contact our {{teamName}} Team<br>
-        in Canada & Worldwide<br>
-        to discover & try Kangen Water for free
+        Contact our Kangen {{teamName}} Team<br>
+        to elevate the Wellness of your<br>
+        Family and Team Worldwide
     </div>
     <div class="para-header">Hydrate | Elevate | Prosper</div>
+    <div class="para-header link" *ngIf="isPersonalWebsite">
+        <a href="https://www.facebook.com/profile.php?id=61556978612373&mibextid=ZbWKwL" target="blank">Visit our Facebook Page!</a>
+    </div>
+    <div class="para-header link"><a href="/contact">Contact us Today to Join our Team!</a></div>
 </div>
 </div>
 <div class="main-container">
@@ -28,6 +32,7 @@
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>
+            <div *ngIf="member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
             <div>{{member.location}}</div>
             <div>{{member.email}}</div>
             <div>{{member.phone}}</div>
@@ -50,6 +55,7 @@
             <img src="{{member.img}}">
             <div class="name">{{member.name}}</div>
             <div>{{member.title}}</div>
+            <div *ngIf="member.name == 'Denis Cheong'">Founder of Kangen {{teamName}}</div>
             <div>{{member.location}}</div>
             <div>{{member.email}}</div>
             <div>{{member.phone}}</div>

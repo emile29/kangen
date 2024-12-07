@@ -22,6 +22,23 @@
         text-shadow: 1px 1px 1px black;
     }
 
+    a {
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+            color: #2E86C1;
+        }
+    }
+
+    .para-header.link {
+        font-size: 24px;
+
+        @media screen and (max-width: 425px) {
+            font-size: 22px;
+        }
+    }
+
     .para-header {
         margin-bottom: 20px;
         font-size: 36px;
@@ -65,6 +82,10 @@
         .common-col {
             width: 33.33%;
             padding: 30px;
+
+            div {
+                word-wrap: break-word;
+            }
 
             img {
                 width: 100%;
@@ -110,6 +131,10 @@
         .common-col {
             width: 50%;
             padding: 15px;
+
+            div {
+                word-wrap: break-word;
+            }
 
             img {
                 width: 100%;

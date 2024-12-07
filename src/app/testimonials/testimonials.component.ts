@@ -141,6 +141,20 @@ export class TestimonialsComponent implements OnInit {
         place: "Albion, Mauritius",
         email: "ebwoodycraft@gmail.com",
         phone: "+230-5710-0761"
+      },
+      {
+        img: "assets/images/testimonials/denis.jpg",
+        header: "",
+        para1: "After changing my country, I changed my water and both events changed my life!",
+        para2: "Since our family got our K8, our lives have been transformed. We have been enjoying \
+        better wellness, stronger immunity and more vitality. And Kangen water is so delicious, light \
+        and easy to drink and digest and it's 100% natural, with full of antioxidants.",
+        para3: "I'm now on a global mission to change the lives of as many people and organizations as \
+        possible, across the world, with Kangen Water, Anespa, Ukon and emGuarde.",
+        name: "Denis Cheong",
+        place: "Toronto, Canada",
+        email: "denisltc@gmail.com",
+        phone: "+1-647-389-8798"
       }
     ];
     constructor(private dbService: DbService) { }
