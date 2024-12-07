@@ -140,28 +140,30 @@ export function initAPI(app, websiteName) {
             newsletterMsg = 'Also wants to receive newsletter.';
         }
 
-        // send report to main_email
-        const mailOptions2 = {
-            from: VARS.officeEmail,
-            to: MAIN_EMAIL,
-            subject: `New eBook Download at ${pageTitle}`,
-            generateTextFromHTML: true,
-            html: `
-                <div>Note: ${newsletterMsg}</div><br/>
-                <b>FROM:</b>
-                <div>${user.firstname} ${user.lastname}</div>
-                <div>${user.phone}</div>
-                <div><a href="mailto:${user.email}">${user.email}</a></div>
-            `
-        };
-        smtpTransport.sendMail(mailOptions2, (error1, response1) => {
-            if (error1) {
-                console.log('Failed to send report');
-            } else {
-                console.log('Report sent successfully');
-            }
-            smtpTransport.close();
-        });
+        if (VARS.personalEmail !== MAIN_EMAIL) {
+            // send report to main_email
+            const mailOptions2 = {
+                from: VARS.officeEmail,
+                to: MAIN_EMAIL,
+                subject: `New eBook Download at ${pageTitle}`,
+                generateTextFromHTML: true,
+                html: `
+                    <div>Note: ${newsletterMsg}</div><br/>
+                    <b>FROM:</b>
+                    <div>${user.firstname} ${user.lastname}</div>
+                    <div>${user.phone}</div>
+                    <div><a href="mailto:${user.email}">${user.email}</a></div>
+                `
+            };
+            smtpTransport.sendMail(mailOptions2, (error1, response1) => {
+                if (error1) {
+                    console.log('Failed to send report');
+                } else {
+                    console.log('Report sent successfully');
+                }
+                smtpTransport.close();
+            });
+        }
 
         // send report to personal_email
         const mailOptions3 = {
