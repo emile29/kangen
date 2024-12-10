@@ -8,7 +8,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-around;
-    padding: 100px;
+    padding: 80px;
     margin-top: 55px;
 
     @media screen and (max-width: 425px) {
@@ -40,7 +40,7 @@
     }
 
     .para-header {
-        margin-bottom: 20px;
+        margin-bottom: 28px;
         font-size: 36px;
 
         @media screen and (max-width: 425px) {
@@ -53,6 +53,19 @@
 
         &.custom-color {
             color: rgb(255, 192, 0);
+            font-size: 34px;
+
+            @media screen and (max-width: 425px) {
+                font-size: 30px;
+            }
+        }
+
+        &.slogan {
+            font-size: 34px;
+            
+            @media screen and (max-width: 425px) {
+                font-size: 30px;
+            }
         }
     }
 }

@@ -12,7 +12,8 @@ import * as varTemplate from 'src/environments/varTemplate.json';
 })
 export class ContactComponent implements OnInit {
     currentType = "";
-    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "emguarde", "other", "freetrial"];
+    machineTypes = ["anespa", "r", "jriv", "super501", "sd501", "sd501-plat", "k8", "emguarde", 
+                    "other", "freetrial", "becoming-a-distributor", "freecall", "ordering"];
     machineFullNames = {
         "anespa": "ANESPA DX",
         "jriv": "Leveluk JRIV",
@@ -22,7 +23,10 @@ export class ContactComponent implements OnInit {
         "k8": "Leveluk K8",
         "emguarde": "emGuarde",
         "other": "Other",
-        "freetrial": "FREE TRIAL of Kangen Water"
+        "freetrial": "FREE Kangen Water Trial",
+        "becoming-a-distributor": "Becoming a Distributor",
+        "freecall": "FREE 30 Min Call/Meeting",
+        "ordering": "Ordering"
     };
     websiteName = '';
     VARS = varTemplate;

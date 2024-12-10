@@ -52,6 +52,34 @@ export function initAPI(app, websiteName) {
         }
     });
 
+    let teamName = process.env.website.split('kangen')[1].charAt(0).toUpperCase() + process.env.website.split('kangen')[1].slice(1);
+
+    if (teamName === 'Southafrica') {
+        teamName = 'South Africa';
+    }
+
+    let emailSignature = `
+        <div>All the best,</div>
+        <div><b>Denis Cheong</b></div>
+        <div>Enagic® Global Distributor</div>
+        <div>Founder of Kangen ${teamName}</div>
+        <div>WhatsApp: +1-647-389-8798</div>
+        <div>Email: <a href='mailto:${VARS.personalEmail}'>${VARS.personalEmail}</a></div>
+        <div>Bio: <a href='https://linktr.ee/denischeong'>linktr.ee/denischeong</a></div>
+    `;
+
+    if (process.env.website.includes('kenya')) {
+        emailSignature = `
+            <div>All the best,</div>
+            <b>${VARS.title}</b>
+            <div>${VARS.distributor}</div>
+            <div>${VARS.location}</div>
+            <div>${VARS.phone}</div>
+            <div><a href='mailto:${VARS.personalEmail}'>${VARS.personalEmail}</a></div>
+            <div><a href='${VARS.domainName}'>${VARS.domainName}</a></div>
+        `;
+    }
+
     // Send inquiry email
     app.post("/api/sendmail", (req, res) => {
         console.log("New machine inquiry request received");
@@ -110,16 +138,8 @@ export function initAPI(app, websiteName) {
                 <div>I am so happy for you to discover this amazing water just like I did! I could hardly believe it when they told me that changing my water could change my life.</div>
                 <div>But, I'm so delighted I took the time to discover Kangen Water, because it truly has changed my life!</div>
                 <div>Don't delay! Dig in! Call me, text me, email me, I have incredible stories from thousands of other people to share with you! Can't wait to hear from you!</div>
-                <h4><em>Change Your Water, Change Your Life!</em></h4>
-                
-                <div>All the best,</div>
-                <b>${VARS.title}</b>
-                <div>${VARS.distributor}</div>
-                <div>${VARS.location}</div>
-                <div>${VARS.phone}</div>
-                <div><a href='mailto:${VARS.personalEmail}'>${VARS.personalEmail}</a></div>
-                <div><a href='${VARS.domainName}'>${VARS.domainName}</a></div>
-            `,
+                <h4><em>Change Your Water, Change Your Life!</em></h4>                
+            `+emailSignature,
             attachments: VARS.attachments
         };
         smtpTransport.sendMail(mailOptions, (error, response) => {
