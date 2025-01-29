@@ -220,13 +220,13 @@
         ],
         "teamMembers": [
             {
-                "img": "assets/images/team/denis.jpg",
-                "name": "Denis Cheong",
+                "img": "assets/images/team/grace_vanderwalt.jpg",
+                "name": "Grace Van Der Walt",
                 "title": "Enagic Global Distributor",
                 "location": "South Africa (Johannesburg)",
-                "email": "denisltc@gmail.com",
-                "phone": "+1-647-389-8798",
-                "testimonial": "testimonials#denis-cheong"
+                "email": "terenure@netactive.co.za",
+                "phone": "+27-82-648-2278",
+                "testimonial": "testimonials#"
             }
         ]
     },
