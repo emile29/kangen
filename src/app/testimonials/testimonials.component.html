@@ -16,38 +16,50 @@
                 <img src="{{testimonial.img}}">
             </div>
             <div class="right text-container">
+                <div style="text-align: left; margin-bottom: 12px;">
+                    <div><b>{{testimonial.name}}</b> | {{testimonial.place}}</div>
+                    <div>{{testimonial.email}} | {{testimonial.phone}}</div>
+                    <!-- <div><b>{{testimonial.phone}}</b></div> -->
+                </div>
+                <hr style="border-width: 1px; border-color: rgba(80, 80, 80, 0.3);">
                 <div>
                     <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
                     <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
                     <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
                     <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
                 </div>
-                <div style="float: right">
+                <!-- <div style="float: right">
                     <div style="text-align: left;">
                         <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
                         <div><b>{{testimonial.email}}</b></div>
                         <div><b>{{testimonial.phone}}</b></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <div *ngIf="odd">
         <div class="ttml-section">
             <div class="left text-container">
+                <div style="text-align: left; margin-bottom: 12px;">
+                    <div><b>{{testimonial.name}}</b> | {{testimonial.place}}</div>
+                    <div>{{testimonial.email}} | {{testimonial.phone}}</div>
+                    <!-- <div><b>{{testimonial.phone}}</b></div> -->
+                </div>
+                <hr style="border-width: 1px; border-color: rgba(80, 80, 80, 0.3);">
                 <div>
                     <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
                     <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
                     <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
                     <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
                 </div>
-                <div style="float: right">
+                <!-- <div style="float: right">
                     <div style="text-align: left;">
                         <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
                         <div><b>{{testimonial.email}}</b></div>
                         <div><b>{{testimonial.phone}}</b></div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="right image-container">
                 <img src="{{testimonial.img}}">
@@ -59,16 +71,16 @@
             <img src="{{testimonial.img}}">
         </div>
         <div class="text-container">
+            <div style="margin-bottom: 14px;">
+                <div><b>{{testimonial.name}}</b> | {{testimonial.place}}</div>
+                <div>{{testimonial.email}} | {{testimonial.phone}}</div>
+                <!-- <div><b>{{testimonial.phone}}</b></div> -->
+            </div>
             <div>
                 <p *ngIf='testimonial.header != ""'><b>{{testimonial.header}}</b></p>
                 <p *ngIf='testimonial.para1 != ""'>"{{testimonial.para1}}</p>
                 <p *ngIf='testimonial.para2 != ""'>{{testimonial.para2}}</p>
                 <p *ngIf='testimonial.para3 != ""'>{{testimonial.para3}}"</p>
-            </div>
-            <div>
-                <div><b>- {{testimonial.name}} (<em>{{testimonial.place}}</em>)</b></div>
-                <div><b>{{testimonial.email}}</b></div>
-                <div><b>{{testimonial.phone}}</b></div>
             </div>
         </div>
     </div>

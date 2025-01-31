@@ -13,7 +13,7 @@ export class TestimonialsComponent implements OnInit {
     testimonials = [
       {
         img: "assets/images/testimonials/mamta.png",
-        header: "super hydrated, sleep peacefully, healthy skin",
+        header: "",
         para1: "After only a few days drinking Kangen Water, my family and myself could feel super \
         hydrated and sleep peacefully despite a long tiring day.",
         para2: "And during my holidays in Dubai where I had to drink bottled water, I realized that Kangen water is much \
@@ -21,16 +21,16 @@ export class TestimonialsComponent implements OnInit {
         These were remedied as soon I resumed with Kangen water, upon my return to Mauritius.",
         para3: "Kangen water has definitely changed our lives. It's the best investment that I could have ever made so far.",
         name: "Mamta Ramlugun",
-        place: "Vacoas, Mauritius",
+        place: "Mauritius (Vacoas)",
         email: "mamtaramlugun@gmail.com",
         phone: "+230 5252 0710"
       },
       {
         img: "assets/images/testimonials/aris.png",
-        header: "headache relief, easy to drink 2-3 Liters, bottled water savings",
+        header: "",
         para1: "I finally bought my own K8 Kangen machine. I have been getting Kangen water from friends for the last two years. Since the first day, I tried Kangen water, I noticed a significant change in my body and my life.",
-        para2: "Here is the main reason that motivated me to buy a K8. I used to have a heavy headache after poor sleep, intense work or any bad events. The first time I tried Kangen, I was preparing to write an exam for a professional certification. Three days later, I realized that I didn't have any headache even if I was sleeping only for 4 to 5 hours. Also, I was easily drinking 2 to 3 liters a day, which was almost impossible. I can feel the benefit of Kangen water.",
-        para3: "Adding to that, I am saving CA$ 1,200 per year on plastic bottled water.",
+        para2: "I used to have a heavy headache after poor sleep, intense work or bad events. The first time I tried Kangen water, I was preparing for a professional exam. 3 days later, I realized that I didn't have any headache even if I was sleeping only for 3 to 4 hours.",
+        para3: "Now, I can easily drink 2 to 3 liters of Kangen Water every day, which was impossible before with bottled water. Adding to that, Kangen water has made me save around CA$ 900 per year on plastic bottled water for our big family of 6.",
         name: "Aris Ilunga",
         place: "London, Canada",
         email: "arilunga@gmail.com",
@@ -44,7 +44,7 @@ export class TestimonialsComponent implements OnInit {
         My husband tried it first, then he recommended it to the entire family. For a few weeks, I didn't think anything of it, till I realised I could not remember the last time I had those nasty heartburns.",
         para3: "I asked myself, what I'm I doing differently, and it dawned on me that I had changed my water. Wish I had tried it earlier. My body is happy and I'm happy!",
         name: "Edith Mills",
-        place: "Ottawa, Canada",
+        place: "Canada (Welland)",
         email: "edmill83@gmail.com",
         phone: "+1-613-407-7134"
       },
@@ -75,57 +75,45 @@ export class TestimonialsComponent implements OnInit {
       // },
       {
         img: "assets/images/testimonials/neena.jpg",
-        header: "improved blood tests, more immune, bottled water savings",
-        para1: "2 years ago, I was overwhelmed with my work and managing my life, no time for sports and how worried I was \
-        getting about my health. My general blood tests was not too good. I was feeling tired all the time, \
-        couldn't sleep well, obesity and swollen feet.",
-        para2: "It is now 1.5 years since I bought my K8 Machine and consuming solely KANGEN water. I must admit I \
-        could only experience good results. My blood tests continued to improve and I am now within the required \
-        range. I sleep well and i feel more energetic. I lost around 10 kg and the swelling has reduced.",
-        para3: "My whole family is enjoying the benefits of KANGEN water. We love the taste. My 3 kids used to be \
-        vulnerable to the climate change. Now they are more immune to the seasonal flu. My hubby is also \
-        feeling more energetic and his body pain has lessen.  We have minimised our spending on medicines \
-        and saved, I would say, approx. U$600 annually on bottled water.",
+        header: "",
+        para1: "I used to be overwhelmed with my work, feel tired all the time, could not sleep well, and was struggling with obesity. And since I bought my K8 Machine and consuming solely KANGEN water, my blood tests have improved. I sleep well and feel more energetic. I lost around 8 kgs and the swelling of my feet has reduced.",
+        para2: "",
+        para3: "My whole family is now enjoying the benefits of KANGEN water. We love the taste. My 3 kids are now more immune to the seasonal flu and my hubby joint pains are now gone. We have also reduced our spending on medicines and saved around U$600 annually on plastic bottled water.",
         name: "Neena Soorjun",
-        place: "Melrose, Mauritius",
+        place: "Mauritius (Melrose)",
         email: "neenasoorjun@gmail.com",
         phone: "+230-5719-1524"
       },
       {
         img: "assets/images/testimonials/jolie.jpg",
-        header: "pains disappeared, menstrual remedy, body revitalized",
-        para1: "I learned about KANGEN WATER in 2020 in GHANA. As I was suffering from menstruation problems, terrible back pain, I immediately agreed to test Kangen water, for a month.",
-        para2: "In less than 2 weeks, things took a different turn, I started to feel positively the KANGEN effects in my body and it was unbelievable - the aches and pains disappeared. In short, I had a new body for the better! My menstrual cycle is back to normal...no back pain or cycle abnormalities. KANGEN WATER had revitalized my body. I recommend this KANGEN WATER to you, for the good health of all your body cells. Today, in CANADA, KANGEN water has become our water for life, with our K8. And I now wholeheartedly hope to help people discover KANGEN water back in Congo, my birthplace!",
-        para3: "THANK YOU KANGEN WATER, CHANGE YOUR WATER, CHANGE YOUR LIFE and DRINK KANGEN WATER.",
+        header: "",
+        para1: "I learned about Kangen Water in Ghana. As I was suffering from menstruation problems, terrible back pain, I immediately agreed to test Kangen water, for a month.",
+        para2: "In less than 2 weeks, I started to feel positively the Kangen effects in my body and it was unbelievable - the aches and pains disappeared. In short, I had a new body for the better! My menstrual cycle is back to normal...no back pain or cycle abnormalities. Kangen Water revitalized my body. I recommend this Kangen Water to everyone, for the good health of all our body cells.",
+        para3: "Today, Kangen Water has become our water for life, with our K8.",
         name: "Jolie Bampengesha",
-        place: "London, Canada",
+        place: "Canada (London)",
         email: "jaassilu@gmail.com",
         phone: "+1-519-282-6290"
       },
       {
         img: "assets/images/testimonials/dio.jpg",
         header: "",
-        para1: "Thank you, Nestle Alumni, Denis Cheong, for all your assistance and the Kangen Water 💧 to keep me in super health for new challenges in Canada !",
+        para1: "I'm so grateful to Kangen Water for keeping me in super health for my new challenges in Canada!",
         para2: "",
-        para3: "Kangen Water has provided me with greater stamina and mental focus to cope with my demanding post graduate study in Canada. \
-        Myself and my family could all feel the difference, with Kangen Water. Kangen Water is Life !",
+        para3: "Kangen Water has provided me with greater stamina and mental focus and clarity to cope with my demanding post graduate study in Canada. Myself and my family could all feel the difference, now, with our new K8 Kangen Water machine. And no more the burden to buy and carry bulky plastic bottled water from grocery stores! Kangen Water has changed our lives!",
         name: "Dio Elikem Tay",
-        place: "Ottawa, Canada",
+        place: "Canada (Welland)",
         email: "dioelikem@yahoo.com",
         phone: "+1-514-515-7905"
       },
       {
         img: "assets/images/testimonials/usman.jpg",
         header: "",
-        para1: "I was fortunate to hear about Kangen Water from a friend. \
-        Then I met Mr. Denis Cheong and my life changed completely from that day.",
-        para2: "Denis introduced to me the health benefits of Kangen water and the business opportunity of Enagic. \
-        Long story short, after several zoom calls with Denis, I finally bought my K8 Kangen machine. \
-        Once I started drinking kangen water, me and my family can never go back.",
-        para3: "I'm looking forward to changing lives in Nigeria and Africa at large with Kangen Water. \
-        Thank you Denis & Enagic.",
+        para1: "I was fortunate to hear about Kangen Water from a good friend in Canada who introduced to me the health benefits of Kangen water and since then, my life has changed completely. After doing my own research, witnessing the amazing worldwide testimonials and the company history of Enagic Japan International, I finally bought my K8 Kangen machine.",
+        para2: "",
+        para3: "Once I started drinking kangen water, me and my family can never go back. My wife testifies that Kangen water is the best as she could not believe the energy she has now and how she feels years younger! Kangen water has greatly improved our wellness and we feel good inside and out. I can't wait to share this wonderful gift with everyone!",
         name: "Nuruddeen Usman",
-        place: "Kano, Nigeria",
+        place: "Nigeria (Kano)",
         email: "nuruddeen666@gmail.com",
         phone: "+234-703-497-7586"
       },
@@ -136,14 +124,14 @@ export class TestimonialsComponent implements OnInit {
         para2: "Having played volley ball at national level for Mauritius for over 20 years, I have always been mindful on how to cope after sports retirement. \
         Kangen Water was the perfect answer. Few days after trying Kangen Water I felt fully energised and hydrated, slept better and lost weight.",
         para3: "The whole family now enjoys Kangen Water, not only for drinking but also for washing vegetables, beauty water, watering plants etc. \
-        Kangen Water was definitely an excellent long term health investment for me and my family !",
+        Kangen Water was definitely an excellent long term health investment for me and my family!",
         name: "Stephanie Neta",
-        place: "Albion, Mauritius",
+        place: "Mauritius (Albion)",
         email: "ebwoodycraft@gmail.com",
         phone: "+230-5710-0761"
       },
       {
-        img: "assets/images/testimonials/denis.jpg",
+        img: "assets/images/testimonials/denis.png",
         header: "",
         para1: "After changing my country, I changed my water and both events changed my life!",
         para2: "Since our family got our K8, our lives have been transformed. We have been enjoying \
@@ -152,9 +140,20 @@ export class TestimonialsComponent implements OnInit {
         para3: "I'm now on a global mission to change the lives of as many people and organizations as \
         possible, across the world, with Kangen Water, Anespa, Ukon and emGuarde.",
         name: "Denis Cheong",
-        place: "Toronto, Canada",
+        place: "Canada (Toronto)",
         email: "denisltc@gmail.com",
         phone: "+1-647-389-8798"
+      },
+      {
+        img: "assets/images/testimonials/sam.png",
+        header: "",
+        para1: "We're really happy with our K8! It has been a great investment in the wellness of our family. After drinking the water for 1 year, I have lost almost 7 kgs of body fat that was stubborn to go. We all sleep better and would wake up noticeably rested and refreshed. Drinking Kangen water has given me and my family our quality of life back!",
+        para2: "",
+        para3: "In addition to the noticeable health benefits, the different pH types of waters give a great flexibility on how we can use the Kangen system in our house. It has also been very good for our skin care, plants, cleaning, removing pesticides from the fruits and vegetables and sanitising the home.",
+        name: "Sam Kangau",
+        place: "Kenya (Nairobi)",
+        email: "sam.kangau@gmail.com",
+        phone: "+254-722-223-789"
       }
     ];
     constructor(private dbService: DbService) { }
