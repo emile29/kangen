@@ -32,7 +32,7 @@ export class TestimonialsComponent implements OnInit {
         para2: "I used to have a heavy headache after poor sleep, intense work or bad events. The first time I tried Kangen water, I was preparing for a professional exam. 3 days later, I realized that I didn't have any headache even if I was sleeping only for 3 to 4 hours.",
         para3: "Now, I can easily drink 2 to 3 liters of Kangen Water every day, which was impossible before with bottled water. Adding to that, Kangen water has made me save around CA$ 900 per year on plastic bottled water for our big family of 6.",
         name: "Aris Ilunga",
-        place: "London, Canada",
+        place: "Canada (London)",
         email: "arilunga@gmail.com",
         phone: "+1-519-868-4375"
       },

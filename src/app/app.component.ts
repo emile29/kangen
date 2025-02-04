@@ -34,9 +34,9 @@ export class AppComponent {
                 if (this.websiteName.includes('southafrica')) {
                     this.teamName = "South Africa";
                 }
-				if (this.websiteName.includes('kenya')) {
-                    this.isPersonalWebsite = true;
-                }
+				// if (this.websiteName.includes('kenya')) {
+                //     this.isPersonalWebsite = true;
+                // }
                 this.VARS = (environment.vars as any).default[this.websiteName];
 
 				// set page title dynamically

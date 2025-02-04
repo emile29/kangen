@@ -27,9 +27,9 @@ export class HomepageComponent implements OnInit {
                 if (this.websiteName.includes('southafrica')) {
                     this.teamName = "South Africa";
                 }
-                if (this.websiteName.includes('kenya')) {
-                    this.isPersonalWebsite = true;
-                }
+                // if (this.websiteName.includes('kenya')) {
+                //     this.isPersonalWebsite = true;
+                // }
                 this.VARS = (environment.vars as any).default[this.websiteName];
                 let loc = this.VARS.location.split("|");
                 let phone = this.VARS.phone.split("|");

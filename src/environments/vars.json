@@ -104,7 +104,7 @@
         "flagImg": "assets/images/kenya_flag.jpg",
         "phone": "+254-722-223-789",
         "officeEmail": "kangenkenya.info@gmail.com",
-        "personalEmail": "sam.kangau@gmail.com",
+        "personalEmail": "denisltc@gmail.com",
         "herokuURL": "https://kangenkenya.herokuapp.com",
         "domainName": "http://www.kangenkenya.com",
         "profileImg": "assets/images/profile_pic_kenya.jpg",
@@ -118,7 +118,17 @@
                 "path": "https://drive.google.com/uc?export=view&id=1_ECdc94ujZbHUF0ss-5OTL-WLlri879P"
             }
         ],
-        "teamMembers": []
+        "teamMembers": [
+            {
+                "img": "assets/images/team/sam.png",
+                "name": "Sam Kangau",
+                "title": "Enagic Global Distributor",
+                "location": "Kenya (Nairobi)",
+                "email": "sam.kangau@gmail.com",
+                "phone": "+254-722-223-789",
+                "testimonial": ""
+            }
+        ]
     },
     "kangenluxembourg": {
         "distributor": "Denis Cheong",
